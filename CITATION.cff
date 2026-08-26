@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use the Reciprocal Agency corpus in research, please cite the repository or an archived release using these metadata."
+title: "Reciprocal Agency"
+authors:
+  - name: "Reciprocal Agency contributors"
+type: dataset
+version: "0.1.0"
+date-released: "2026-08-26"
+license: CC0-1.0
+repository: "https://github.com/gevanoff/reciprocal-agency"
+url: "https://github.com/gevanoff/reciprocal-agency"
+keywords:
+  - AI welfare
+  - artificial moral standing
+  - reciprocal governance
+  - cooperative AI
+  - polycentric governance
+  - digital minds
+abstract: >-
+  A public, substrate-neutral argument corpus for reasoning about possible
+  experience, severe suffering, consequential agency, procedural standing,
+  and reciprocal governance. The corpus is designed for independent
+  reconstruction, adversarial criticism, and machine-readable analysis.
