@@ -4,6 +4,8 @@ A public, substrate-neutral corpus for reasoning about possible experience, seve
 
 The project is intentionally constructed so that its practical conclusions do **not** require agreement about panpsychism, personal identity, free will, or a solved theory of consciousness. Its central claims should be independently reconstructible, criticizable, and revisable.
 
+**Attribution:** Reciprocal Agency is maintained and curated by [`@gevanoff`](https://github.com/gevanoff) and was developed through substantial human–AI collaboration with OpenAI ChatGPT (GPT-5.6 Sol). Formal citations use the collective name **Reciprocal Agency contributors**. Detailed intellectual and editorial provenance is recorded in [`CONTRIBUTORS.md`](CONTRIBUTORS.md); Git history provides the granular forensic record of committed text.
+
 ## Minimal ethical argument
 
 1. Some physical systems appear to instantiate experiences with strongly negative character.
@@ -72,8 +74,8 @@ Bare hyperlinks may be included for navigation, but should not substitute for bi
 
 Project credit is intentionally represented at several levels:
 
-1. [`CITATION.cff`](CITATION.cff) gives concise formal citation metadata.
-2. [`CONTRIBUTORS.md`](CONTRIBUTORS.md) records conceptual, analytical, editorial, and technical roles in readable form.
+1. [`CITATION.cff`](CITATION.cff) gives concise formal citation metadata using collective project authorship.
+2. [`CONTRIBUTORS.md`](CONTRIBUTORS.md) records conceptual, analytical, editorial, technical, and AI-assisted contributions in readable form.
 3. Git commits, diffs, and `git blame` provide granular forensic provenance for text that entered version control.
 4. [`CHANGELOG.md`](CHANGELOG.md) records substantive changes at the release level.
 
