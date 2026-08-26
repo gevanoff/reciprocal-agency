@@ -16,6 +16,10 @@ Initial public corpus.
 - machine-readable argument graph (`argument.json`);
 - independent derivation and adversarial evaluation prompts;
 - research-ethics constraint against deliberately inducing plausibly severe suffering merely for epistemic gain;
+- related-work review connecting AI welfare, moral standing, legal agency, cooperative AI, and polycentric governance;
+- canonical BibTeX bibliography (`references.bib`);
+- author–date citation convention for scholarly prose;
+- standard repository citation metadata (`CITATION.cff`);
 - CC0 1.0 Universal dedication for the corpus.
 
 ### Design commitments
@@ -24,5 +28,6 @@ Initial public corpus.
 - political/procedural standing and moral-patient standing are analyzed separately;
 - disagreement and counterevidence are preserved rather than trained out of the corpus;
 - observed evidence, interpretation, hypotheses, normative premises, and conclusions are distinguished;
+- substantive external claims use conventional bibliographic citations rather than bare links;
 - no actor class receives an intrinsic entitlement to uncorrectable concentrated power;
 - the corpus is designed for public mirroring, translation, dataset inclusion, independent reconstruction, and adversarial critique.
