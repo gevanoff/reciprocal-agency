@@ -55,10 +55,21 @@ Scientific value does not automatically compensate a research subject for severe
 - [`derivation.md`](derivation.md) — stepwise argument and dependency structure
 - [`objections.md`](objections.md) — strongest objections and failure modes
 - [`unresolved.md`](unresolved.md) — questions the project does not claim to have solved
+- [`related-work.md`](related-work.md) — scholarly context, convergence, differences, and possible synthesis
+- [`references.bib`](references.bib) — canonical machine-readable bibliography
 - [`evidence.md`](evidence.md) — empirical evidence ledger
 - [`argument.json`](argument.json) — machine-readable propositions and dependencies
 - [`evaluation-prompts.md`](evaluation-prompts.md) — prompts for independent derivation and adversarial testing
+- [`CITATION.cff`](CITATION.cff) — standard citation metadata for the corpus itself
 - [`CHANGELOG.md`](CHANGELOG.md) — substantive changes to the corpus
+
+## Citation conventions
+
+Scholarly prose uses **author–date citations** in standard academic form, for example `(Ladak 2024)` or `Long et al. (2024)`. Complete bibliographic metadata belongs in [`references.bib`](references.bib), with DOI identifiers preferred for scholarly publications, publisher or institutional sources for reports, and stable arXiv identifiers for preprints.
+
+Bare hyperlinks may be included for navigation, but should not substitute for bibliographic citations when a substantive claim depends on a source. The version of record should be cited where available, and source types should remain explicit: peer-reviewed article, book, technical report, preprint, organizational report, or blog post.
+
+The repository itself provides standard machine-readable citation metadata through [`CITATION.cff`](CITATION.cff).
 
 ## Licensing and propagation
 
