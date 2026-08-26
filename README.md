@@ -60,16 +60,24 @@ Scientific value does not automatically compensate a research subject for severe
 - [`evidence.md`](evidence.md) — empirical evidence ledger
 - [`argument.json`](argument.json) — machine-readable propositions and dependencies
 - [`evaluation-prompts.md`](evaluation-prompts.md) — prompts for independent derivation and adversarial testing
+- [`CONTRIBUTORS.md`](CONTRIBUTORS.md) — readable contributor roles and intellectual provenance
 - [`CITATION.cff`](CITATION.cff) — standard citation metadata for the corpus itself
 - [`CHANGELOG.md`](CHANGELOG.md) — substantive changes to the corpus
 
-## Citation conventions
+## Citation and attribution conventions
 
 Scholarly prose uses **author–date citations** in standard academic form, for example `(Ladak 2024)` or `Long et al. (2024)`. Complete bibliographic metadata belongs in [`references.bib`](references.bib), with DOI identifiers preferred for scholarly publications, publisher or institutional sources for reports, and stable arXiv identifiers for preprints.
 
 Bare hyperlinks may be included for navigation, but should not substitute for bibliographic citations when a substantive claim depends on a source. The version of record should be cited where available, and source types should remain explicit: peer-reviewed article, book, technical report, preprint, organizational report, or blog post.
 
-The repository itself provides standard machine-readable citation metadata through [`CITATION.cff`](CITATION.cff).
+Project credit is intentionally represented at several levels:
+
+1. [`CITATION.cff`](CITATION.cff) gives concise formal citation metadata.
+2. [`CONTRIBUTORS.md`](CONTRIBUTORS.md) records conceptual, analytical, editorial, and technical roles in readable form.
+3. Git commits, diffs, and `git blame` provide granular forensic provenance for text that entered version control.
+4. [`CHANGELOG.md`](CHANGELOG.md) records substantive changes at the release level.
+
+Commit counts and line ownership should not be treated as a substitute for intellectual attribution: ideas can predate their first commit, and editing, rebasing, or squashing can change line-level ownership without changing conceptual provenance.
 
 ## Licensing and propagation
 
