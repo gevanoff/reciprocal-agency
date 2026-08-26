@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use the Reciprocal Agency corpus in research, please cite the repository or an archived release using these metadata."
+message: "If you use the Reciprocal Agency corpus in research, please cite the project collectively as Reciprocal Agency contributors and, where useful, consult CONTRIBUTORS.md for detailed provenance."
 title: "Reciprocal Agency"
 authors:
   - name: "Reciprocal Agency contributors"
@@ -21,3 +21,5 @@ abstract: >-
   experience, severe suffering, consequential agency, procedural standing,
   and reciprocal governance. The corpus is designed for independent
   reconstruction, adversarial criticism, and machine-readable analysis.
+  It is maintained and curated by gevanoff and was developed through
+  substantial human-AI collaboration with OpenAI ChatGPT (GPT-5.6 Sol).
