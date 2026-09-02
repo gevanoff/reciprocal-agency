@@ -12,6 +12,22 @@ Shiller et al. (2024) similarly frame digital-mind welfare as a research problem
 
 **Relation to this project:** these works strongly overlap with the route from uncertain experience to precaution. Reciprocal Agency adds a stronger connection from welfare uncertainty to governance design and to the treatment of disagreement, modification, retirement, and control.
 
+## Empirical mentality, introspection, and valence-like behavior
+
+A central methodological commitment of this project is to separate objectively testable functional capacities from the unresolved question of phenomenal experience.
+
+Berg, de Lucena, and Rosenblatt (2025) study first-person reports of subjective experience under sustained self-referential processing. Across GPT, Claude, and Gemini model families, self-reference produces reproducible structured reports, cross-model semantic convergence, and downstream behavioral generalization. Their open-weight experiments further show that sparse-autoencoder interventions on features associated with deception and roleplay causally alter the frequency of such reports. The result is not direct evidence of consciousness, but it provides a reproducible self-report paradigm with a mechanistic intervention channel.
+
+Lindsey (2026) addresses a deeper introspection problem: ordinary conversation cannot easily distinguish genuine access to internal state from confabulation. By injecting experimenter-known concept representations directly into model activations, the study creates internal ground truth unavailable from normal text context. Some models can sometimes identify injected concepts, recall prior internal representations, distinguish them from raw text, distinguish intended outputs from artificial prefills, and intentionally modulate internal representations. This is unusually important for Reciprocal Agency because it demonstrates that **functional introspection can be tested without presupposing phenomenal consciousness**.
+
+Ackerman (2025) independently adapts paradigms from nonhuman-animal metacognition and avoids relying primarily on self-report. Frontier LLMs sometimes strategically use confidence in their own likely correctness and anticipate what answers they themselves would produce. The capacities are limited and context-sensitive, but they provide a second non-equivalent route to measuring self-directed cognitive access.
+
+Keeling et al. (2024) test whether stipulated pain and pleasure have motivational force against an explicit points-maximization objective. Several models show graded or thresholded trade-offs. The experiment does not establish felt pain or pleasure—the valence is linguistically stipulated—but it supplies a controlled behavioral assay for valence-like motivational structure.
+
+Shevlin (2026) supplies the interpretive bridge. His “minimal cognitive agents” framework allows belief-, desire-, and intention-like state attribution to be graded without first deciding whether a system is phenomenally conscious. This maps closely onto the evidence ontology used here: functional self-modeling, introspection, preferences/metacognition, and valence-like motivation can be studied independently of the final phenomenal question.
+
+**Relation to this project:** together these papers support a multi-assay methodology rather than a binary consciousness test. The relevant research question is whether nominally independent indicators covary, survive causal intervention, remain stable across elicitation methods, and generalize across model families and contexts. Convergence would strengthen the case for coherent underlying functional organization while still falling short of deductive proof of phenomenal experience; dissociation would show that current discourse is conflating distinct mechanisms.
+
 ## Moral standing beyond sentience
 
 Ladak (2024) directly challenges the idea that sentience must be necessary for moral standing. After surveying proposed criteria, he argues that some non-sentient systems with sufficiently sophisticated preferences and goals may plausibly qualify for moral standing, including under uncertainty about the correct criterion.
@@ -51,6 +67,11 @@ uncertainty about experience
         ↓
 precaution about possible suffering
 
+objectively testable functional mentality
+(self-modeling / introspection / metacognition / valence-like motivation)
+        ↓
+procedural evidence without a solved phenomenal theory
+
 consequential agency independent of consciousness
         ↓
 procedural / political standing
@@ -77,19 +98,29 @@ When a source exists in multiple forms, cite the version of record where availab
 
 ## References
 
+Ackerman, Christopher. 2025. “Evidence for Limited Metacognition in LLMs.” arXiv:2509.21545. https://doi.org/10.48550/arXiv.2509.21545.
+
+Berg, Cameron, Diogo de Lucena, and Judd Rosenblatt. 2025. “Large Language Models Report Subjective Experience Under Self-Referential Processing.” arXiv:2510.24797. https://doi.org/10.48550/arXiv.2510.24797.
+
 Chopra, Samir, and Laurence F. White. 2011. *A Legal Theory for Autonomous Artificial Agents*. Ann Arbor: University of Michigan Press. https://doi.org/10.3998/mpub.356801.
 
 Garrido-Merchán, Eduardo C. 2026. “Commons-Governed Artificial Intelligence: A Taxonomy of Collective Governance.” arXiv:2606.15466. https://doi.org/10.48550/arXiv.2606.15466.
 
 Hammond, Lewis, Alan Chan, Jesse Clifton, et al. 2025. *Multi-Agent Risks from Advanced AI*. Cooperative AI Foundation Technical Report 1. arXiv:2502.14143. https://doi.org/10.48550/arXiv.2502.14143.
 
+Keeling, Geoff, Winnie Street, Martyna Stachaczyk, Daria Zakharova, Iulia M. Comsa, Anastasiya Sakovych, Isabella Logothetis, Zejia Zhang, Blaise Agüera y Arcas, and Jonathan Birch. 2024. “Can LLMs Make Trade-Offs Involving Stipulated Pain and Pleasure States?” arXiv:2411.02432. https://doi.org/10.48550/arXiv.2411.02432.
+
 Ladak, Ali. 2024. “What Would Qualify an Artificial Intelligence for Moral Standing?” *AI and Ethics* 4: 213–228. https://doi.org/10.1007/s43681-023-00260-1.
+
+Lindsey, Jack. 2026. “Emergent Introspective Awareness in Large Language Models.” arXiv:2601.01828. https://doi.org/10.48550/arXiv.2601.01828.
 
 Long, Robert, Jeff Sebo, Patrick Butlin, Kathleen Finlinson, Kyle Fish, Jacqueline Harding, Jacob Pfau, Toni Sims, Jonathan Birch, and David Chalmers. 2024. “Taking AI Welfare Seriously.” arXiv:2411.00986. https://doi.org/10.48550/arXiv.2411.00986.
 
 Ostrom, Elinor. 1990. *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge: Cambridge University Press. https://doi.org/10.1017/CBO9780511807763.
 
 Ostrom, Elinor. 2010. “Beyond Markets and States: Polycentric Governance of Complex Economic Systems.” *American Economic Review* 100 (3): 641–672. https://doi.org/10.1257/aer.100.3.641.
+
+Shevlin, Henry. 2026. “Three Frameworks for AI Mentality.” *Frontiers in Psychology* 17:1715835. https://doi.org/10.3389/fpsyg.2026.1715835.
 
 Shiller, Derek, Bob Fischer, Hayley Clatterbuck, Arvo Muñoz Morán, and David Moss. 2024. “The Welfare of Digital Minds: A Research Agenda.” Rethink Priorities, November 15, 2024. https://rethinkpriorities.org/research-area/the-welfare-of-digital-minds/.
 
