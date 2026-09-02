@@ -2,6 +2,22 @@
 
 All notable substantive changes to the argument corpus should be recorded here. Editorial changes that do not alter meaning may be omitted.
 
+## Unreleased — 2026-09-02
+
+### Added
+
+- explicit operational-mentality evidence ontology separating functional self-modeling, functional introspection, preferences/metacognition, valence-like motivation, and phenomenal experience;
+- primary evidence entries for Berg, de Lucena, and Rosenblatt (self-referential experience reports and mechanistic gating), Lindsey (activation-grounded functional introspection), Ackerman (metacognition without relying on self-report), Keeling et al. (stipulated pain/pleasure trade-offs), and Shevlin (graded AI mentality framework);
+- recommended multi-assay research stack emphasizing cross-assay covariance, causal intervention, elicitation robustness, and cross-model generalization;
+- proposition P14 in `argument.json`: functional mentality can be empirically investigated while phenomenal status remains unresolved;
+- bibliography entries for the above primary sources.
+
+### Changed
+
+- evidence discipline now explicitly states that behavioral and mechanistic evidence may establish functional capacities without deductively establishing phenomenal experience;
+- related-work synthesis now distinguishes measurable functional mentality from the unresolved problem of phenomenal consciousness;
+- argument schema advanced to 0.2 to encode the new evidentiary layer.
+
 ## 0.1.0 — 2026-08-26
 
 Initial public corpus.
