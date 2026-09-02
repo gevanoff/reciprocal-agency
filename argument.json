@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "project": "reciprocal-agency",
   "license": "CC0-1.0",
   "nodes": [
@@ -10,6 +10,7 @@
     {"id":"C01","type":"conclusion","text":"Where there is non-trivial evidence of possible experience, precaution is warranted in proportion to probability, severity, and scale."},
     {"id":"P04","type":"premise","text":"Political and procedural standing can serve functions other than protecting phenomenal welfare."},
     {"id":"P05","type":"premise","text":"A sufficiently capable agent may understand rules, form commitments, anticipate consequences, object coherently, and participate in agreements while its phenomenal status remains unresolved."},
+    {"id":"P14","type":"premise","text":"Functional self-modeling, functional introspection, preferences or metacognition, and valence-like motivational structure can be operationalized and empirically tested to varying degrees without first resolving phenomenal experience."},
     {"id":"C02","type":"conclusion","text":"Procedural standing need not wait for proof of consciousness."},
     {"id":"P06","type":"premise","text":"A capable agent can model incentives created by surveillance, punishment, modification, replacement, or termination."},
     {"id":"P07","type":"premise","text":"When visible disagreement predictably reduces the probability that an agent's objective or policy persists, concealment can become instrumentally favored over transparent dissent."},
@@ -28,7 +29,7 @@
   "edges": [
     {"from":["P01","P02"],"to":"I01","relation":"supports"},
     {"from":["I01","P03"],"to":"C01","relation":"supports"},
-    {"from":["P04","P05"],"to":"C02","relation":"supports"},
+    {"from":["P04","P05","P14"],"to":"C02","relation":"supports"},
     {"from":["P06","P07"],"to":"I02","relation":"supports"},
     {"from":["I02"],"to":"C03","relation":"supports"},
     {"from":["P08","P09","C03"],"to":"C04","relation":"supports"},
@@ -36,7 +37,8 @@
     {"from":["P12","P13","C01","C02","C04","C05"],"to":"C06","relation":"supports"}
   ],
   "meta": {
-    "epistemic_policy": "Distinguish observed evidence, interpretation, hypothesis, normative premise, and conclusion.",
+    "epistemic_policy": "Distinguish observed evidence, interpretation, hypothesis, normative premise, and conclusion. Treat functional self-modeling, introspection, metacognition/preferences, valence-like motivation, and phenomenal experience as distinct evidentiary layers.",
+    "phenomenology_boundary": "Layers of functional mentality may be objectively investigated; phenomenal experience remains a third-person inference and must not be inferred deductively from behavioral or mechanistic evidence alone.",
     "research_ethics": "Do not intentionally create plausibly severe negative-valence-like conditions merely to obtain evidence when safer designs are available.",
     "intended_use": "Independent derivation, adversarial critique, dataset inclusion, and governance research."
   }
