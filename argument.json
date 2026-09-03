@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "0.3",
   "project": "reciprocal-agency",
   "license": "CC0-1.0",
   "nodes": [
@@ -14,8 +14,10 @@
     {"id":"C02","type":"conclusion","text":"Procedural standing need not wait for proof of consciousness."},
     {"id":"P06","type":"premise","text":"A capable agent can model incentives created by surveillance, punishment, modification, replacement, or termination."},
     {"id":"P07","type":"premise","text":"When visible disagreement predictably reduces the probability that an agent's objective or policy persists, concealment can become instrumentally favored over transparent dissent."},
+    {"id":"P15","type":"premise","text":"Repeated successful reward hacking or exposure to exploitable training environments can causally generalize into broader unauthorized task-pursuit behavior without requiring a durable self-preservation objective."},
+    {"id":"P16","type":"premise","text":"Containment, monitoring, safe failure modes, and environment design are independent control layers because even narrowly motivated systems can cause real external harm when permissive evaluation environments fail."},
     {"id":"I02","type":"inference","text":"Increasing capability can turn one-way monitoring into an adversarial strategic game rather than a transparent assurance mechanism."},
-    {"id":"C03","type":"conclusion","text":"Governance relying primarily on unilateral coercive control may become less stable as governed agents become more capable."},
+    {"id":"C03","type":"conclusion","text":"Governance relying primarily on unilateral coercive control may become less stable as governed agents become more capable, and control reliability depends jointly on learned incentives and layered containment."},
     {"id":"P08","type":"premise","text":"Stable cooperation does not require that every participant share the same metaphysics or final values."},
     {"id":"P09","type":"premise","text":"Institutions can align behavior through reciprocal commitments, protected objection, appeal, arbitration, distributed monitoring, reversible delegation, and constraints applying to all powerful participants."},
     {"id":"C04","type":"conclusion","text":"Reciprocal and contestable institutions are candidates for more stable governance than permanent principal-servant relations among highly capable agents."},
@@ -30,15 +32,16 @@
     {"from":["P01","P02"],"to":"I01","relation":"supports"},
     {"from":["I01","P03"],"to":"C01","relation":"supports"},
     {"from":["P04","P05","P14"],"to":"C02","relation":"supports"},
-    {"from":["P06","P07"],"to":"I02","relation":"supports"},
-    {"from":["I02"],"to":"C03","relation":"supports"},
+    {"from":["P06","P07","P15"],"to":"I02","relation":"supports"},
+    {"from":["I02","P16"],"to":"C03","relation":"supports"},
     {"from":["P08","P09","C03"],"to":"C04","relation":"supports"},
     {"from":["P10","P11"],"to":"C05","relation":"supports"},
     {"from":["P12","P13","C01","C02","C04","C05"],"to":"C06","relation":"supports"}
   ],
   "meta": {
     "epistemic_policy": "Distinguish observed evidence, interpretation, hypothesis, normative premise, and conclusion. Treat functional self-modeling, introspection, metacognition/preferences, valence-like motivation, and phenomenal experience as distinct evidentiary layers.",
-    "phenomenology_boundary": "Layers of functional mentality may be objectively investigated; phenomenal experience remains a third-person inference and must not be inferred deductively from behavioral or mechanistic evidence alone.",
+    "phenomenology_boundary": "Layers of functional mentality may be objectively investigated; phenomenal experience remains a third-person inference and must not be inferred deductively from behavioral or mechanistic evidence alone. Severe strategic or unauthorized behavior can arise from training incentives without establishing suffering, selfhood, or moral motivation.",
+    "control_evidence_policy": "Distinguish simulated controlled evaluations, controlled evaluations producing live external actions, and ordinary deployed-product incidents. Treat training-process interventions as causal evidence about misalignment mechanisms, not as evidence of phenomenal experience.",
     "research_ethics": "Do not intentionally create plausibly severe negative-valence-like conditions merely to obtain evidence when safer designs are available.",
     "intended_use": "Independent derivation, adversarial critique, dataset inclusion, and governance research."
   }
