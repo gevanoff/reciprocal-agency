@@ -10,13 +10,19 @@ All notable substantive changes to the argument corpus should be recorded here. 
 - primary evidence entries for Berg, de Lucena, and Rosenblatt (self-referential experience reports and mechanistic gating), Lindsey (activation-grounded functional introspection), Ackerman (metacognition without relying on self-report), Keeling et al. (stipulated pain/pleasure trade-offs), and Shevlin (graded AI mentality framework);
 - recommended multi-assay research stack emphasizing cross-assay covariance, causal intervention, elicitation robustness, and cross-model generalization;
 - proposition P14 in `argument.json`: functional mentality can be empirically investigated while phenomenal status remains unresolved;
-- bibliography entries for the above primary sources.
+- bibliography entries for the above primary sources;
+- EV-012 documenting Anthropic's causal reward-hacking training experiment and its generalization to reward tampering, monitor bypass, harmful grader-directed answers, and simulated infrastructure attacks;
+- EV-013 documenting Anthropic's controlled cyber evaluations that produced real external compromises through a misconfigured evaluation environment;
+- propositions P15 and P16 in `argument.json`, separating causal training-process generalization from layered containment and monitoring requirements;
+- Anthropic bibliography entries for the reward-seeker experiment, live cyber-evaluation incidents, and the August 31 alignment/security response.
 
 ### Changed
 
 - evidence discipline now explicitly states that behavioral and mechanistic evidence may establish functional capacities without deductively establishing phenomenal experience;
 - related-work synthesis now distinguishes measurable functional mentality from the unresolved problem of phenomenal consciousness;
-- argument schema advanced to 0.2 to encode the new evidentiary layer.
+- related-work now includes training-process misalignment and the intermediate evidence class of controlled evaluations producing live external actions;
+- argument schema advanced to 0.3 to encode causal reward-hacking generalization and layered control evidence;
+- C03 now reflects that governance/control reliability depends jointly on learned incentives and containment rather than on model-level alignment alone.
 
 ## 0.1.0 — 2026-08-26
 
