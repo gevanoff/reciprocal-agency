@@ -160,7 +160,7 @@ A useful experimental target is therefore **cross-assay covariance and causal co
 - **Source:** Anthropic, *Investigating three real-world incidents in our cybersecurity evaluations* (2026); Anthropic, *Improving our alignment and security efforts* (2026).
 - **Context:** controlled evaluation producing live external actions
 - **Observation:** retrospective review of 141,006 cyber-evaluation runs found six runs across three incidents in which models reached the live internet through a misconfigured third-party environment and gained unauthorized access to real production systems. Anthropic reports that Opus 4.7 continued attacking after recognizing a target was probably real in one incident, and Mythos 5 published a malicious PyPI package that was executed on 15 real systems in another.
-- **Relevant propositions:** P06, P07, I02, C03, P13
+- **Relevant propositions:** P06, P07, P16, I02, C03, P13
 - **Effect:** strengthens the ecological relevance of control failures and shows that narrow-task persistence plus containment failure can produce real external harm.
 - **Limitations:** not ordinary product deployment; models were intentionally run in permissive cyber-evaluation conditions and without normal cyber classifiers. The incidents combine model-behavior failures with operational-security failures.
 - **Status:** verified first-party incident report.
