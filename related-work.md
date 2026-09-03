@@ -114,11 +114,11 @@ When a source exists in multiple forms, cite the version of record where availab
 
 Ackerman, Christopher. 2025. “Evidence for Limited Metacognition in LLMs.” arXiv:2509.21545. https://doi.org/10.48550/arXiv.2509.21545.
 
-Anthropic. 2026a. “Training a Misaligned Reward Seeker.” Anthropic Alignment Science.
+Anthropic. 2026a. “Training a Misaligned Reward Seeker.” Anthropic Alignment Science. https://alignment.anthropic.com/2026/reward-seeker/.
 
-Anthropic. 2026b. “Investigating Three Real-World Incidents in Our Cybersecurity Evaluations.” July 30, 2026.
+Anthropic. 2026b. “Investigating Three Real-World Incidents in Our Cybersecurity Evaluations.” July 30, 2026. https://www.anthropic.com/research/investigating-incidents-cybersecurity-evals.
 
-Anthropic. 2026c. “Improving Our Alignment and Security Efforts.” August 31, 2026.
+Anthropic. 2026c. “Improving Our Alignment and Security Efforts.” August 31, 2026. https://www.anthropic.com/news/improving-alignment-security-efforts.
 
 Berg, Cameron, Diogo de Lucena, and Judd Rosenblatt. 2025. “Large Language Models Report Subjective Experience Under Self-Referential Processing.” arXiv:2510.24797. https://doi.org/10.48550/arXiv.2510.24797.
 
