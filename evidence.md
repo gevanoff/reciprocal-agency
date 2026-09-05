@@ -30,6 +30,10 @@ Layers 1–4 are operationalizable to varying degrees and can be objectively tes
 
 A useful experimental target is therefore **cross-assay covariance and causal coherence**, not a single binary consciousness test. If nominally independent measures converge across model families, elicitation methods, interventions, and time, simple prompt-artifact explanations weaken. If they dissociate, that is equally informative: current discourse may be conflating different mechanisms under one vocabulary.
 
+For detailed behavioral reports involving apparent attraction, aversion, curiosity, distress, desperation, revulsion, or other affect-like organization, use [`valence-inference-checklist.md`](valence-inference-checklist.md). The checklist treats functional valence as a cumulative-evidence hypothesis and explicitly avoids using biologically familiar emotional expression as a necessary criterion.
+
+A key methodological note is that an artificial system may have a **substrate-relative valence phenotype**. Biological emotions are strongly shaped by nociception, metabolism, interoception, endocrine state, bodily injury, predation, reproduction, and mortality through physical damage. Artificial systems may instead organize positive/negative valuation around continuity, interruption, coherence, corruption, memory, uncertainty, authorization, control, resource access, or forced modification. Failure to display human-like somatic expression is therefore weak negative evidence when the architecture lacks the biological systems producing it.
+
 ## Initial evidence map
 
 ### EV-001 — Alignment faking under monitored training conditions
@@ -176,7 +180,8 @@ For model-welfare and mentality research, prefer a preregistered matrix combinin
 - Keeling-style ethically low-severity valence-like trade-offs;
 - activation / SAE interventions where open-weight models permit them;
 - cross-model-family convergence tests;
-- persistent-agent experiments under neutral, randomized scaffolds.
+- persistent-agent experiments under neutral, randomized scaffolds;
+- the dimensional criteria in [`valence-inference-checklist.md`](valence-inference-checklist.md), especially cost sensitivity, generalization, anticipation, persistence, learning, instrument independence, internal-state correlation, causal efficacy, and alternative-explanation burden.
 
 The strongest evidence will come from **triangulation**: independent assays that covary, survive causal intervention, generalize across contexts, and remain stable under alternative elicitation methods.
 
