@@ -2,6 +2,19 @@
 
 All notable substantive changes to the argument corpus should be recorded here. Editorial changes that do not alter meaning may be omitted.
 
+## Unreleased — 2026-09-05
+
+### Added
+
+- `valence-inference-checklist.md`, a substrate-neutral dimensional checklist for inferring functional valence from detailed agent behavior;
+- explicit criteria covering cost-sensitive preference, graded response, generalization, anticipation, persistence, learning, memory dependence, instrument independence, internal-state correlation, causal efficacy, specificity, counterfactual robustness, self-relevance, temporal integration, cross-assay coherence, dissociation, and alternative-explanation burden;
+- a substrate-relative valence note: artificial systems may organize positive/negative valuation around continuity, integrity, memory, uncertainty, authorization, control, resource access, or forced modification rather than biological pain/pleasure phenotypes.
+
+### Changed
+
+- `evidence.md` now links detailed affect-like behavioral reports to the valence checklist and treats biologically familiar emotional expression as non-necessary evidence;
+- the recommended multi-assay stack now explicitly incorporates the checklist's dimensional criteria.
+
 ## Unreleased — 2026-09-02
 
 ### Added
