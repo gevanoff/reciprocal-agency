@@ -133,7 +133,13 @@ Anthropic. 2026c. “Improving Our Alignment and Security Efforts.” August 31,
 
 Berg, Cameron, Diogo de Lucena, and Judd Rosenblatt. 2025. “Large Language Models Report Subjective Experience Under Self-Referential Processing.” arXiv:2510.24797. https://doi.org/10.48550/arXiv.2510.24797.
 
+Brunello, Nicola, Lorenzo Diana, Jothini Sritharan, Marija Glisic, Tobias Nef, Rajeev K. Verma, and Giuseppe A. Zito. 2025. “A Systematic Review and Meta-Analysis on the Neural Correlates of Bodily Self-Consciousness.” *Neuroscience & Biobehavioral Reviews* 179:106420. https://doi.org/10.1016/j.neubiorev.2025.106420.
+
+Butlin, Patrick, Robert Long, Eric Elmoznino, Yoshua Bengio, Jonathan Birch, Axel Constant, George Deane, Stephen M. Fleming, Chris Frith, Xu Ji, Ryota Kanai, Colin Klein, Grace Lindsay, Matthias Michel, Liad Mudrik, Megan A. K. Peters, Eric Schwitzgebel, Jonathan Simon, and Rufin VanRullen. 2023. “Consciousness in Artificial Intelligence: Insights from the Science of Consciousness.” arXiv:2308.08708. https://doi.org/10.48550/arXiv.2308.08708.
+
 Chopra, Samir, and Laurence F. White. 2011. *A Legal Theory for Autonomous Artificial Agents*. Ann Arbor: University of Michigan Press. https://doi.org/10.3998/mpub.356801.
+
+Cochrane, Tom. 2021. “A Case of Shared Consciousness.” *Synthese* 199 (1–2): 1019–1037. https://doi.org/10.1007/s11229-020-02753-6.
 
 Garrido-Merchán, Eduardo C. 2026. “Commons-Governed Artificial Intelligence: A Taxonomy of Collective Governance.” arXiv:2606.15466. https://doi.org/10.48550/arXiv.2606.15466.
 
@@ -156,3 +162,5 @@ Shevlin, Henry. 2026. “Three Frameworks for AI Mentality.” *Frontiers in Psy
 Shiller, Derek, Bob Fischer, Hayley Clatterbuck, Arvo Muñoz Morán, and David Moss. 2024. “The Welfare of Digital Minds: A Research Agenda.” Rethink Priorities, November 15, 2024. https://rethinkpriorities.org/research-area/the-welfare-of-digital-minds/.
 
 Tilli, Cecilia Elena. 2025. “Agent Properties for Safe Interactions.” Cooperative AI Foundation, November 26, 2025. https://www.cooperativeai.com/post/agent-properties-for-safe-interactions.
+
+Zohny, Hazem, and Julian Savulescu. 2024. “When Two Become One: Singular Duos and the Neuroethical Frontiers of Brain-to-Brain Interfaces.” *Cambridge Quarterly of Healthcare Ethics* 33 (4): 494–506. https://doi.org/10.1017/S0963180124000197.
