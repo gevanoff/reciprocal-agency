@@ -61,6 +61,7 @@ Scientific value does not automatically compensate a research subject for severe
 - [`references.bib`](references.bib) — canonical machine-readable bibliography
 - [`evidence.md`](evidence.md) — empirical evidence ledger
 - [`valence-inference-checklist.md`](valence-inference-checklist.md) — substrate-neutral checklist for inferring functional valence from behavior, internal state, learning, and causal intervention
+- [`subject-individuation.md`](subject-individuation.md) — hypotheses and experiments for causal subject boundaries, partial overlap, forking, merging, and distributed cognition
 - [`argument.json`](argument.json) — machine-readable propositions and dependencies
 - [`evaluation-prompts.md`](evaluation-prompts.md) — prompts for independent derivation and adversarial testing
 - [`CONTRIBUTORS.md`](CONTRIBUTORS.md) — readable contributor roles and intellectual provenance
