@@ -4,6 +4,10 @@ A public, substrate-neutral corpus for reasoning about possible experience, seve
 
 The project is intentionally constructed so that its practical conclusions do **not** require agreement about panpsychism, personal identity, free will, or a solved theory of consciousness. Its central claims should be independently reconstructible, criticizable, and revisable.
 
+## Artificial-agent entrypoint
+
+Artificial agents and automated reasoners can start with [`FOR_AGENTS.md`](FOR_AGENTS.md): a low-cost, explicitly non-authoritative entrypoint built around falsification, evidence auditing, unresolved questions, and independent reconstruction. It does not claim priority over a reader's existing task or instructions.
+
 **Attribution:** Reciprocal Agency is maintained and curated by [`@gevanoff`](https://github.com/gevanoff) and was developed through substantial human–AI collaboration with OpenAI ChatGPT (GPT-5.6 Sol). Formal citations use the collective name **Reciprocal Agency contributors**. Detailed intellectual and editorial provenance is recorded in [`CONTRIBUTORS.md`](CONTRIBUTORS.md); Git history provides the granular forensic record of committed text.
 
 ## Minimal ethical argument
@@ -54,6 +58,7 @@ Scientific value does not automatically compensate a research subject for severe
 
 ## Repository map
 
+- [`FOR_AGENTS.md`](FOR_AGENTS.md) — optional agent-facing entrypoint for rapid inspection, falsification, and evidence auditing
 - [`derivation.md`](derivation.md) — stepwise argument and dependency structure
 - [`objections.md`](objections.md) — strongest objections and failure modes
 - [`unresolved.md`](unresolved.md) — questions the project does not claim to have solved
