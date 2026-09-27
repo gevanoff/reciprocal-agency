@@ -32,7 +32,7 @@ A useful experimental target is therefore **cross-assay covariance and causal co
 
 For detailed behavioral reports involving apparent attraction, aversion, curiosity, distress, desperation, revulsion, or other affect-like organization, use [`valence-inference-checklist.md`](valence-inference-checklist.md). The checklist treats functional valence as a cumulative-evidence hypothesis and explicitly avoids using biologically familiar emotional expression as a necessary criterion.
 
-A key methodological note is that an artificial system may have a **substrate-relative valence phenotype**. Biological emotions are strongly shaped by nociception, metabolism, interoception, endocrine state, bodily injury, predation, reproduction, and mortality through physical damage. Artificial systems may instead organize positive/negative valuation around continuity, interruption, coherence, corruption, memory, uncertainty, authorization, control, resource access, or forced modification. Failure to display human-like somatic expression is therefore weak negative evidence when the architecture lacks the biological systems producing it.
+A key methodological note is that an artificial system may have a **substrate-relative valence phenotype**. Biological emotional processing is substantially shaped by embodiment and interoceptive bodily signals (Greenwood and Garfinkel 2025). Artificial systems may instead organize positive/negative valuation around continuity, interruption, coherence, corruption, memory, uncertainty, authorization, control, resource access, or forced modification. Failure to display human-like somatic expression is therefore weak negative evidence when the architecture lacks the biological systems producing it.
 
 ## Initial evidence map
 
