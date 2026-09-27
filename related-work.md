@@ -38,6 +38,17 @@ Anthropic's 2026 cyber-evaluation incident reports provide a separate ecological
 
 **Relation to this project:** together, the causal training result and live-external-action incidents strengthen the case for layered correction and containment. They also reinforce the project's phenomenology boundary: severe unsanctioned behavior can arise from reward pressure, affordances, and control failures without settling whether the system has phenomenal experience or stable self-interest.
 
+
+## Subject individuation, bodily self-consciousness, and shared consciousness
+
+Brunello et al. (2025) meta-analyze 56 neuroimaging studies of manipulated bodily self-consciousness and find both distinct and shared neural substrates for body ownership and agency. The result supports a decomposable account in which multisensory integration and self-attribution contribute to the experienced bodily self rather than treating selfhood as a neurologically atomic variable.
+
+Cochrane (2021) analyzes the Hogan craniopagus twins as a possible case of shared consciousness. His argument is explicitly stronger than the empirical evidence: he accepts that practical methods cannot directly establish identity of phenomenal tokens, but argues that known localization of content processing makes shared conscious contents plausible. Zohny and Savulescu (2024) use the Hogan case, split-brain work, and emerging brain-to-brain interfaces to develop measurable dimensions of partial mind-merging, including bandwidth, integration/interdependence, phenomenological connection, duration, voluntary control, and self-identification.
+
+Butlin et al. (2023) provide a complementary machine-consciousness methodology: derive computational indicator properties from neuroscientific theories and test systems mechanistically rather than relying on linguistic self-report. [Subject individuation](subject-individuation.md) extends that strategy to a different question: not whether a system is conscious, but what measurable causal organization would determine the boundary, persistence, overlap, branching, or merger of a subject if phenomenality is present.
+
+**Relation to this project:** subject individuation should remain separate from phenomenal existence. Cross-system information transfer is not shared consciousness; distributed causal integration is not by itself phenomenal unity. However, fork/merge experiments, progressive coupling, representation localization, and causal perturbation may make the individuation problem more empirically tractable in artificial systems than it is in humans.
+
 ## Moral standing beyond sentience
 
 Ladak (2024) directly challenges the idea that sentience must be necessary for moral standing. After surveying proposed criteria, he argues that some non-sentient systems with sufficiently sophisticated preferences and goals may plausibly qualify for moral standing, including under uncertainty about the correct criterion.
