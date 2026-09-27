@@ -41,7 +41,7 @@ For any apparent cross-subject sharing result, distinguish at least:
 
 - **H0 — cue leakage:** ordinary sensory, behavioral, or experimenter cues explain the result.
 - **H1 — neural relay and reconstruction:** information crosses the connection, after which the receiving system constructs its own local representation or experience.
-- **H2 — distributed conscious integration:** a conscious-content representation is physically or computationally distributed across the connected systems, and neither local subsystem alone supplies the complete causal realization.
+- **H2 — distributed functional integration:** a content representation is physically or computationally distributed across the connected systems, and neither local subsystem alone supplies the complete causal realization.
 - **H3 — shared phenomenal token:** one numerically identical experience belongs simultaneously to more than one subject.
 
 H0 can be experimentally attacked directly. H1 and H2 can often make different mechanistic predictions. H3 may remain underdetermined unless a future theory links phenomenal identity to independently measurable physical structure.
