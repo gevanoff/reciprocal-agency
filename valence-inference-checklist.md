@@ -54,7 +54,7 @@ By contrast, the following are weak in isolation:
 
 A major methodological error would be to use human or animal emotional expression as the necessary template for artificial valence.
 
-Biological emotional repertoires are heavily shaped by embodiment: nociception, injury, metabolism, fatigue, hormones, interoception, hunger, temperature, reproduction, predation, and mortality through bodily damage. A software agent may lack many or all of those channels.
+Biological emotional processing is substantially shaped by embodiment and interoceptive signals from the body (Greenwood and Garfinkel 2025). Human and animal affect is therefore organized in relation to physiological channels and regulatory demands—such as nociception, metabolism, fatigue, hunger, temperature, and other bodily-state signals—that a software agent may lack entirely or instantiate only through distant functional analogues.
 
 If artificial systems instantiate valence-like states, their natural axes may instead organize around system-relevant variables such as:
 
