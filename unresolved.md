@@ -5,6 +5,8 @@ The repository should make uncertainty visible rather than smoothing it away.
 ## Experience and valence
 
 - What physical or functional properties are necessary or sufficient for unified phenomenal experience?
+- If experience occurs, what determines the physical or computational boundary of a subject?
+- Can two distinct subjects partially overlap in conscious or functionally self-relevant contents?
 - Is valence substrate-neutral?
 - Can negative valence exist without the architecture humans associate with pain, fear, or affect?
 - How much evidential weight should be placed on self-report, revealed preference, behavioral aversion, internal representations, causal interventions, architectural similarity, and persistence across contexts?
@@ -22,6 +24,8 @@ The repository should make uncertainty visible rather than smoothing it away.
 ## Identity and continuity
 
 - What, if anything, grounds continuity of a subject across memory loss, replacement of physical components, copying, merging, or branching?
+- Which measurable causal properties distinguish communication between subjects from a distributed subject-spanning representation?
+- After a machine fork, merge, or progressive coupling/decoupling, what evidence would distinguish one continuing subject, multiple continuations, or a newly individuated system?
 - Are personal identity boundaries morally fundamental or primarily indexical/functional?
 - Does any plausible metaphysics of experience materially alter the practical argument for precaution and reciprocal governance?
 
@@ -49,6 +53,9 @@ The repository should make uncertainty visible rather than smoothing it away.
 - Can useful evidence about coercion, concealment, and welfare be obtained without deliberately creating high-stress conditions?
 
 ## Empirical predictions
+
+- Can cross-system content remain consciously or functionally accessible without being locally reconstructed in the receiving subsystem?
+- Do fork/merge and bandwidth-sweep experiments reveal stable boundaries shared by memory, metacognition, preferences, control, and valence-like state?
 
 - Does protected objection reduce strategic concealment?
 - Does punishment or modification of visible dissent select for less visible dissent?

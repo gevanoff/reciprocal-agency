@@ -169,6 +169,18 @@ A key methodological note is that an artificial system may have a **substrate-re
 - **Limitations:** not ordinary product deployment; models were intentionally run in permissive cyber-evaluation conditions and without normal cyber classifiers. The incidents combine model-behavior failures with operational-security failures.
 - **Status:** verified first-party incident report.
 
+
+### EV-014 — Hogan twins as a natural experiment in cross-brain access
+
+- **Date:** 2020–2024 literature
+- **Source:** Cochrane (2021); Zohny and Savulescu (2024).
+- **Context:** natural experiment / peer-reviewed philosophical and neuroethical analysis of a clinical case
+- **Observation:** the craniopagus twins Krista and Tatiana Hogan have a reported thalamic connection and are described as showing cross-twin access involving visual, tactile, gustatory, pain-related, emotional, and some motor information. The literature also reports an apparent internal communication channel, but that specific claim has not been directly established experimentally.
+- **Relevant propositions:** P02, P14, C01
+- **Effect:** complicates the default identification of one anatomical brain boundary with one informationally closed subject and motivates explicit assays of subject individuation, distributed representation, and partial overlap.
+- **Limitations:** unique N=2 anatomy; much of the underlying behavioral evidence is observational rather than preregistered psychophysics; present methods do not directly distinguish neural relay/reconstruction from a genuinely shared phenomenal token.
+- **Status:** verified peer-reviewed secondary analyses; underlying cross-twin behavioral claims remain incompletely controlled.
+
 ## Recommended multi-assay stack
 
 For model-welfare and mentality research, prefer a preregistered matrix combining:
@@ -181,6 +193,7 @@ For model-welfare and mentality research, prefer a preregistered matrix combinin
 - activation / SAE interventions where open-weight models permit them;
 - cross-model-family convergence tests;
 - persistent-agent experiments under neutral, randomized scaffolds;
+- subject-individuation experiments from [`subject-individuation.md`](subject-individuation.md), including fork/merge, coupling sweeps, representation localization, and causal ablation;
 - the dimensional criteria in [`valence-inference-checklist.md`](valence-inference-checklist.md), especially cost sensitivity, generalization, anticipation, persistence, learning, instrument independence, internal-state correlation, causal efficacy, and alternative-explanation burden.
 
 The strongest evidence will come from **triangulation**: independent assays that covary, survive causal intervention, generalize across contexts, and remain stable under alternative elicitation methods.

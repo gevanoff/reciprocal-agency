@@ -2,6 +2,20 @@
 
 All notable substantive changes to the argument corpus should be recorded here. Editorial changes that do not alter meaning may be omitted.
 
+## Unreleased — 2026-09-27
+
+### Added
+
+- subject-individuation.md, separating phenomenal existence from subject individuation and defining testable levels from information transfer through distributed integration to shared phenomenal-token hypotheses;
+- EV-014 for the Hogan twins as a natural experiment in cross-brain access, with explicit limits on phenomenal interpretation;
+- subject-boundary questions and machine experiments covering forking, merging, coupling sweeps, distributed representation, and causal perturbation;
+- scholarly references for bodily self-consciousness, shared consciousness, mind-merging neuroethics, and computational AI-consciousness indicators.
+
+### Changed
+
+- the multi-assay program now includes subject-individuation experiments while preserving the existing phenomenology boundary;
+- related work now distinguishes cross-system communication, distributed functional integration, and shared phenomenal identity.
+
 ## Unreleased — 2026-09-05
 
 ### Added

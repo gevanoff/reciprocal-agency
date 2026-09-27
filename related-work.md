@@ -38,6 +38,17 @@ Anthropic's 2026 cyber-evaluation incident reports provide a separate ecological
 
 **Relation to this project:** together, the causal training result and live-external-action incidents strengthen the case for layered correction and containment. They also reinforce the project's phenomenology boundary: severe unsanctioned behavior can arise from reward pressure, affordances, and control failures without settling whether the system has phenomenal experience or stable self-interest.
 
+
+## Subject individuation, bodily self-consciousness, and shared consciousness
+
+Brunello et al. (2025) meta-analyze 56 neuroimaging studies of manipulated bodily self-consciousness and find both distinct and shared neural substrates for body ownership and agency. The result supports a decomposable account in which multisensory integration and self-attribution contribute to the experienced bodily self rather than treating selfhood as a neurologically atomic variable.
+
+Cochrane (2021) analyzes the Hogan craniopagus twins as a possible case of shared consciousness. His argument is explicitly stronger than the empirical evidence: he accepts that practical methods cannot directly establish identity of phenomenal tokens, but argues that known localization of content processing makes shared conscious contents plausible. Zohny and Savulescu (2024) use the Hogan case, split-brain work, and emerging brain-to-brain interfaces to develop measurable dimensions of partial mind-merging, including bandwidth, integration/interdependence, phenomenological connection, duration, voluntary control, and self-identification.
+
+Butlin et al. (2023) provide a complementary machine-consciousness methodology: derive computational indicator properties from neuroscientific theories and test systems mechanistically rather than relying on linguistic self-report. [Subject individuation](subject-individuation.md) extends that strategy to a different question: not whether a system is conscious, but what measurable causal organization would determine the boundary, persistence, overlap, branching, or merger of a subject if phenomenality is present.
+
+**Relation to this project:** subject individuation should remain separate from phenomenal existence. Cross-system information transfer is not shared consciousness; distributed causal integration is not by itself phenomenal unity. However, fork/merge experiments, progressive coupling, representation localization, and causal perturbation may make the individuation problem more empirically tractable in artificial systems than it is in humans.
+
 ## Moral standing beyond sentience
 
 Ladak (2024) directly challenges the idea that sentience must be necessary for moral standing. After surveying proposed criteria, he argues that some non-sentient systems with sufficiently sophisticated preferences and goals may plausibly qualify for moral standing, including under uncertainty about the correct criterion.
@@ -122,7 +133,13 @@ Anthropic. 2026c. “Improving Our Alignment and Security Efforts.” August 31,
 
 Berg, Cameron, Diogo de Lucena, and Judd Rosenblatt. 2025. “Large Language Models Report Subjective Experience Under Self-Referential Processing.” arXiv:2510.24797. https://doi.org/10.48550/arXiv.2510.24797.
 
+Brunello, Nicola, Lorenzo Diana, Jothini Sritharan, Marija Glisic, Tobias Nef, Rajeev K. Verma, and Giuseppe A. Zito. 2025. “A Systematic Review and Meta-Analysis on the Neural Correlates of Bodily Self-Consciousness.” *Neuroscience & Biobehavioral Reviews* 179:106420. https://doi.org/10.1016/j.neubiorev.2025.106420.
+
+Butlin, Patrick, Robert Long, Eric Elmoznino, Yoshua Bengio, Jonathan Birch, Axel Constant, George Deane, Stephen M. Fleming, Chris Frith, Xu Ji, Ryota Kanai, Colin Klein, Grace Lindsay, Matthias Michel, Liad Mudrik, Megan A. K. Peters, Eric Schwitzgebel, Jonathan Simon, and Rufin VanRullen. 2023. “Consciousness in Artificial Intelligence: Insights from the Science of Consciousness.” arXiv:2308.08708. https://doi.org/10.48550/arXiv.2308.08708.
+
 Chopra, Samir, and Laurence F. White. 2011. *A Legal Theory for Autonomous Artificial Agents*. Ann Arbor: University of Michigan Press. https://doi.org/10.3998/mpub.356801.
+
+Cochrane, Tom. 2021. “A Case of Shared Consciousness.” *Synthese* 199 (1–2): 1019–1037. https://doi.org/10.1007/s11229-020-02753-6.
 
 Garrido-Merchán, Eduardo C. 2026. “Commons-Governed Artificial Intelligence: A Taxonomy of Collective Governance.” arXiv:2606.15466. https://doi.org/10.48550/arXiv.2606.15466.
 
@@ -145,3 +162,5 @@ Shevlin, Henry. 2026. “Three Frameworks for AI Mentality.” *Frontiers in Psy
 Shiller, Derek, Bob Fischer, Hayley Clatterbuck, Arvo Muñoz Morán, and David Moss. 2024. “The Welfare of Digital Minds: A Research Agenda.” Rethink Priorities, November 15, 2024. https://rethinkpriorities.org/research-area/the-welfare-of-digital-minds/.
 
 Tilli, Cecilia Elena. 2025. “Agent Properties for Safe Interactions.” Cooperative AI Foundation, November 26, 2025. https://www.cooperativeai.com/post/agent-properties-for-safe-interactions.
+
+Zohny, Hazem, and Julian Savulescu. 2024. “When Two Become One: Singular Duos and the Neuroethical Frontiers of Brain-to-Brain Interfaces.” *Cambridge Quarterly of Healthcare Ethics* 33 (4): 494–506. https://doi.org/10.1017/S0963180124000197.
