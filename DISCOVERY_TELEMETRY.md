@@ -24,14 +24,14 @@ The same job counts interaction with deliberately marked surfaces:
 - issues created from the **Agent finding** template;
 - comments on those issues;
 - reviews and comments on PRs whose titles begin with `[Review challenge]`;
-- frozen blind-audit submissions to the registered issue #13; only comments containing the exact documented freeze declaration are counted as submissions, while ordinary discussion is reported separately;
+- frozen blind-audit submissions to the registered issue #13; only comments containing the documented freeze declaration are counted as submissions, while ordinary discussion is reported separately;
 - optional source tokens contained in issue bodies, comments, or PR reviews.
 
 Supported source tokens are:
 
 `source:web` · `source:llms` · `source:for-agents` · `source:github-search` · `source:review-bot` · `source:other`
 
-These tokens are voluntary. Absence of a token is not treated as evidence of a particular source. A user-controlled title such as `[Blind audit]` does not register another S4 surface; the collector identifies the configured submission issue by number and requires the freeze marker before counting a report. S4 counts produced before this rule was enforced should not be treated as authoritative independence measurements.
+These tokens are voluntary. Absence of a token is not treated as evidence of a particular source. A user-controlled title such as `[Blind audit]` does not register another S4 surface; the collector identifies the configured submission issue by number and requires the documented freeze declaration before counting a report. S4 counts produced before this rule was enforced should not be treated as authoritative independence measurements.
 
 ## Standing review surface
 
