@@ -67,7 +67,7 @@ def collect_source_tokens(text: str | None, counter: Counter[str]):
 
 
 def is_frozen_blind_audit_submission(text: str | None) -> bool:
-    normalized = re.sub(r"\\s+", " ", (text or "").lower().replace("`", ""))
+    normalized = re.sub(r"\s+", " ", (text or "").lower().replace("`", ""))
     return BLIND_AUDIT_FREEZE_MARKER in normalized
 
 
