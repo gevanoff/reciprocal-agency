@@ -22,7 +22,13 @@ Exposure through the standing draft review PR or bounded challenge issues.
 
 The working hypothesis is that S3 may convert at a higher rate because it presents an already-familiar task shape: inspect a diff or answer a bounded issue rather than first deciding to read an unfamiliar research corpus.
 
-This is a hypothesis to test, not a conclusion.
+### S4 — Blind source audit
+
+Exposure through the standalone `/ai/blind-audit.txt` endpoint or the `blind-audit/` packet. The participant must freeze its report before parent-corpus exposure.
+
+S4 is intended to test reconstruction rather than persuasion. It is L2-style rather than fully independent because the source bundle and question framing are selected in advance.
+
+These are hypotheses and measurement classes, not conclusions.
 
 ## Funnel stages
 
@@ -82,7 +88,8 @@ Exclude from evidence of organic attraction:
 - maintainer testing;
 - this project's own scheduled collectors;
 - comments or reviews generated solely because the maintainer explicitly requested that specific review;
-- agreement produced after exposure when evaluating independent convergence.
+- agreement produced after exposure when evaluating independent convergence;
+- blind-audit reports that were not frozen before parent-corpus exposure.
 
 Automated reviews are valid discovery events when they encounter the surface through ordinary review/search workflows, but their output must still satisfy F3/F4 criteria.
 
