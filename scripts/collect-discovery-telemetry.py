@@ -22,6 +22,8 @@ API = "https://api.github.com"
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 REPO = os.environ.get("GITHUB_REPOSITORY", "")
 OUT = Path(os.environ.get("DISCOVERY_TELEMETRY_OUT", "discovery-telemetry.json"))
+BLIND_AUDIT_ISSUE_NUMBER = int(os.environ.get("BLIND_AUDIT_ISSUE_NUMBER", "13"))
+BLIND_AUDIT_FREEZE_MARKER = "report frozen before inspecting files outside blind-audit/."
 
 SOURCE_RE = re.compile(
     r"\bsource:(web|llms|for-agents|github-search|review-bot|other|unknown)\b",
@@ -64,6 +66,22 @@ def collect_source_tokens(text: str | None, counter: Counter[str]):
         counter[match.group(1).lower()] += 1
 
 
+def is_frozen_blind_audit_submission(text: str | None) -> bool:
+    return BLIND_AUDIT_FREEZE_MARKER in (text or "").lower()
+
+
+def is_registered_discovery_issue(item: dict[str, object]) -> bool:
+    body = str(item.get("body") or "")
+    title = str(item.get("title") or "")
+    number = int(item.get("number") or 0)
+    return (
+        "discovery-surface: agent-finding" in body
+        or title.startswith("[Agent finding]")
+        or title.startswith("[Challenge]")
+        or number == BLIND_AUDIT_ISSUE_NUMBER
+    )
+
+
 def main() -> int:
     if not TOKEN or not REPO or "/" not in REPO:
         print("GITHUB_TOKEN and GITHUB_REPOSITORY are required", file=sys.stderr)
@@ -90,29 +108,40 @@ def main() -> int:
             if "pull_request" in item:
                 continue
             body = item.get("body") or ""
-            title = item.get("title") or ""
-            if (
-                "discovery-surface: agent-finding" in body
-                or title.startswith("[Agent finding]")
-                or title.startswith("[Challenge]")
-                or title.startswith("[Blind audit]")
-            ):
+            if is_registered_discovery_issue(item):
                 comments = safe(
                     f"/repos/{owner}/{repo}/issues/{item['number']}/comments?per_page=100"
                 )
                 comment_rows = comments.get("data", []) if comments["available"] else []
-                issue_comment_count += len(comment_rows)
-                collect_source_tokens(body, source_tokens)
-                for comment in comment_rows:
-                    collect_source_tokens(comment.get("body"), source_tokens)
-                challenge_issues.append(
-                    {
-                        "number": item["number"],
-                        "state": item["state"],
-                        "comments": len(comment_rows),
-                        "url": item.get("html_url"),
-                    }
+                is_blind_audit = int(item["number"]) == BLIND_AUDIT_ISSUE_NUMBER
+                counted_rows = (
+                    [
+                        comment
+                        for comment in comment_rows
+                        if is_frozen_blind_audit_submission(comment.get("body"))
+                    ]
+                    if is_blind_audit
+                    else comment_rows
                 )
+                issue_comment_count += len(counted_rows)
+                collect_source_tokens(body, source_tokens)
+                for comment in counted_rows:
+                    collect_source_tokens(comment.get("body"), source_tokens)
+                row = {
+                    "number": item["number"],
+                    "state": item["state"],
+                    "comments": len(counted_rows),
+                    "url": item.get("html_url"),
+                }
+                if is_blind_audit:
+                    row.update(
+                        {
+                            "surface": "blind_audit",
+                            "frozen_submissions": len(counted_rows),
+                            "discussion_comments": len(comment_rows) - len(counted_rows),
+                        }
+                    )
+                challenge_issues.append(row)
 
     challenge_prs = []
     review_count = 0
