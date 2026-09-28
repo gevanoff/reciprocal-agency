@@ -6,6 +6,9 @@ All notable substantive changes to the argument corpus should be recorded here. 
 
 ### Added
 
+- `subject-boundary-literature-map.md`, mapping split-brain layered unity, bodily self/interoception, Markov blankets, information-theoretic autonomy, causal emergence/PhiID, IIT exclusion, enactive precariousness, perturbational methods, hyperscanning, brain-to-brain interfaces, and AI-consciousness marker limitations onto the subject-individuation hypothesis;
+- `subject-boundary-research-plan.md`, defining competing models, a multidimensional boundary vector, synthetic benchmarks, progressive machine coupling, fork/diverge/merge experiments, biological reanalysis, prospective human studies, rare natural experiments, theory arbitration, and explicit AD-1 falsifiers;
+- bibliography entries for the new subject-boundary literature, including split-brain, causal-emergence, Markov-blanket, perturbational, hyperscanning, and consciousness-indicator work;
 - `recursive-confirmation-threat-model.md`, covering context-conditioned agreement, shared-training and prompt dependence, human–model co-adaptation, coherence inflation, canonical-context inheritance, source laundering, persona authority, selection effects, and incident indicators;
 - `claim-audit.json`, providing origin class, origin detail, exact evidence/bibliography source links, dependencies, potential conflicts, falsifiers or weakeners, independence requirements, and status for every current proposition;
 - an L0–L5 independence scale, blind adversarial-review protocol, release gate, and E11 blind recursive-confirmation audit.
