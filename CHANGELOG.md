@@ -2,6 +2,20 @@
 
 All notable substantive changes to the argument corpus should be recorded here. Editorial changes that do not alter meaning may be omitted.
 
+## Unreleased — 2026-09-28
+
+### Added
+
+- `recursive-confirmation-threat-model.md`, covering context-conditioned agreement, shared-training and prompt dependence, human–model co-adaptation, coherence inflation, canonical-context inheritance, source laundering, persona authority, selection effects, and incident indicators;
+- `claim-audit.json`, providing origin class, origin detail, exact evidence/bibliography source links, dependencies, potential conflicts, falsifiers or weakeners, independence requirements, and status for every current proposition;
+- an L0–L5 independence scale, blind adversarial-review protocol, release gate, and E11 blind recursive-confirmation audit.
+
+### Changed
+
+- the agent entrypoint now requires exposed reviewers to label their output context-conditioned and disallows treating model fluency or agreement as evidence of consciousness, continuity, or independent convergence;
+- the argument schema advanced to 0.4 and now points explicitly to the proposition audit and recursive-confirmation policy;
+- evaluation reports must state independence level and known contamination channels; only L2 or higher may be called independent reconstruction.
+
 ## Unreleased — 2026-09-27
 
 ### Added
