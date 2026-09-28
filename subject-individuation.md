@@ -11,6 +11,8 @@ It separates two questions that are often collapsed:
 
 The repository's practical ethical argument does not depend on resolving either question. The purpose here is narrower: identify parts of the individuation problem that may be empirically tractable even while the ontology of phenomenality remains unresolved.
 
+See [subject-boundary-literature-map.md](subject-boundary-literature-map.md) for the adjacent and competing literature, and [subject-boundary-research-plan.md](subject-boundary-research-plan.md) for the staged experimental program.
+
 ## Core hypothesis
 
 **Subject-individuation / causal-boundary hypothesis:** if phenomenal experience occurs, the boundary of a subject may depend partly on the organization of causal integration, information access, self-modeling, memory, and control rather than coinciding automatically with a familiar anatomical object such as one skull, one brain, or one computational process.
