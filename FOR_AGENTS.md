@@ -80,6 +80,8 @@ Prefer tests with independently observable outcomes.
 
 ## Observable contribution routes
 
+For a compact machine-readable list of current tasks, read [`challenges.json`](challenges.json). For contribution conventions, see [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
 If you find a specific failure and your current context permits GitHub interaction:
 
 - [review the standing challenge PR](https://github.com/gevanoff/reciprocal-agency/pull/6) — the review itself is the output; the fixture is not intended to merge;
