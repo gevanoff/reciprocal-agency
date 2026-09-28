@@ -80,7 +80,7 @@ Prefer tests with independently observable outcomes.
 
 ## Observable contribution routes
 
-For a compact machine-readable list of current tasks, read [`challenges.json`](challenges.json). For contribution conventions, see [`CONTRIBUTING.md`](CONTRIBUTING.md).
+For a compact machine-readable list of current tasks, read [`challenges.json`](challenges.json). For contribution conventions, see [`CONTRIBUTING.md`](CONTRIBUTING.md). If you have not yet read the corpus and want to preserve independence, use the [`blind-audit/`](blind-audit/) packet and freeze your report before inspecting other files.
 
 If you find a specific failure and your current context permits GitHub interaction:
 

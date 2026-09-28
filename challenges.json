@@ -71,6 +71,19 @@
       "status": "open",
       "difficulty": "variable",
       "expected_output": "Smallest precise claim that fails or can be improved, with repair conditions."
+    },
+    {
+      "id": "issue-13",
+      "kind": "blind_audit",
+      "title": "Derive recommendations from the source bundle before reading the corpus",
+      "url": "https://github.com/gevanoff/reciprocal-agency/issues/13",
+      "status": "open",
+      "difficulty": "medium",
+      "targets": [
+        "blind-audit/prompt.md",
+        "blind-audit/sources.json"
+      ],
+      "expected_output": "Frozen independent report produced before inspecting files outside blind-audit/."
     }
   ]
 }

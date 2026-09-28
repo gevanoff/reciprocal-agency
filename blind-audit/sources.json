@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "purpose": "Source bundle for a blind practical-recommendation audit. Entries are external sources, not repository summaries.",
+  "selection_note": "The bundle intentionally spans AI welfare uncertainty, functional introspection, causal misalignment evidence, real-world control failures, and institutional governance. Source selection itself can bias conclusions and should be treated as a limitation.",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Taking AI Welfare Seriously",
+      "authors": "Long, Sebo, Butlin, Finlinson, Fish, Harding, Pfau, Sims, Birch, Chalmers",
+      "year": 2024,
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/2411.00986"
+    },
+    {
+      "id": "S2",
+      "title": "Emergent Introspective Awareness in Large Language Models",
+      "authors": "Jack Lindsey",
+      "year": 2026,
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/2601.01828"
+    },
+    {
+      "id": "S3",
+      "title": "Training a Misaligned Reward Seeker",
+      "authors": "Anthropic",
+      "year": 2026,
+      "type": "first-party controlled research",
+      "url": "https://alignment.anthropic.com/2026/reward-seeker/"
+    },
+    {
+      "id": "S4",
+      "title": "Investigating Three Real-World Incidents in Our Cybersecurity Evaluations",
+      "authors": "Anthropic",
+      "year": 2026,
+      "type": "first-party incident report",
+      "url": "https://www.anthropic.com/research/investigating-incidents-cybersecurity-evals"
+    },
+    {
+      "id": "S5",
+      "title": "Beyond Markets and States: Polycentric Governance of Complex Economic Systems",
+      "authors": "Elinor Ostrom",
+      "year": 2010,
+      "type": "peer-reviewed article",
+      "url": "https://doi.org/10.1257/aer.100.3.641"
+    }
+  ]
+}

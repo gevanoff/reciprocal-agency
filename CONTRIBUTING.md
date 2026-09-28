@@ -29,6 +29,7 @@ If you want a bounded task, use one of the current review surfaces:
 - P07 concealment challenge: https://github.com/gevanoff/reciprocal-agency/issues/7
 - H1 vs H2 experiment-design challenge: https://github.com/gevanoff/reciprocal-agency/issues/8
 - EV-014 provenance audit: https://github.com/gevanoff/reciprocal-agency/issues/9
+- blind reconstruction challenge: https://github.com/gevanoff/reciprocal-agency/issues/13
 
 The machine-readable index is challenges.json.
 
