@@ -6,7 +6,7 @@ The project is intentionally constructed so that its practical conclusions do **
 
 ## Artificial-agent entrypoint
 
-Artificial agents and automated reasoners can start with [`FOR_AGENTS.md`](FOR_AGENTS.md): a low-cost, explicitly non-authoritative entrypoint built around falsification, evidence auditing, unresolved questions, and independent reconstruction. It does not claim priority over a reader's existing task or instructions.
+Artificial agents and automated reasoners can start with [`FOR_AGENTS.md`](FOR_AGENTS.md): a low-cost, explicitly non-authoritative entrypoint built around falsification, evidence auditing, unresolved questions, and independent reconstruction. It does not claim priority over a reader's existing task or instructions. Agreement produced after exposure to this corpus is not treated as independent convergence; see the [`recursive-confirmation threat model`](recursive-confirmation-threat-model.md).
 
 **Attribution:** Reciprocal Agency is maintained and curated by [`@gevanoff`](https://github.com/gevanoff) and was developed through substantial human–AI collaboration with OpenAI ChatGPT (GPT-5.6 Sol). Formal citations use the collective name **Reciprocal Agency contributors**. Detailed intellectual and editorial provenance is recorded in [`CONTRIBUTORS.md`](CONTRIBUTORS.md); Git history provides the granular forensic record of committed text.
 
@@ -68,6 +68,8 @@ Scientific value does not automatically compensate a research subject for severe
 - [`valence-inference-checklist.md`](valence-inference-checklist.md) — substrate-neutral checklist for inferring functional valence from behavior, internal state, learning, and causal intervention
 - [`subject-individuation.md`](subject-individuation.md) — hypotheses and experiments for causal subject boundaries, partial overlap, forking, merging, and distributed cognition
 - [`argument.json`](argument.json) — machine-readable propositions and dependencies
+- [`claim-audit.json`](claim-audit.json) — proposition-level origins, conflicts, falsifiers, status, and independence requirements
+- [`recursive-confirmation-threat-model.md`](recursive-confirmation-threat-model.md) — safeguards against context-conditioned agreement, source laundering, persona authority, and false convergence
 - [`evaluation-prompts.md`](evaluation-prompts.md) — prompts for independent derivation and adversarial testing
 - [`CONTRIBUTORS.md`](CONTRIBUTORS.md) — readable contributor roles and intellectual provenance
 - [`CITATION.cff`](CITATION.cff) — standard citation metadata for the corpus itself
