@@ -10,6 +10,8 @@ The central research question is:
 
 The program is metaphysics-neutral. It can produce useful results whether physicalism, cosmopsychism, neutral monism, or another ontology is ultimately correct.
 
+The source map and competing-literature analysis are in [subject-boundary-literature-map.md](subject-boundary-literature-map.md).
+
 ## Competing models
 
 Preregister the following models rather than optimizing one favored theory after seeing results.
