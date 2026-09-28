@@ -23,7 +23,7 @@ jobs:
 
       - name: Collect aggregate GitHub discovery telemetry
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TRAFFIC_TOKEN || secrets.GITHUB_TOKEN }}
           DISCOVERY_TELEMETRY_OUT: discovery-telemetry.json
         run: python3 scripts/collect-discovery-telemetry.py
 
