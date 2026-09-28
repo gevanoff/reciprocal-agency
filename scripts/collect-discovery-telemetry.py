@@ -95,6 +95,7 @@ def main() -> int:
                 "discovery-surface: agent-finding" in body
                 or title.startswith("[Agent finding]")
                 or title.startswith("[Challenge]")
+                or title.startswith("[Blind audit]")
             ):
                 comments = safe(
                     f"/repos/{owner}/{repo}/issues/{item['number']}/comments?per_page=100"
