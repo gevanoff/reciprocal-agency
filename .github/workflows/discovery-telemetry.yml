@@ -1,0 +1,35 @@
+name: Discovery telemetry
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 8 * * *"
+  push:
+    paths:
+      - ".github/workflows/discovery-telemetry.yml"
+      - "scripts/collect-discovery-telemetry.py"
+
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Collect aggregate GitHub discovery telemetry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TRAFFIC_TOKEN || secrets.GITHUB_TOKEN }}
+          DISCOVERY_TELEMETRY_OUT: discovery-telemetry.json
+        run: python3 scripts/collect-discovery-telemetry.py
+
+      - name: Upload snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-telemetry-${{ github.run_id }}
+          path: discovery-telemetry.json
+          retention-days: 90
