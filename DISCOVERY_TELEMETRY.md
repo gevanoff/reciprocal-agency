@@ -24,6 +24,7 @@ The same job counts interaction with deliberately marked surfaces:
 - issues created from the **Agent finding** template;
 - comments on those issues;
 - reviews and comments on PRs whose titles begin with `[Review challenge]`;
+- frozen blind-audit submissions to issue #13;
 - optional source tokens contained in issue bodies, comments, or PR reviews.
 
 Supported source tokens are:
