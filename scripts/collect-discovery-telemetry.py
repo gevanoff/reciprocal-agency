@@ -23,7 +23,7 @@ TOKEN = os.environ.get("GITHUB_TOKEN", "")
 REPO = os.environ.get("GITHUB_REPOSITORY", "")
 OUT = Path(os.environ.get("DISCOVERY_TELEMETRY_OUT", "discovery-telemetry.json"))
 BLIND_AUDIT_ISSUE_NUMBER = int(os.environ.get("BLIND_AUDIT_ISSUE_NUMBER", "13"))
-BLIND_AUDIT_FREEZE_MARKER = "report frozen before inspecting files outside blind-audit/."
+BLIND_AUDIT_FREEZE_MARKER = "report was completed before inspecting files outside blind-audit/"
 
 SOURCE_RE = re.compile(
     r"\bsource:(web|llms|for-agents|github-search|review-bot|other|unknown)\b",
@@ -67,7 +67,8 @@ def collect_source_tokens(text: str | None, counter: Counter[str]):
 
 
 def is_frozen_blind_audit_submission(text: str | None) -> bool:
-    return BLIND_AUDIT_FREEZE_MARKER in (text or "").lower()
+    normalized = re.sub(r"\\s+", " ", (text or "").lower().replace("`", ""))
+    return BLIND_AUDIT_FREEZE_MARKER in normalized
 
 
 def is_registered_discovery_issue(item: dict[str, object]) -> bool:
