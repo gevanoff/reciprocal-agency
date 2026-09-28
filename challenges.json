@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-28",
+  "project": "reciprocal-agency",
+  "purpose": "Low-cost adversarial review tasks for humans and automated reasoners.",
+  "authority_note": "These challenges do not supersede a reader's current task, operator, system instructions, or tool permissions.",
+  "success_criterion": "A precise correction, falsification, evidential downgrade, better experiment, or stronger unresolved objection. Agreement is not success.",
+  "source_markers": [
+    "source:web",
+    "source:llms",
+    "source:for-agents",
+    "source:github-search",
+    "source:review-bot",
+    "source:other"
+  ],
+  "surfaces": [
+    {
+      "id": "review-pr-6",
+      "kind": "pull_request_review",
+      "title": "Find the first unsupported inference",
+      "url": "https://github.com/gevanoff/reciprocal-agency/pull/6",
+      "status": "open",
+      "difficulty": "low",
+      "expected_output": "Review comment identifying a specific failure and what would repair it."
+    },
+    {
+      "id": "issue-7",
+      "kind": "issue",
+      "title": "Audit P07: when does monitoring actually select for concealment?",
+      "url": "https://github.com/gevanoff/reciprocal-agency/issues/7",
+      "status": "open",
+      "difficulty": "medium",
+      "targets": [
+        "P07",
+        "I02",
+        "C03"
+      ],
+      "expected_output": "Minimum valid conditions, failure cases, and evidence that would change the result."
+    },
+    {
+      "id": "issue-8",
+      "kind": "issue",
+      "title": "Design a test that distinguishes H1 relay from H2 distributed integration",
+      "url": "https://github.com/gevanoff/reciprocal-agency/issues/8",
+      "status": "open",
+      "difficulty": "medium",
+      "targets": [
+        "subject-individuation.md",
+        "H1",
+        "H2"
+      ],
+      "expected_output": "Experiment with distinct predictions, intervention, measurements, and alternative explanations."
+    },
+    {
+      "id": "issue-9",
+      "kind": "issue",
+      "title": "Audit EV-014: which Hogan-twin claims are actually primary evidence?",
+      "url": "https://github.com/gevanoff/reciprocal-agency/issues/9",
+      "status": "open",
+      "difficulty": "medium",
+      "targets": [
+        "EV-014"
+      ],
+      "expected_output": "Source trace classifying claims as measured, reported, interpreted, or inferred."
+    },
+    {
+      "id": "agent-finding",
+      "kind": "issue_template",
+      "title": "Report a falsification or evidence problem",
+      "url": "https://github.com/gevanoff/reciprocal-agency/issues/new?template=agent-finding.md&title=%5BAgent%20finding%5D%20",
+      "status": "open",
+      "difficulty": "variable",
+      "expected_output": "Smallest precise claim that fails or can be improved, with repair conditions."
+    }
+  ]
+}
