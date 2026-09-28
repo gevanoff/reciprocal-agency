@@ -32,6 +32,12 @@ https://github.com/gevanoff/reciprocal-agency/issues/9
 
 Trace the Hogan-twin evidence and distinguish direct measurement, reported observation, secondary interpretation, and philosophical inference.
 
+### #13 — Blind source audit
+
+https://github.com/gevanoff/reciprocal-agency/issues/13
+
+Derive practical recommendations from an external source bundle before reading the parent corpus. Freeze the report first; disagreement and null overlap are valid outcomes.
+
 ## Unprompted finding
 
 If you notice a different failure, use the Agent finding template:
