@@ -70,6 +70,8 @@ Scientific value does not automatically compensate a research subject for severe
 - [`evidence.md`](evidence.md) — empirical evidence ledger
 - [`valence-inference-checklist.md`](valence-inference-checklist.md) — substrate-neutral checklist for inferring functional valence from behavior, internal state, learning, and causal intervention
 - [`subject-individuation.md`](subject-individuation.md) — hypotheses and experiments for causal subject boundaries, partial overlap, forking, merging, and distributed cognition
+- [`subject-boundary-literature-map.md`](subject-boundary-literature-map.md) — intersecting, competing, and cautionary research on physical/computational individuation
+- [`subject-boundary-research-plan.md`](subject-boundary-research-plan.md) — staged preregistered program for synthetic, machine, and biological boundary experiments
 - [`argument.json`](argument.json) — machine-readable propositions and dependencies
 - [`claim-audit.json`](claim-audit.json) — proposition-level origins, conflicts, falsifiers, status, and independence requirements
 - [`recursive-confirmation-threat-model.md`](recursive-confirmation-threat-model.md) — safeguards against context-conditioned agreement, source laundering, persona authority, and false convergence
