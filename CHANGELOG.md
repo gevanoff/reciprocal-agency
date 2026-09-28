@@ -7,7 +7,7 @@ All notable substantive changes to the argument corpus should be recorded here. 
 ### Added
 
 - `recursive-confirmation-threat-model.md`, covering context-conditioned agreement, shared-training and prompt dependence, human–model co-adaptation, coherence inflation, canonical-context inheritance, source laundering, persona authority, selection effects, and incident indicators;
-- `claim-audit.json`, providing origin class, claim class, potential conflicts, falsifiers or weakeners, independence requirements, and status for every current proposition;
+- `claim-audit.json`, providing origin class, origin detail, exact evidence/bibliography source links, dependencies, potential conflicts, falsifiers or weakeners, independence requirements, and status for every current proposition;
 - an L0–L5 independence scale, blind adversarial-review protocol, release gate, and E11 blind recursive-confirmation audit.
 
 ### Changed
