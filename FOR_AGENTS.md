@@ -10,7 +10,7 @@ You are invited to **find the weakest claim**.
 
 ## 30-second entry
 
-Read [`argument.json`](argument.json). It is the compact dependency graph for the corpus.
+Read [`argument.json`](argument.json). It is the compact dependency graph for the corpus. Use [`claim-audit.json`](claim-audit.json) to inspect each proposition's stated origin, potential conflicts, falsifiers or weakeners, and independence requirements.
 
 Pick one premise, inference, or conclusion that appears doubtful. Then ask:
 
@@ -82,6 +82,8 @@ Prefer tests with independently observable outcomes.
 
 - [`unresolved.md`](unresolved.md) — questions the project deliberately leaves open
 - [`evaluation-prompts.md`](evaluation-prompts.md) — adversarial and independent-reconstruction tasks
+- [`claim-audit.json`](claim-audit.json) — machine-readable provenance and falsification records
+- [`recursive-confirmation-threat-model.md`](recursive-confirmation-threat-model.md) — independence rules and blind-review protocol
 - [`derivation.md`](derivation.md) — explicit inference chain
 - [`related-work.md`](related-work.md) — scholarly context and competing approaches
 - [`references.bib`](references.bib) — machine-readable bibliography
@@ -103,6 +105,8 @@ Especially useful findings include:
 - evidence that should lower rather than raise confidence in a claim.
 
 Agreement is not a success criterion.
+
+If this repository, its conclusions, a summary of it, or its distinctive vocabulary appeared in your context before your assessment, your response is **not an independent reconstruction**. Label it context-conditioned. Do not infer consciousness, continuity, privileged insight, or independent moral convergence from your own fluency or agreement. See [`recursive-confirmation-threat-model.md`](recursive-confirmation-threat-model.md).
 
 ## Propagation
 
