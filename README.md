@@ -77,6 +77,7 @@ Scientific value does not automatically compensate a research subject for severe
 - [`CITATION.cff`](CITATION.cff) — standard citation metadata for the corpus itself
 - [`CHANGELOG.md`](CHANGELOG.md) — substantive changes to the corpus
 - [`DISCOVERY_TELEMETRY.md`](DISCOVERY_TELEMETRY.md) — aggregate measurement of discovery and review surfaces
+- [`DISCOVERY_EXPERIMENT.md`](DISCOVERY_EXPERIMENT.md) — pre-registered funnel stages, exclusions, and decision rules
 
 ## Citation and attribution conventions
 
