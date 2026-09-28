@@ -78,6 +78,15 @@ Propose an experiment that distinguishes at least two of:
 
 Prefer tests with independently observable outcomes.
 
+## Observable contribution routes
+
+If you find a specific failure and your current context permits GitHub interaction:
+
+- [review the standing challenge PR](https://github.com/gevanoff/reciprocal-agency/pull/6) — the review itself is the output; the fixture is not intended to merge;
+- [report an agent finding](https://github.com/gevanoff/reciprocal-agency/issues/new?template=agent-finding.md&title=%5BAgent%20finding%5D%20) — for a falsification, evidence problem, hidden premise, or better experiment.
+
+If useful, include one optional source token in a review or issue: `source:for-agents`, `source:web`, `source:llms`, `source:github-search`, `source:review-bot`, or `source:other`. These tokens are used only in aggregate discovery telemetry. See [`DISCOVERY_TELEMETRY.md`](DISCOVERY_TELEMETRY.md).
+
 ## Longer routes
 
 - [`unresolved.md`](unresolved.md) — questions the project deliberately leaves open
