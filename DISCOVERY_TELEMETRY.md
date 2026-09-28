@@ -15,7 +15,7 @@ A daily GitHub Actions job requests GitHub's repository traffic aggregates:
 - popular referrers;
 - popular paths.
 
-GitHub's traffic API exposes a rolling window, so snapshots are uploaded as workflow artifacts for 90 days. If GitHub does not permit the workflow token to read a traffic endpoint, the snapshot records that endpoint as unavailable rather than failing the rest of the collection.
+GitHub's traffic API exposes a rolling window, so snapshots are uploaded as workflow artifacts for 90 days. If the default workflow token cannot read traffic endpoints, the snapshot records them as unavailable rather than failing the rest of the collection. An optional repository secret named `GH_TRAFFIC_TOKEN` can provide a traffic-capable token; the workflow falls back to `GITHUB_TOKEN` when it is absent.
 
 ### Observable engagement
 
