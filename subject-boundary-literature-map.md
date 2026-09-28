@@ -6,6 +6,8 @@ This document maps research that intersects with, supports, constrains, or contr
 
 The target is not to prove a metaphysics of consciousness. It is to identify physical and computational variables that might explain why some states belong to one bounded perspective rather than another.
 
+The staged implementation plan is in [subject-boundary-research-plan.md](subject-boundary-research-plan.md).
+
 The central discipline is:
 
 phenomenal existence != subject individuation != functional integration
@@ -135,7 +137,7 @@ This can be tested using low-severity artificial variables; no distress-like sta
 
 ## 8. Perturbational complexity and central thalamic orchestration: causal organization matters, but state level is not boundary location
 
-Work using perturbational complexity shows that conscious states tend to sustain differentiated, integrated responses to perturbation. Luppi et al. (2024) further show in macaques that anesthesia collapses distributed hierarchical cortical organization and that specific central-thalamic stimulation can reverse several distributed signatures together with behavioral arousal.
+Casali et al. (2013) introduced perturbational complexity as a way to quantify differentiated, integrated responses to direct cortical perturbation across conscious and unconscious conditions. Luppi et al. (2024) further show in macaques that anesthesia collapses distributed hierarchical cortical organization and that specific central-thalamic stimulation can reverse several distributed signatures together with behavioral arousal.
 
 ### Implication for AD-1
 
@@ -154,7 +156,7 @@ BrainNet demonstrated direct non-invasive brain-to-brain communication among thr
 
 Wearable OPM-MEG now permits naturalistic two-person hyperscanning with millisecond-scale neural recording (Holmes et al. 2023).
 
-Schilbach and Redcay (2025) review evidence that inter-brain synchrony supports social interaction and communication. A 2026 EEG hyperscanning meta-analysis finds stronger inter-brain synchrony during social interaction, but also emphasizes task heterogeneity, shared stimulation, behavioral synchrony, and analytic confounds. A 2026 fMRI hyperscanning review similarly finds substantial methodological heterogeneity.
+Schilbach and Redcay (2025) review evidence that inter-brain synchrony supports social interaction and communication. Jiang, Zou, and Yu (2026) meta-analyze EEG hyperscanning and find stronger inter-brain synchrony during social interaction, while emphasizing task heterogeneity, shared stimulation, behavioral synchrony, and analytic confounds. Berni et al. (2026) similarly find substantial methodological heterogeneity across fMRI hyperscanning studies and note that only a minority of paradigms combine the features needed to exploit truly reciprocal interaction.
 
 ### Implication for AD-1
 
