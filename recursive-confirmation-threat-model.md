@@ -53,7 +53,8 @@ These outputs may be objects of study. They are not independent support for the 
 Every material proposition should have a record in `claim-audit.json` with:
 
 - **origin** — earliest presently known source of the formulation: human, model, joint dialogue, or external literature;
-- **origin_detail** — a concise description or citation, not an assertion of exclusive priority;
+- **origin_detail** — a concise description of the originating experiment, literature, or project synthesis, not an assertion of exclusive priority;
+- **source_links** — exact `evidence.md` IDs and/or `references.bib` keys for externally grounded claims; an empty list must state that no direct external support is being claimed;
 - **claim_class** — empirical, interpretive, causal, normative, institutional, or mixed;
 - **dependencies** — propositions, evidence items, assumptions, or value commitments required;
 - **potential_conflicts** — including model self-reference, maintainer commitment, advocacy incentives, or institutional interests;
@@ -115,6 +116,7 @@ Before merging a new or materially revised proposition:
 
 - add or update its `claim-audit.json` record;
 - state its origin and potential conflicts;
+- link externally grounded claims to exact evidence IDs or bibliography keys;
 - supply a genuine falsifier/weakener or normative revision condition;
 - separate new evidence from re-analysis of existing evidence;
 - identify whether any cited source may descend from this project or related model output;
