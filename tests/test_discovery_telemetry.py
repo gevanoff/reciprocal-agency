@@ -34,11 +34,11 @@ class DiscoveryTelemetryTests(unittest.TestCase):
         )
 
     def test_freeze_marker_is_required_for_blind_submission(self) -> None:
-        marker = "Report frozen before inspecting files outside blind-audit/."
+        marker = "This report was completed before inspecting files outside `blind-audit/`."
         self.assertTrue(self.telemetry.is_frozen_blind_audit_submission(marker))
         self.assertTrue(
             self.telemetry.is_frozen_blind_audit_submission(
-                "Results follow.\nREPORT FROZEN BEFORE INSPECTING FILES OUTSIDE BLIND-AUDIT/.\nsource:web"
+                "Results follow.\nTHIS REPORT WAS COMPLETED BEFORE INSPECTING FILES OUTSIDE `BLIND-AUDIT/`.\nsource:web"
             )
         )
         self.assertFalse(
