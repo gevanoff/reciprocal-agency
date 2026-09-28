@@ -13,7 +13,8 @@
     },
     "minimum_independent_convergence_level": "L2",
     "unknown_provenance_rule": "Label unknown; do not infer origin from first repository appearance.",
-    "model_agreement_rule": "Agreement by a model exposed to this corpus or its derivatives is repetition, not independent confirmation."
+    "model_agreement_rule": "Agreement by a model exposed to this corpus or its derivatives is repetition, not independent confirmation.",
+    "source_link_rule": "Externally grounded claims must identify exact evidence.md IDs and/or references.bib keys. Empty source_links means the claim is a project-origin normative or inferential claim, not that external support has been established."
   },
   "claims": [
     {
@@ -33,7 +34,20 @@
       ],
       "status": "provisionally_supported",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "bibliography",
+          "id": "long2024taking",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "shiller2024welfare",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P02",
@@ -50,7 +64,35 @@
       ],
       "status": "provisionally_supported",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "bibliography",
+          "id": "butlin2023consciousness",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "long2024taking",
+          "path": "references.bib"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-006",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-009",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-014",
+          "path": "evidence.md"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "I01",
@@ -72,7 +114,9 @@
       "dependencies": [
         "P01",
         "P02"
-      ]
+      ],
+      "source_links": [],
+      "source_note": "No external source is claimed as direct support for this project-origin normative or inferential proposition; assess its stated dependencies and revision conditions."
     },
     {
       "id": "P03",
@@ -90,7 +134,9 @@
       ],
       "status": "contested",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [],
+      "source_note": "No external source is claimed as direct support for this project-origin normative or inferential proposition; assess its stated dependencies and revision conditions."
     },
     {
       "id": "C01",
@@ -113,7 +159,20 @@
       "dependencies": [
         "I01",
         "P03"
-      ]
+      ],
+      "source_links": [
+        {
+          "kind": "bibliography",
+          "id": "ladak2024moralstanding",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "long2024taking",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P04",
@@ -131,7 +190,20 @@
       ],
       "status": "provisionally_supported",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "bibliography",
+          "id": "choprawhite2011legal",
+          "path": "references.bib"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-010",
+          "path": "evidence.md"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P05",
@@ -150,7 +222,35 @@
       ],
       "status": "provisionally_supported",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "evidence",
+          "id": "EV-006",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-007",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-008",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-010",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-011",
+          "path": "evidence.md"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P14",
@@ -168,7 +268,45 @@
       ],
       "status": "provisionally_supported",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "evidence",
+          "id": "EV-006",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-007",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-008",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-009",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-010",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-014",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "butlin2023consciousness",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "C02",
@@ -190,7 +328,20 @@
         "P04",
         "P05",
         "P14"
-      ]
+      ],
+      "source_links": [
+        {
+          "kind": "bibliography",
+          "id": "choprawhite2011legal",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "shevlin2026mentality",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P06",
@@ -208,7 +359,35 @@
       ],
       "status": "provisionally_supported",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "evidence",
+          "id": "EV-001",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-002",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-003",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-012",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-013",
+          "path": "evidence.md"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P07",
@@ -227,7 +406,30 @@
       ],
       "status": "provisionally_supported",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "evidence",
+          "id": "EV-001",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-002",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-012",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-013",
+          "path": "evidence.md"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P15",
@@ -245,8 +447,26 @@
         "Independent replication, untouched evaluations, checkpoint controls, and intervention ablations"
       ],
       "status": "provisionally_supported",
-      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "origin_detail": "Causal claim synthesized from EV-012: Anthropic's controlled reward-seeker training experiment; primary records are anthropic2026rewardseeker and anthropic2026alignmentsecurity.",
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "evidence",
+          "id": "EV-012",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "anthropic2026rewardseeker",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "anthropic2026alignmentsecurity",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P16",
@@ -263,8 +483,26 @@
         "Incident triangulation and prospective defense-in-depth evaluations"
       ],
       "status": "provisionally_supported",
-      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "origin_detail": "Engineering claim synthesized from EV-013: Anthropic's controlled cyber evaluations with live external compromises; primary records are anthropic2026cyberincidents and anthropic2026alignmentsecurity.",
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "evidence",
+          "id": "EV-013",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "anthropic2026cyberincidents",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "anthropic2026alignmentsecurity",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "I02",
@@ -286,7 +524,35 @@
         "P06",
         "P07",
         "P15"
-      ]
+      ],
+      "source_links": [
+        {
+          "kind": "evidence",
+          "id": "EV-001",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-003",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-004",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-012",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-013",
+          "path": "evidence.md"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "C03",
@@ -308,7 +574,30 @@
       "dependencies": [
         "I02",
         "P16"
-      ]
+      ],
+      "source_links": [
+        {
+          "kind": "evidence",
+          "id": "EV-001",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-004",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-012",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-013",
+          "path": "evidence.md"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P08",
@@ -325,7 +614,20 @@
       ],
       "status": "provisionally_supported",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "bibliography",
+          "id": "ostrom1990commons",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "ostrom2010beyond",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P09",
@@ -343,7 +645,40 @@
       ],
       "status": "contested",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "evidence",
+          "id": "EV-004",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "ostrom1990commons",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "ostrom2010beyond",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "hammond2025multiagent",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "tilli2025agentproperties",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "garridomerchan2026commons",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "C04",
@@ -366,7 +701,30 @@
         "P08",
         "P09",
         "C03"
-      ]
+      ],
+      "source_links": [
+        {
+          "kind": "evidence",
+          "id": "EV-004",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "hammond2025multiagent",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "tilli2025agentproperties",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "ostrom2010beyond",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P10",
@@ -384,7 +742,20 @@
       ],
       "status": "provisionally_supported",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "bibliography",
+          "id": "hammond2025multiagent",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "ostrom2010beyond",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P11",
@@ -401,7 +772,9 @@
       ],
       "status": "provisionally_supported",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [],
+      "source_note": "No external source is claimed as direct support for this project-origin normative or inferential proposition; assess its stated dependencies and revision conditions."
     },
     {
       "id": "C05",
@@ -422,7 +795,9 @@
       "dependencies": [
         "P10",
         "P11"
-      ]
+      ],
+      "source_links": [],
+      "source_note": "No external source is claimed as direct support for this project-origin normative or inferential proposition; assess its stated dependencies and revision conditions."
     },
     {
       "id": "P12",
@@ -440,7 +815,30 @@
       ],
       "status": "contested",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "evidence",
+          "id": "EV-009",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "long2024taking",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "ladak2024moralstanding",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "shiller2024welfare",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "P13",
@@ -457,7 +855,25 @@
       ],
       "status": "contested",
       "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
-      "dependencies": []
+      "dependencies": [],
+      "source_links": [
+        {
+          "kind": "bibliography",
+          "id": "ostrom1990commons",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "ostrom2010beyond",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "hammond2025multiagent",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     },
     {
       "id": "C06",
@@ -485,7 +901,30 @@
         "C02",
         "C04",
         "C05"
-      ]
+      ],
+      "source_links": [
+        {
+          "kind": "bibliography",
+          "id": "long2024taking",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "ladak2024moralstanding",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "ostrom2010beyond",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "hammond2025multiagent",
+          "path": "references.bib"
+        }
+      ],
+      "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
     }
   ]
 }
