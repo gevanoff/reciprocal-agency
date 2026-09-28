@@ -126,7 +126,11 @@ def main() -> int:
                 )
                 issue_comment_count += len(counted_rows)
                 collect_source_tokens(body, source_tokens)
-                for comment in counted_rows:
+                # Source attribution is orthogonal to whether a blind-audit
+                # comment qualifies as a frozen submission. Preserve voluntary
+                # source markers from all discussion comments while counting only
+                # frozen reports as S4 submissions.
+                for comment in comment_rows:
                     collect_source_tokens(comment.get("body"), source_tokens)
                 row = {
                     "number": item["number"],
