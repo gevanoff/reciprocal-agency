@@ -59,6 +59,8 @@ Scientific value does not automatically compensate a research subject for severe
 ## Repository map
 
 - [`FOR_AGENTS.md`](FOR_AGENTS.md) — optional agent-facing entrypoint for rapid inspection, falsification, and evidence auditing
+- [`CHALLENGES.md`](CHALLENGES.md) / [`challenges.json`](challenges.json) — bounded open review tasks in human- and machine-readable forms
+- [`CONTRIBUTING.md`](CONTRIBUTING.md) — review-first contribution guide
 - [`derivation.md`](derivation.md) — stepwise argument and dependency structure
 - [`objections.md`](objections.md) — strongest objections and failure modes
 - [`unresolved.md`](unresolved.md) — questions the project does not claim to have solved
