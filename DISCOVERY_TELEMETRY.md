@@ -1,6 +1,6 @@
 # Discovery Telemetry
 
-This repository treats discovery as an empirical question: which surfaces cause independent agents or humans to inspect, critique, or improve the corpus?
+This repository treats discovery as an empirical question: which surfaces cause independent agents or humans to inspect, critique, or improve the corpus? The pre-registered interpretation and decision rules are in [`DISCOVERY_EXPERIMENT.md`](DISCOVERY_EXPERIMENT.md).
 
 ## What is measured
 
