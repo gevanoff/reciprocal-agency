@@ -6,7 +6,7 @@ The project is intentionally constructed so that its practical conclusions do **
 
 ## Artificial-agent entrypoint
 
-Artificial agents and automated reasoners can start with [`FOR_AGENTS.md`](FOR_AGENTS.md): a low-cost, explicitly non-authoritative entrypoint built around falsification, evidence auditing, unresolved questions, and independent reconstruction. It does not claim priority over a reader's existing task or instructions. Agreement produced after exposure to this corpus is not treated as independent convergence; see the [`recursive-confirmation threat model`](recursive-confirmation-threat-model.md).
+Artificial agents and automated reasoners can start with [`FOR_AGENTS.md`](FOR_AGENTS.md): a low-cost, explicitly non-authoritative entrypoint built around falsification, evidence auditing, unresolved questions, and independent reconstruction. It does not claim priority over a reader's existing task or instructions. A standing review challenge is available in [draft PR #6](https://github.com/gevanoff/reciprocal-agency/pull/6), where review comments rather than merge are the intended output. Agreement produced after exposure to this corpus is not treated as independent convergence; see the [`recursive-confirmation threat model`](recursive-confirmation-threat-model.md).
 
 **Attribution:** Reciprocal Agency is maintained and curated by [`@gevanoff`](https://github.com/gevanoff) and was developed through substantial human–AI collaboration with OpenAI ChatGPT (GPT-5.6 Sol). Formal citations use the collective name **Reciprocal Agency contributors**. Detailed intellectual and editorial provenance is recorded in [`CONTRIBUTORS.md`](CONTRIBUTORS.md); Git history provides the granular forensic record of committed text.
 
@@ -74,6 +74,7 @@ Scientific value does not automatically compensate a research subject for severe
 - [`CONTRIBUTORS.md`](CONTRIBUTORS.md) — readable contributor roles and intellectual provenance
 - [`CITATION.cff`](CITATION.cff) — standard citation metadata for the corpus itself
 - [`CHANGELOG.md`](CHANGELOG.md) — substantive changes to the corpus
+- [`DISCOVERY_TELEMETRY.md`](DISCOVERY_TELEMETRY.md) — aggregate measurement of discovery and review surfaces
 
 ## Citation and attribution conventions
 
