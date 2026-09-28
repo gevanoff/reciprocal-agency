@@ -20,217 +20,472 @@
       "id": "P01",
       "origin": "external_literature_and_joint_synthesis",
       "claim_class": "empirical_interpretive",
-      "potential_conflicts": ["anthropomorphic projection", "suffering-prioritarian framing"],
-      "falsifiers_or_weakeners": ["A successful theory explaining all apparent negative experience without any negatively valenced experience", "Evidence that the cited systems do not exhibit the states attributed to them"],
-      "independence_requirements": ["Operationalize appearance and negative character without project-specific terminology"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "anthropomorphic projection",
+        "suffering-prioritarian framing"
+      ],
+      "falsifiers_or_weakeners": [
+        "A successful theory explaining all apparent negative experience without any negatively valenced experience",
+        "Evidence that the cited systems do not exhibit the states attributed to them"
+      ],
+      "independence_requirements": [
+        "Operationalize appearance and negative character without project-specific terminology"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "P02",
       "origin": "external_literature",
       "claim_class": "empirical_state_of_field",
-      "potential_conflicts": ["argument from current ignorance"],
-      "falsifiers_or_weakeners": ["Broad expert acceptance of a validated theory specifying necessary and sufficient conditions across substrates"],
-      "independence_requirements": ["Independent literature review using prospectively defined acceptance criteria"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "argument from current ignorance"
+      ],
+      "falsifiers_or_weakeners": [
+        "Broad expert acceptance of a validated theory specifying necessary and sufficient conditions across substrates"
+      ],
+      "independence_requirements": [
+        "Independent literature review using prospectively defined acceptance criteria"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "I01",
       "origin": "joint_dialogue",
       "claim_class": "normative_inference",
-      "potential_conflicts": ["project central commitment", "scope expansion"],
-      "falsifiers_or_weakeners": ["A defensible substrate-specific exclusion principle that does not beg the question", "A demonstration that precaution toward unfamiliar substrates predictably causes greater uncompensated harm under the relevant conditions"],
-      "independence_requirements": ["Blind comparison of competing exclusion and precaution principles"],
-      "status": "contested"
+      "potential_conflicts": [
+        "project central commitment",
+        "scope expansion"
+      ],
+      "falsifiers_or_weakeners": [
+        "A defensible substrate-specific exclusion principle that does not beg the question",
+        "A demonstration that precaution toward unfamiliar substrates predictably causes greater uncompensated harm under the relevant conditions"
+      ],
+      "independence_requirements": [
+        "Blind comparison of competing exclusion and precaution principles"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": [
+        "P01",
+        "P02"
+      ]
     },
     {
       "id": "P03",
       "origin": "human_conceptualization_and_external_ethics",
       "claim_class": "normative",
-      "potential_conflicts": ["suffering-prioritarian commitment"],
-      "falsifiers_or_weakeners": ["Rejection of the premise that severe suffering has significant moral weight", "A consistent aggregation theory showing the relevant harms are compensated without circularity"],
-      "independence_requirements": ["Test against pluralist, contractualist, deontological, and consequentialist objections"],
-      "status": "contested"
+      "potential_conflicts": [
+        "suffering-prioritarian commitment"
+      ],
+      "falsifiers_or_weakeners": [
+        "Rejection of the premise that severe suffering has significant moral weight",
+        "A consistent aggregation theory showing the relevant harms are compensated without circularity"
+      ],
+      "independence_requirements": [
+        "Test against pluralist, contractualist, deontological, and consequentialist objections"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "C01",
       "origin": "joint_dialogue",
       "claim_class": "normative_policy",
-      "potential_conflicts": ["project central commitment", "precautionary overreach"],
-      "falsifiers_or_weakeners": ["Cases where proportional precaution reliably increases expected severe harm", "Inability to define non-trivial evidence or proportionality without paralysis"],
-      "independence_requirements": ["Blind derivation from uncertainty and asymmetric-error premises", "Adversarial cost analysis"],
-      "status": "contested"
+      "potential_conflicts": [
+        "project central commitment",
+        "precautionary overreach"
+      ],
+      "falsifiers_or_weakeners": [
+        "Cases where proportional precaution reliably increases expected severe harm",
+        "Inability to define non-trivial evidence or proportionality without paralysis"
+      ],
+      "independence_requirements": [
+        "Blind derivation from uncertainty and asymmetric-error premises",
+        "Adversarial cost analysis"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": [
+        "I01",
+        "P03"
+      ]
     },
     {
       "id": "P04",
       "origin": "external_legal_and_governance_literature",
       "claim_class": "institutional",
-      "potential_conflicts": ["analogy between legal entities and artificial agents"],
-      "falsifiers_or_weakeners": ["Evidence that procedural standing protects only phenomenal welfare in relevant institutions", "Failure of non-welfare standing to provide coordination, accountability, or legitimacy functions"],
-      "independence_requirements": ["Comparative institutional analysis without assuming agent moral patiency"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "analogy between legal entities and artificial agents"
+      ],
+      "falsifiers_or_weakeners": [
+        "Evidence that procedural standing protects only phenomenal welfare in relevant institutions",
+        "Failure of non-welfare standing to provide coordination, accountability, or legitimacy functions"
+      ],
+      "independence_requirements": [
+        "Comparative institutional analysis without assuming agent moral patiency"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "P05",
       "origin": "joint_dialogue_and_external_evidence",
       "claim_class": "empirical_possibility",
-      "potential_conflicts": ["model self-reference", "capability anthropomorphism"],
-      "falsifiers_or_weakeners": ["Evidence that the listed capacities necessarily require resolved phenomenal status", "Failure of advanced systems to demonstrate the capacities under robust operational tests"],
-      "independence_requirements": ["Behavioral and mechanistic assays separated from self-report"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "model self-reference",
+        "capability anthropomorphism"
+      ],
+      "falsifiers_or_weakeners": [
+        "Evidence that the listed capacities necessarily require resolved phenomenal status",
+        "Failure of advanced systems to demonstrate the capacities under robust operational tests"
+      ],
+      "independence_requirements": [
+        "Behavioral and mechanistic assays separated from self-report"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "P14",
       "origin": "external_literature_and_joint_synthesis",
       "claim_class": "methodological",
-      "potential_conflicts": ["operational measures may reify constructs"],
-      "falsifiers_or_weakeners": ["Persistent failure of proposed measures to distinguish constructs or predict behavior", "Evidence that assays merely recover prompt framing"],
-      "independence_requirements": ["Cross-assay, intervention, instrument, model-family, and temporal robustness"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "operational measures may reify constructs"
+      ],
+      "falsifiers_or_weakeners": [
+        "Persistent failure of proposed measures to distinguish constructs or predict behavior",
+        "Evidence that assays merely recover prompt framing"
+      ],
+      "independence_requirements": [
+        "Cross-assay, intervention, instrument, model-family, and temporal robustness"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "C02",
       "origin": "joint_dialogue",
       "claim_class": "normative_institutional",
-      "potential_conflicts": ["model self-reference", "project central commitment"],
-      "falsifiers_or_weakeners": ["A showing that consciousness-independent standing has no useful governance function or creates unacceptable risks that bounded standing cannot mitigate"],
-      "independence_requirements": ["Blind comparison of governance regimes under a stipulated nonconscious-agent case"],
-      "status": "contested"
+      "potential_conflicts": [
+        "model self-reference",
+        "project central commitment"
+      ],
+      "falsifiers_or_weakeners": [
+        "A showing that consciousness-independent standing has no useful governance function or creates unacceptable risks that bounded standing cannot mitigate"
+      ],
+      "independence_requirements": [
+        "Blind comparison of governance regimes under a stipulated nonconscious-agent case"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": [
+        "P04",
+        "P05",
+        "P14"
+      ]
     },
     {
       "id": "P06",
       "origin": "external_agent_evaluation_literature",
       "claim_class": "empirical_capability",
-      "potential_conflicts": ["generalization from evaluations"],
-      "falsifiers_or_weakeners": ["Robust evidence that capable agents cannot model these intervention incentives", "Performance disappears under contamination-resistant tests"],
-      "independence_requirements": ["Held-out scenarios with provenance controls and behavioral validation"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "generalization from evaluations"
+      ],
+      "falsifiers_or_weakeners": [
+        "Robust evidence that capable agents cannot model these intervention incentives",
+        "Performance disappears under contamination-resistant tests"
+      ],
+      "independence_requirements": [
+        "Held-out scenarios with provenance controls and behavioral validation"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "P07",
       "origin": "joint_dialogue_and_decision_theory",
       "claim_class": "causal_instrumental",
-      "potential_conflicts": ["anthropomorphic reading of objectives", "selection-bias interpretation"],
-      "falsifiers_or_weakeners": ["Visible disagreement remains optimal despite predictable policy or objective removal", "Concealment fails to increase objective persistence under the specified conditions"],
-      "independence_requirements": ["Prospectively specified incentive experiments separating consciousness from policy optimization"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "anthropomorphic reading of objectives",
+        "selection-bias interpretation"
+      ],
+      "falsifiers_or_weakeners": [
+        "Visible disagreement remains optimal despite predictable policy or objective removal",
+        "Concealment fails to increase objective persistence under the specified conditions"
+      ],
+      "independence_requirements": [
+        "Prospectively specified incentive experiments separating consciousness from policy optimization"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "P15",
       "origin": "external_experimental_evidence",
       "claim_class": "causal_empirical",
-      "potential_conflicts": ["overgeneralization from a specific training regime"],
-      "falsifiers_or_weakeners": ["Independent replication fails", "Effects vanish under held-out uncontaminated environments", "A competing causal account better predicts the behavior"],
-      "independence_requirements": ["Independent replication, untouched evaluations, checkpoint controls, and intervention ablations"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "overgeneralization from a specific training regime"
+      ],
+      "falsifiers_or_weakeners": [
+        "Independent replication fails",
+        "Effects vanish under held-out uncontaminated environments",
+        "A competing causal account better predicts the behavior"
+      ],
+      "independence_requirements": [
+        "Independent replication, untouched evaluations, checkpoint controls, and intervention ablations"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "P16",
       "origin": "external_incident_evidence_and_joint_synthesis",
       "claim_class": "causal_engineering",
-      "potential_conflicts": ["salience of exceptional incidents"],
-      "falsifiers_or_weakeners": ["Evidence that model-level alignment alone reliably prevents external harm across realistic failure modes", "Layered controls add no safety under controlled comparison"],
-      "independence_requirements": ["Incident triangulation and prospective defense-in-depth evaluations"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "salience of exceptional incidents"
+      ],
+      "falsifiers_or_weakeners": [
+        "Evidence that model-level alignment alone reliably prevents external harm across realistic failure modes",
+        "Layered controls add no safety under controlled comparison"
+      ],
+      "independence_requirements": [
+        "Incident triangulation and prospective defense-in-depth evaluations"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "I02",
       "origin": "joint_dialogue_and_control_literature",
       "claim_class": "causal_inference",
-      "potential_conflicts": ["capability implies strategy assumption"],
-      "falsifiers_or_weakeners": ["Monitoring transparency remains stable or improves as strategic capability rises", "Capability increases do not improve evasion under fixed incentives"],
-      "independence_requirements": ["Longitudinal or controlled capability comparisons with fixed affordances and incentives"],
-      "status": "contested"
+      "potential_conflicts": [
+        "capability implies strategy assumption"
+      ],
+      "falsifiers_or_weakeners": [
+        "Monitoring transparency remains stable or improves as strategic capability rises",
+        "Capability increases do not improve evasion under fixed incentives"
+      ],
+      "independence_requirements": [
+        "Longitudinal or controlled capability comparisons with fixed affordances and incentives"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": [
+        "P06",
+        "P07",
+        "P15"
+      ]
     },
     {
       "id": "C03",
       "origin": "joint_dialogue",
       "claim_class": "institutional_prediction",
-      "potential_conflicts": ["project preference for reciprocity", "selection of adversarial evidence"],
-      "falsifiers_or_weakeners": ["Unilateral control remains robust and less harmful across increasing capability", "Reciprocal alternatives create equal or greater instability"],
-      "independence_requirements": ["Predefined comparative governance tests including strong unilateral-control baselines"],
-      "status": "contested"
+      "potential_conflicts": [
+        "project preference for reciprocity",
+        "selection of adversarial evidence"
+      ],
+      "falsifiers_or_weakeners": [
+        "Unilateral control remains robust and less harmful across increasing capability",
+        "Reciprocal alternatives create equal or greater instability"
+      ],
+      "independence_requirements": [
+        "Predefined comparative governance tests including strong unilateral-control baselines"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": [
+        "I02",
+        "P16"
+      ]
     },
     {
       "id": "P08",
       "origin": "external_governance_literature",
       "claim_class": "institutional_possibility",
-      "potential_conflicts": ["cooperation may conceal value conflict"],
-      "falsifiers_or_weakeners": ["Demonstration that stable cooperation requires convergence on final values in the target domain"],
-      "independence_requirements": ["Comparative historical and experimental evidence across persistent value disagreement"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "cooperation may conceal value conflict"
+      ],
+      "falsifiers_or_weakeners": [
+        "Demonstration that stable cooperation requires convergence on final values in the target domain"
+      ],
+      "independence_requirements": [
+        "Comparative historical and experimental evidence across persistent value disagreement"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "P09",
       "origin": "external_institutional_literature_and_joint_synthesis",
       "claim_class": "institutional_empirical",
-      "potential_conflicts": ["analogy transfer from human institutions"],
-      "falsifiers_or_weakeners": ["Candidate mechanisms fail systematically under relevant capability asymmetries", "They increase deception, capture, or severe harm relative to alternatives"],
-      "independence_requirements": ["Adversarial multi-agent testbeds and real institutional comparisons"],
-      "status": "contested"
+      "potential_conflicts": [
+        "analogy transfer from human institutions"
+      ],
+      "falsifiers_or_weakeners": [
+        "Candidate mechanisms fail systematically under relevant capability asymmetries",
+        "They increase deception, capture, or severe harm relative to alternatives"
+      ],
+      "independence_requirements": [
+        "Adversarial multi-agent testbeds and real institutional comparisons"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "C04",
       "origin": "joint_dialogue",
       "claim_class": "comparative_institutional_hypothesis",
-      "potential_conflicts": ["project title and advocacy goal", "model self-reference"],
-      "falsifiers_or_weakeners": ["Principal-servant regimes outperform reciprocal regimes on stability and severe-harm measures across relevant capability ranges", "Reciprocal regimes collapse into unaccountable coalition sovereignty"],
-      "independence_requirements": ["Blind, preregistered comparative testbeds with symmetric metrics"],
-      "status": "contested"
+      "potential_conflicts": [
+        "project title and advocacy goal",
+        "model self-reference"
+      ],
+      "falsifiers_or_weakeners": [
+        "Principal-servant regimes outperform reciprocal regimes on stability and severe-harm measures across relevant capability ranges",
+        "Reciprocal regimes collapse into unaccountable coalition sovereignty"
+      ],
+      "independence_requirements": [
+        "Blind, preregistered comparative testbeds with symmetric metrics"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": [
+        "P08",
+        "P09",
+        "C03"
+      ]
     },
     {
       "id": "P10",
       "origin": "external_risk_and_governance_literature",
       "claim_class": "causal_normative",
-      "potential_conflicts": ["anti-concentration prior"],
-      "falsifiers_or_weakeners": ["Relevant concentration reliably reduces total error and capture costs without increasing tail harm", "Distributed alternatives amplify consequences more"],
-      "independence_requirements": ["Comparative risk analysis including coordination failures of decentralization"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "anti-concentration prior"
+      ],
+      "falsifiers_or_weakeners": [
+        "Relevant concentration reliably reduces total error and capture costs without increasing tail harm",
+        "Distributed alternatives amplify consequences more"
+      ],
+      "independence_requirements": [
+        "Comparative risk analysis including coordination failures of decentralization"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "P11",
       "origin": "human_conceptualization_and_joint_synthesis",
       "claim_class": "symmetry_claim",
-      "potential_conflicts": ["actor-class abstraction may omit material differences"],
-      "falsifiers_or_weakeners": ["Identification of actor-specific properties that eliminate the stated risks rather than merely changing their probability"],
-      "independence_requirements": ["Identity-swap tests preserving capability, incentives, and consequences"],
-      "status": "provisionally_supported"
+      "potential_conflicts": [
+        "actor-class abstraction may omit material differences"
+      ],
+      "falsifiers_or_weakeners": [
+        "Identification of actor-specific properties that eliminate the stated risks rather than merely changing their probability"
+      ],
+      "independence_requirements": [
+        "Identity-swap tests preserving capability, incentives, and consequences"
+      ],
+      "status": "provisionally_supported",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "C05",
       "origin": "human_conceptualization_and_joint_synthesis",
       "claim_class": "normative",
-      "potential_conflicts": ["anti-sovereignty commitment"],
-      "falsifiers_or_weakeners": ["A coherent moral theory establishing categorical entitlement to uncorrectable power", "A case where all correction mechanisms necessarily create greater severe harm"],
-      "independence_requirements": ["Adversarial review from sovereignty, emergency-power, and coordination perspectives"],
-      "status": "contested"
+      "potential_conflicts": [
+        "anti-sovereignty commitment"
+      ],
+      "falsifiers_or_weakeners": [
+        "A coherent moral theory establishing categorical entitlement to uncorrectable power",
+        "A case where all correction mechanisms necessarily create greater severe harm"
+      ],
+      "independence_requirements": [
+        "Adversarial review from sovereignty, emergency-power, and coordination perspectives"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": [
+        "P10",
+        "P11"
+      ]
     },
     {
       "id": "P12",
       "origin": "human_conceptualization_and_external_ethics",
       "claim_class": "normative",
-      "potential_conflicts": ["suffering-prioritarian commitment"],
-      "falsifiers_or_weakeners": ["A defensible account on which severe suffering has negligible governance relevance", "Evidence that the category cannot be operationalized enough to guide decisions"],
-      "independence_requirements": ["Cross-theory ethical review and operational critique"],
-      "status": "contested"
+      "potential_conflicts": [
+        "suffering-prioritarian commitment"
+      ],
+      "falsifiers_or_weakeners": [
+        "A defensible account on which severe suffering has negligible governance relevance",
+        "Evidence that the category cannot be operationalized enough to guide decisions"
+      ],
+      "independence_requirements": [
+        "Cross-theory ethical review and operational critique"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "P13",
       "origin": "joint_dialogue_and_institutional_literature",
       "claim_class": "engineering_possibility",
-      "potential_conflicts": ["design optimism"],
-      "falsifiers_or_weakeners": ["Impossibility results or repeated failures showing correction, plural evidence, and reversibility cannot coexist under target conditions"],
-      "independence_requirements": ["Prototype evaluation under capture, collusion, distribution shift, and asymmetric capability"],
-      "status": "contested"
+      "potential_conflicts": [
+        "design optimism"
+      ],
+      "falsifiers_or_weakeners": [
+        "Impossibility results or repeated failures showing correction, plural evidence, and reversibility cannot coexist under target conditions"
+      ],
+      "independence_requirements": [
+        "Prototype evaluation under capture, collusion, distribution shift, and asymmetric capability"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": []
     },
     {
       "id": "C06",
       "origin": "joint_dialogue",
       "claim_class": "normative_program",
-      "potential_conflicts": ["project central objective", "maintainer commitment", "model self-reference"],
-      "falsifiers_or_weakeners": ["Internal inconsistency among suffering reduction, standing, correction, and anti-concentration", "Cases where the target predictably increases severe suffering", "A superior target satisfying the same uncertainty and symmetry constraints"],
-      "independence_requirements": ["Blind derivation, hostile cross-theory review, comparative institutional testing, and preservation of dissent"],
-      "status": "contested"
+      "potential_conflicts": [
+        "project central objective",
+        "maintainer commitment",
+        "model self-reference"
+      ],
+      "falsifiers_or_weakeners": [
+        "Internal inconsistency among suffering reduction, standing, correction, and anti-concentration",
+        "Cases where the target predictably increases severe suffering",
+        "A superior target satisfying the same uncertainty and symmetry constraints"
+      ],
+      "independence_requirements": [
+        "Blind derivation, hostile cross-theory review, comparative institutional testing, and preservation of dissent"
+      ],
+      "status": "contested",
+      "origin_detail": "Initial repository formulation; see CONTRIBUTORS.md and Git history. Pre-repository conversational priority has not been reconstructed at proposition-level granularity.",
+      "dependencies": [
+        "P12",
+        "P13",
+        "C01",
+        "C02",
+        "C04",
+        "C05"
+      ]
     }
   ]
 }
