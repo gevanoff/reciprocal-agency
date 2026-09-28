@@ -21,6 +21,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Run telemetry regression tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+
       - name: Collect aggregate GitHub discovery telemetry
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TRAFFIC_TOKEN || secrets.GITHUB_TOKEN }}
