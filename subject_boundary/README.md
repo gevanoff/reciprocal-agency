@@ -54,6 +54,8 @@ future candidate implementations and should be compared against these controls.
 
 The runner also emits an **exploratory** recurrent-autonomy section based on natural multistep trajectories. It is intentionally excluded from the locked validation gate because its behavior was inspected during development. The interpretation and held-out confirmation requirements are documented in `subject-boundary-autonomy-exploration.md`.
 
+The confirmatory preregistration is immutable. Post-inspection metadata lives in `subject-boundary-exploratory-registry.json`, and runner artifacts include hashes for both provenance files.
+
 ## Run
 
 ```bash
