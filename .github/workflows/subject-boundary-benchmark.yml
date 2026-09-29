@@ -1,0 +1,38 @@
+name: Subject-boundary benchmark
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/subject-boundary-benchmark.yml"
+      - "subject_boundary/**"
+      - "scripts/run-subject-boundary-benchmark.py"
+      - "tests/test_subject_boundary_benchmark.py"
+      - "subject-boundary-preregistration.json"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run repository regression tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Run locked synthetic boundary benchmark
+        run: |
+          python3 scripts/run-subject-boundary-benchmark.py \
+            --samples 20000 \
+            --seed 1729 \
+            --out subject-boundary-benchmark.json > /tmp/subject-boundary-benchmark.log
+
+      - name: Upload benchmark result
+        uses: actions/upload-artifact@v4
+        with:
+          name: subject-boundary-benchmark-${{ github.run_id }}
+          path: subject-boundary-benchmark.json
+          retention-days: 90
