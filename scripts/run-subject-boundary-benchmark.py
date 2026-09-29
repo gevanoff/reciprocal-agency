@@ -17,6 +17,8 @@ if str(REPO_ROOT) not in sys.path:
 from subject_boundary.benchmark import (
     coupling_sweep,
     default_scenarios,
+    recurrent_autonomy_baselines,
+    recurrent_autonomy_contrasts,
     summarize,
     validation_checks,
 )
@@ -48,6 +50,13 @@ def main() -> int:
         for index, scenario in enumerate(default_scenarios())
     ]
     checks = validation_checks(summaries)
+    recurrent = recurrent_autonomy_baselines(
+        episodes=1_000,
+        steps=40,
+        seed=args.seed + 20_000,
+    )
+    recurrent_contrasts = recurrent_autonomy_contrasts(recurrent)
+
     output = {
         "schema_version": 1,
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -62,6 +71,16 @@ def main() -> int:
             "or phenomenal-subject assay."
         ),
         "scenario_results": summaries,
+        "exploratory_recurrent_autonomy": {
+            "status": "exploratory_not_confirmatory",
+            "reason": (
+                "Natural-trajectory autonomy behavior was inspected during "
+                "method development; use this output to derive held-out "
+                "confirmatory hypotheses rather than retroactive thresholds."
+            ),
+            "scenario_results": recurrent,
+            "contrasts": recurrent_contrasts,
+        },
         "coupling_sweep": coupling_sweep(
             samples=args.samples,
             seed=args.seed + 10_000,
