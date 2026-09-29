@@ -12,6 +12,18 @@ The program is metaphysics-neutral. It can produce useful results whether physic
 
 The source map and competing-literature analysis are in [subject-boundary-literature-map.md](subject-boundary-literature-map.md).
 
+## Implementation status — 2026-09-28
+
+WP0/WP1 has begun with a standard-library synthetic benchmark and machine-readable preregistration:
+
+- `subject-boundary-preregistration.json` freezes the initial constructs, competing models, evidence ladder, synthetic scenarios, baseline metrics, and validation rules;
+- `subject_boundary/benchmark.py` implements randomized interventional transition sampling and paired counterfactual perturbations with fixed exogenous randomness;
+- the first controls cover independence, common input, one-way coupling, reciprocal copying, hidden stochastic routing, and an irreducibly joint XOR transition;
+- `stochastic_router` is a deliberate false-positive case showing that joint predictive gain can arise without conjunctive integration;
+- regression tests and CI require the synthetic validation bundle to pass before later machine experiments are added.
+
+This benchmark validates **causal discrimination only**. It does not validate any phenomenal interpretation.
+
 ## Competing models
 
 Preregister the following models rather than optimizing one favored theory after seeing results.
