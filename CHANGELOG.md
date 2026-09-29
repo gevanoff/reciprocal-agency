@@ -15,6 +15,7 @@ All notable substantive changes to the argument corpus should be recorded here. 
 
 ### Changed
 
+- clarified `AD-1` as the explicit subject-individuation / causal-boundary hypothesis and corrected IIT-style exclusion predictions to allow multiple non-overlapping maximal complexes before any coupling-induced A+B transition;
 - the agent entrypoint now requires exposed reviewers to label their output context-conditioned and disallows treating model fluency or agreement as evidence of consciousness, continuity, or independent convergence;
 - the argument schema advanced to 0.4 and now points explicitly to the proposition audit and recursive-confirmation policy;
 - evaluation reports must state independence level and known contamination channels; only L2 or higher may be called independent reconstruction.
