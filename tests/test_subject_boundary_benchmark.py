@@ -9,6 +9,10 @@ from subject_boundary.benchmark import (
     VALIDATION_THRESHOLDS,
     coupling_sweep,
     default_scenarios,
+    recurrent_autonomy_baselines,
+    recurrent_autonomy_contrasts,
+    sample_natural_trajectory_transitions,
+    trajectory_autonomy_summary,
     summarize,
     validation_checks,
 )
@@ -109,6 +113,67 @@ class SubjectBoundaryBenchmarkTests(unittest.TestCase):
         self.assertEqual(
             [row["scenario"]["coupling"] for row in rows],
             [0.0, 0.5, 1.0],
+        )
+
+
+    def test_natural_trajectory_sample_count(self) -> None:
+        scenario = next(
+            row for row in default_scenarios() if row.name == "independent"
+        )
+        rows = sample_natural_trajectory_transitions(
+            scenario,
+            episodes=7,
+            steps=11,
+            seed=self.SEED,
+        )
+        self.assertEqual(len(rows), 77)
+
+    def test_trajectory_autonomy_is_reproducible_for_fixed_seed(self) -> None:
+        scenario = next(
+            row for row in default_scenarios()
+            if row.name == "bidirectional_swap"
+        )
+        first = trajectory_autonomy_summary(
+            scenario,
+            episodes=100,
+            steps=20,
+            seed=self.SEED,
+        )
+        second = trajectory_autonomy_summary(
+            scenario,
+            episodes=100,
+            steps=20,
+            seed=self.SEED,
+        )
+        self.assertEqual(first["metrics"], second["metrics"])
+
+    def test_trajectory_autonomy_entropy_bounds(self) -> None:
+        for scenario in default_scenarios():
+            result = trajectory_autonomy_summary(
+                scenario,
+                episodes=100,
+                steps=20,
+                seed=self.SEED,
+            )
+            metrics = result["metrics"]
+            self.assertGreaterEqual(metrics["joint_state_entropy"], 0.0)
+            self.assertLessEqual(metrics["joint_state_entropy"], 2.0)
+            self.assertGreaterEqual(metrics["joint_trajectory_autonomy"], 0.0)
+            self.assertLessEqual(metrics["joint_trajectory_autonomy"], 2.0)
+
+    def test_recurrent_autonomy_contrast_schema(self) -> None:
+        rows = recurrent_autonomy_baselines(
+            episodes=100,
+            steps=20,
+            seed=self.SEED,
+        )
+        contrasts = recurrent_autonomy_contrasts(rows)
+        self.assertEqual(
+            set(contrasts),
+            {
+                "reciprocal_copy_minus_distributed_xor_joint_autonomy",
+                "stochastic_router_minus_distributed_xor_joint_autonomy",
+            },
         )
 
 
