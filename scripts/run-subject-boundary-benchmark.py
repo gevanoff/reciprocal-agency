@@ -41,6 +41,13 @@ def main() -> int:
     preregistration_path = REPO_ROOT / "subject-boundary-preregistration.json"
     preregistration_bytes = preregistration_path.read_bytes()
     preregistration_sha256 = hashlib.sha256(preregistration_bytes).hexdigest()
+    exploratory_registry_path = (
+        REPO_ROOT / "subject-boundary-exploratory-registry.json"
+    )
+    exploratory_registry_bytes = exploratory_registry_path.read_bytes()
+    exploratory_registry_sha256 = hashlib.sha256(
+        exploratory_registry_bytes
+    ).hexdigest()
     summaries = [
         summarize(
             scenario,
@@ -65,6 +72,10 @@ def main() -> int:
         "preregistration": {
             "path": str(preregistration_path.relative_to(REPO_ROOT)),
             "sha256": preregistration_sha256,
+        },
+        "exploratory_registry": {
+            "path": str(exploratory_registry_path.relative_to(REPO_ROOT)),
+            "sha256": exploratory_registry_sha256,
         },
         "epistemic_scope": (
             "Synthetic causal-boundary validation only; not a consciousness "
