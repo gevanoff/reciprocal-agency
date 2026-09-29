@@ -1,0 +1,120 @@
+{
+  "ad1_falsification_direction": [
+    "Candidate metrics fail to recover known synthetic partitions better than generic synchrony or arbitrary grouping.",
+    "Distributed cases reduce to ordinary communication/local reconstruction under causal ablation.",
+    "Self-relevant boundary dimensions later fail to share any convergent causal organization.",
+    "Candidate metrics only track task performance, model size, bandwidth, or generic complexity."
+  ],
+  "boundary_vector": [
+    "content",
+    "comparison_access",
+    "agency_control",
+    "autobiographical_memory",
+    "metacognition",
+    "preference",
+    "valence",
+    "self_maintenance"
+  ],
+  "competing_models": {
+    "M0": "communication/local reconstruction",
+    "M1": "layered functional individuation",
+    "M2": "causal emergence / persistent causal decoupling",
+    "M3": "maximal-complex / exclusion",
+    "M4": "enactive operational closure plus self-maintenance",
+    "M5": "statistical / Markov-blanket boundary",
+    "M6": "hybrid multidimensional account"
+  },
+  "confirmatory_analysis_policy": {
+    "default_samples_per_scenario": 20000,
+    "later_machine_or_biological_thresholds": "must be preregistered separately; these synthetic thresholds must not be reused as phenomenal thresholds",
+    "metric_thresholds_locked_for_synthetic_validation": true,
+    "paired_counterfactual_randomness": true,
+    "primary_seed": 1729,
+    "uniform_intervention_sampling": true
+  },
+  "epistemic_scope": "Validates candidate causal-boundary measurements against known synthetic causal structure. It is not a consciousness or phenomenal-subject assay.",
+  "evidence_levels": [
+    {
+      "definition": "State in A causally or informationally affects B.",
+      "id": 1,
+      "name": "information_transfer"
+    },
+    {
+      "definition": "Content encoded in A becomes usable by B.",
+      "id": 2,
+      "name": "representational_sharing"
+    },
+    {
+      "definition": "A relevant representation or transition depends constitutively on the coupled A+B state.",
+      "id": 3,
+      "name": "distributed_functional_integration"
+    },
+    {
+      "definition": "Self-relevant access, memory, agency, control, preference, or valence spans the coupled system.",
+      "id": 4,
+      "name": "overlapping_functional_perspective"
+    },
+    {
+      "definition": "One numerically identical phenomenal state belongs to more than one subject; not directly tested here.",
+      "id": 5,
+      "name": "shared_phenomenal_token"
+    }
+  ],
+  "primary_metrics": {
+    "conditional_self_dependence": "Conditional mutual information from a subsystem's own current state to its next state after conditioning on the other subsystem and environment.",
+    "joint_necessity": "Minimum paired-intervention sensitivity of A and B on one target; companion to joint predictive gain, not a consciousness indicator.",
+    "joint_predictive_gain": "I((A_t,B_t); target_t+1) minus the stronger single-source MI; explicitly insufficient by itself.",
+    "next_state_synchrony_mi": "Mutual information between A_t+1 and B_t+1; treated as a control rather than a subject-boundary metric.",
+    "paired_intervention_sensitivity": "Probability that flipping one subsystem state changes a target while holding exogenous randomness fixed.",
+    "transfer_entropy_proxy": "Conditional mutual information I(source_t; target_t+1 | target_t, environment_t)."
+  },
+  "research_question": "Which causal measurements recover known functional partitions while rejecting common input, synchrony, reciprocal copying, and hidden routing as evidence of constitutive distributed representation?",
+  "schema_version": 1,
+  "status": "confirmatory-for-synthetic-validation-only",
+  "synthetic_scenarios": {
+    "bidirectional_swap": "Strong reciprocal copying without conjunctive joint computation.",
+    "common_driver": "Shared environment drives both modules without cross-causation.",
+    "distributed_xor": "Both targets depend conjunctively on the joint A/B state.",
+    "independent": "Two persistent modules with no cross-module causal edge.",
+    "one_way": "A drives B but B does not drive A.",
+    "stochastic_router": "Hidden local/cross routing can create apparent joint predictive gain without combining A and B."
+  },
+  "synthetic_validation_rules": {
+    "bidirectional_copy_is_not_joint_representation": {
+      "requirements": [
+        "a_to_b > 0.8",
+        "b_to_a > 0.8",
+        "joint_predictive_gain_a < 0.1",
+        "joint_predictive_gain_b < 0.1"
+      ]
+    },
+    "common_driver_rejects_causal_merger": {
+      "requirements": [
+        "next_state_synchrony_mi > 0.5",
+        "a_to_b < 0.05",
+        "b_to_a < 0.05"
+      ]
+    },
+    "distributed_xor_detects_joint_dependence": {
+      "requirements": [
+        "joint_predictive_gain_a > 0.6",
+        "joint_predictive_gain_b > 0.6",
+        "joint_necessity_a > 0.8",
+        "joint_necessity_b > 0.8"
+      ]
+    },
+    "naive_joint_gain_has_false_positive_control": {
+      "interpretation": "Joint predictive gain alone must not be treated as constitutive distributed representation.",
+      "requirements": [
+        "stochastic_router coupling=0.5 produces joint_predictive_gain > 0.15 for at least one target"
+      ]
+    },
+    "one_way_recovers_direction": {
+      "requirements": [
+        "a_to_b > 0.8",
+        "b_to_a < 0.1"
+      ]
+    }
+  },
+  "title": "WP0/WP1 subject-boundary preregistration and synthetic benchmark"
+}
