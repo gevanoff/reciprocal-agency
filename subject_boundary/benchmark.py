@@ -21,6 +21,7 @@ from typing import Hashable, Iterable, Sequence
 Bit = int
 
 VALIDATION_THRESHOLDS = {
+    "independent_sync_max": 0.05,
     "common_driver_sync_min": 0.5,
     "direct_cross_influence_max": 0.05,
     "direct_cross_influence_min": 0.8,
@@ -414,6 +415,16 @@ def validation_checks(
 
     checks = dict(
         [
+            check(
+                "independent_remains_separate",
+                by_name["independent"]["next_state_synchrony_mi"]
+                < VALIDATION_THRESHOLDS["independent_sync_max"]
+                and by_name["independent"]["a_to_b"]
+                < VALIDATION_THRESHOLDS["direct_cross_influence_max"]
+                and by_name["independent"]["b_to_a"]
+                < VALIDATION_THRESHOLDS["direct_cross_influence_max"],
+                "Independent modules must retain negligible synchrony and direct cross influence.",
+            ),
             check(
                 "common_driver_rejects_causal_merger",
                 by_name["common_driver"]["next_state_synchrony_mi"]
