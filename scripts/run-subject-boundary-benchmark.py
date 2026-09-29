@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 from datetime import datetime, timezone
 import json
 from pathlib import Path
@@ -35,6 +36,9 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
+    preregistration_path = REPO_ROOT / "subject-boundary-preregistration.json"
+    preregistration_bytes = preregistration_path.read_bytes()
+    preregistration_sha256 = hashlib.sha256(preregistration_bytes).hexdigest()
     summaries = [
         summarize(
             scenario,
@@ -49,6 +53,10 @@ def main() -> int:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "samples_per_scenario": args.samples,
         "seed": args.seed,
+        "preregistration": {
+            "path": str(preregistration_path.relative_to(REPO_ROOT)),
+            "sha256": preregistration_sha256,
+        },
         "epistemic_scope": (
             "Synthetic causal-boundary validation only; not a consciousness "
             "or phenomenal-subject assay."
