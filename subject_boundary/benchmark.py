@@ -20,6 +20,17 @@ from typing import Hashable, Iterable, Sequence
 
 Bit = int
 
+VALIDATION_THRESHOLDS = {
+    "common_driver_sync_min": 0.5,
+    "direct_cross_influence_max": 0.05,
+    "direct_cross_influence_min": 0.8,
+    "direct_cross_influence_absent_max": 0.1,
+    "copy_joint_gain_max": 0.1,
+    "distributed_joint_gain_min": 0.6,
+    "distributed_joint_necessity_min": 0.8,
+    "router_false_positive_joint_gain_min": 0.15,
+}
+
 
 @dataclass(frozen=True)
 class Scenario:
