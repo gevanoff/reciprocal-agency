@@ -8,6 +8,8 @@ The recurrent-autonomy behavior described here was inspected during method devel
 
 The locked WP0/WP1 one-step synthetic validation remains governed by `subject-boundary-preregistration.json`. This extension does not alter those confirmatory pass/fail rules.
 
+Post-inspection metadata is stored separately in `subject-boundary-exploratory-registry.json`; the locked preregistration is left unchanged. Benchmark artifacts bind SHA-256 hashes for both files.
+
 ## Question
 
 Can information-theoretic self-predictability over natural multistep trajectories identify a candidate functional subject boundary?
@@ -33,13 +35,14 @@ These quantities ask whether the current state of a candidate system predicts it
 
 GitHub Actions workflow run:
 
-- run: `36527996507`
-- branch head: `8b50ae0d42bce037b23935e1e9a980fd7a4127e1`
+- run: `36528387879`
+- branch head: `fd73a5fde9bb98a39e17b8ada5b35fa104bf68ba`
 - benchmark seed: `1729`
 - recurrent seed base: `21729`
 - episodes per scenario: `1000`
 - steps per episode: `40`
-- preregistration SHA-256 embedded in artifact: `ec4e7395b938a045a0b439f1a8e976069626baafea6c81e751b84f17c1a405f4`
+- immutable preregistration SHA-256 embedded in artifact: `b53b8c40ed73e454b4de2b8d62a93cccde494ff4335c6678dbaaeff903792f10`
+- exploratory-registry SHA-256 embedded in artifact: `668ab39bd507ce53c8b9f7a5c9f66b3e575fcb80d6ae5a9c36f41a49f6533b15`
 - locked one-step validation checks: all passed
 - recurrent result status in artifact: `exploratory_not_confirmatory`
 
