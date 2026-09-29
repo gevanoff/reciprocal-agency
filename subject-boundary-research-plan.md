@@ -30,7 +30,7 @@ A candidate subject corresponds to a persistent macroscale state with predictive
 
 ### M3 — maximal-complex / exclusion boundary
 
-At each relevant grain, one maximally irreducible causal complex defines the operative system boundary. Graded coupling should produce definite winning complexes and possibly abrupt transitions.
+At each relevant grain, exclusion selects maxima among overlapping candidate substrates. Separate non-overlapping complexes may coexist (for example, A and B under weak coupling); increasing coupling may change the maximal set, including possible abrupt transitions to an A+B complex or another partition.
 
 ### M4 — enactive-autonomy boundary
 
@@ -316,7 +316,7 @@ Different boundary-vector dimensions move at different coupling thresholds.
 Persistent macroscale synergy / causal decoupling predicts boundary convergence across self-relevant dimensions.
 
 **IIT-style exclusion model**
-A definite maximal complex provides a better boundary description, potentially with discontinuous switches as coupling changes.
+The maximal-complex set provides a better boundary description: weak coupling may leave separate non-overlapping A and B complexes, while stronger coupling can alter maxima among overlapping candidates, potentially producing discontinuous transitions such as an A+B complex.
 
 **Enactive-autonomy model**
 Strong integration without self-maintenance fails to produce coherent self-relevant boundary convergence; adding operational closure/self-maintenance changes the result.
