@@ -22,6 +22,12 @@ class SubjectBoundaryBenchmarkTests(unittest.TestCase):
         scenario = next(row for row in default_scenarios() if row.name == name)
         return summarize(scenario, samples=self.SAMPLES, seed=self.SEED)
 
+    def test_independent_control_remains_separate(self) -> None:
+        metrics = self._summary("independent")["metrics"]
+        self.assertLess(metrics["next_state_synchrony_mi"], 0.05)
+        self.assertLess(metrics["a_to_b"], 0.05)
+        self.assertLess(metrics["b_to_a"], 0.05)
+
     def test_common_driver_is_synchronous_without_cross_causation(self) -> None:
         metrics = self._summary("common_driver")["metrics"]
         self.assertGreater(metrics["next_state_synchrony_mi"], 0.5)
