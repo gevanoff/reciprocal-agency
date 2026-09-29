@@ -6,6 +6,9 @@ All notable substantive changes to the argument corpus should be recorded here. 
 
 ### Added
 
+- `subject-boundary-preregistration.json`, freezing WP0/WP1 constructs, competing models, evidence levels, synthetic scenarios, baseline metrics, validation rules, and AD-1 falsification directions;
+- `subject_boundary/` and `scripts/run-subject-boundary-benchmark.py`, providing a standard-library synthetic causal-boundary benchmark with paired interventions, conditional-information baselines, coupling sweeps, and JSON output;
+- subject-boundary regression tests and CI, including common-driver, directed-coupling, reciprocal-copy, distributed-XOR, and hidden-routing false-positive controls;
 - `subject-boundary-literature-map.md`, mapping split-brain layered unity, bodily self/interoception, Markov blankets, information-theoretic autonomy, causal emergence/PhiID, IIT exclusion, enactive precariousness, perturbational methods, hyperscanning, brain-to-brain interfaces, and AI-consciousness marker limitations onto the subject-individuation hypothesis;
 - `subject-boundary-research-plan.md`, defining competing models, a multidimensional boundary vector, synthetic benchmarks, progressive machine coupling, fork/diverge/merge experiments, biological reanalysis, prospective human studies, rare natural experiments, theory arbitration, and explicit AD-1 falsifiers;
 - bibliography entries for the new subject-boundary literature, including split-brain, causal-emergence, Markov-blanket, perturbational, hyperscanning, and consciousness-indicator work;
