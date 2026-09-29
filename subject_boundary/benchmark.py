@@ -478,3 +478,194 @@ def validation_checks(
         ]
     )
     return checks
+
+def sample_natural_trajectory_transitions(
+    scenario: Scenario,
+    episodes: int = 1_000,
+    steps: int = 40,
+    seed: int = 2718,
+) -> list[Transition]:
+    """Sample multistep trajectories without randomizing A/B between steps.
+
+    Each episode starts from a uniformly random A/B/environment state. After
+    that, the system evolves according to its own transition rule. This
+    deliberately differs from `sample_interventional_transitions`, which
+    randomizes the current state on every sample to expose counterfactual
+    dependencies even when natural dynamics visit only a small attractor.
+
+    The resulting measures are observational properties of the natural
+    trajectory distribution. They must not be substituted for interventional
+    causal structure.
+    """
+
+    if episodes <= 0:
+        raise ValueError("episodes must be positive")
+    if steps <= 0:
+        raise ValueError("steps must be positive")
+
+    rng = random.Random(seed)
+    rows: list[Transition] = []
+    for _ in range(episodes):
+        a = rng.getrandbits(1)
+        b = rng.getrandbits(1)
+        environment = rng.getrandbits(1)
+
+        for _ in range(steps):
+            draw_a = rng.random()
+            draw_b = rng.random()
+            draw_environment = rng.random()
+            a_next, b_next, environment_next = transition(
+                scenario,
+                a,
+                b,
+                environment,
+                draw_a,
+                draw_b,
+                draw_environment,
+            )
+            rows.append(
+                Transition(
+                    a=a,
+                    b=b,
+                    environment=environment,
+                    a_next=a_next,
+                    b_next=b_next,
+                    environment_next=environment_next,
+                )
+            )
+            a, b, environment = a_next, b_next, environment_next
+
+    return rows
+
+
+def trajectory_autonomy_summary(
+    scenario: Scenario,
+    episodes: int = 1_000,
+    steps: int = 40,
+    seed: int = 2718,
+) -> dict[str, object]:
+    """Summarize one-step predictive autonomy on naturally visited states.
+
+    The baseline follows the information-theoretic autonomy intuition that a
+    system is more autonomous when its own present state predicts its future
+    after conditioning on relevant environmental state. For the joint A+B
+    candidate system:
+
+        I((A_t, B_t); (A_t+1, B_t+1) | E_t)
+
+    Local conditional self-dependence is reported alongside it:
+
+        I(A_t; A_t+1 | B_t, E_t)
+        I(B_t; B_t+1 | A_t, E_t)
+
+    These quantities are diagnostic baselines, not sufficient individuation
+    criteria. In particular, reversible reciprocal copying can make the joint
+    process highly self-predictive without conjunctive representation.
+    """
+
+    rows = sample_natural_trajectory_transitions(
+        scenario,
+        episodes=episodes,
+        steps=steps,
+        seed=seed,
+    )
+
+    a = [row.a for row in rows]
+    b = [row.b for row in rows]
+    environment = [row.environment for row in rows]
+    a_next = [row.a_next for row in rows]
+    b_next = [row.b_next for row in rows]
+
+    joint = list(zip(a, b))
+    joint_next = list(zip(a_next, b_next))
+    local_a_condition = list(zip(b, environment))
+    local_b_condition = list(zip(a, environment))
+
+    joint_state_entropy = _entropy(joint)
+    joint_next_entropy = _entropy(joint_next)
+
+    return {
+        "scenario": asdict(scenario),
+        "sampling": {
+            "episodes": episodes,
+            "steps": steps,
+            "seed": seed,
+            "mode": "natural_multistep_trajectory",
+        },
+        "metrics": {
+            "joint_trajectory_autonomy": conditional_mutual_information(
+                joint,
+                joint_next,
+                environment,
+            ),
+            "local_conditional_autonomy_a": conditional_mutual_information(
+                a,
+                a_next,
+                local_a_condition,
+            ),
+            "local_conditional_autonomy_b": conditional_mutual_information(
+                b,
+                b_next,
+                local_b_condition,
+            ),
+            "joint_state_entropy": joint_state_entropy,
+            "joint_next_state_entropy": joint_next_entropy,
+            "effective_joint_states": 2 ** joint_state_entropy,
+            "effective_joint_next_states": 2 ** joint_next_entropy,
+            "next_state_synchrony_mi": mutual_information(a_next, b_next),
+        },
+    }
+
+
+def recurrent_autonomy_baselines(
+    episodes: int = 1_000,
+    steps: int = 40,
+    seed: int = 2718,
+) -> list[dict[str, object]]:
+    """Run exploratory natural-trajectory autonomy baselines.
+
+    This function is intentionally not part of the locked WP0/WP1 validation
+    gate. The recurrent-autonomy behavior was inspected during method
+    development, so these outputs are marked exploratory and should generate
+    held-out confirmatory hypotheses rather than retroactive pass/fail rules.
+    """
+
+    return [
+        trajectory_autonomy_summary(
+            scenario,
+            episodes=episodes,
+            steps=steps,
+            seed=seed + index * 100,
+        )
+        for index, scenario in enumerate(default_scenarios())
+    ]
+
+
+def recurrent_autonomy_contrasts(
+    summaries: Sequence[dict[str, object]],
+) -> dict[str, float]:
+    """Expose contrasts that reveal specificity limits of trajectory autonomy."""
+
+    by_name = {
+        str(row["scenario"]["name"]): row["metrics"]
+        for row in summaries
+    }
+    copy_autonomy = float(
+        by_name["bidirectional_swap"]["joint_trajectory_autonomy"]
+    )
+    xor_autonomy = float(
+        by_name["distributed_xor"]["joint_trajectory_autonomy"]
+    )
+    router_autonomy = float(
+        by_name["stochastic_router"]["joint_trajectory_autonomy"]
+    )
+
+    return {
+        "reciprocal_copy_minus_distributed_xor_joint_autonomy": (
+            copy_autonomy - xor_autonomy
+        ),
+        "stochastic_router_minus_distributed_xor_joint_autonomy": (
+            router_autonomy - xor_autonomy
+        ),
+    }
+
