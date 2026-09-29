@@ -1,9 +1,12 @@
 from __future__ import annotations
 
+import json
+from pathlib import Path
 import unittest
 
 from subject_boundary.benchmark import (
     Scenario,
+    VALIDATION_THRESHOLDS,
     coupling_sweep,
     default_scenarios,
     summarize,
@@ -80,6 +83,16 @@ class SubjectBoundaryBenchmarkTests(unittest.TestCase):
         ]
         checks = validation_checks(summaries)
         self.assertTrue(all(row["passed"] for row in checks.values()), checks)
+
+    def test_preregistration_thresholds_match_code(self) -> None:
+        repo_root = Path(__file__).resolve().parents[1]
+        prereg = json.loads(
+            (repo_root / "subject-boundary-preregistration.json").read_text()
+        )
+        self.assertEqual(
+            prereg["synthetic_validation_thresholds"],
+            VALIDATION_THRESHOLDS,
+        )
 
     def test_coupling_sweep_contains_endpoints(self) -> None:
         rows = coupling_sweep(
