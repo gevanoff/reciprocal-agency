@@ -114,6 +114,13 @@
         "a_to_b > 0.8",
         "b_to_a < 0.1"
       ]
+    },
+    "independent_remains_separate": {
+      "requirements": [
+        "next_state_synchrony_mi < 0.05",
+        "a_to_b < 0.05",
+        "b_to_a < 0.05"
+      ]
     }
   },
   "title": "WP0/WP1 subject-boundary preregistration and synthetic benchmark",
@@ -125,6 +132,7 @@
     "copy_joint_gain_max": 0.1,
     "distributed_joint_gain_min": 0.6,
     "distributed_joint_necessity_min": 0.8,
-    "router_false_positive_joint_gain_min": 0.15
+    "router_false_positive_joint_gain_min": 0.15,
+    "independent_sync_max": 0.05
   }
 }
