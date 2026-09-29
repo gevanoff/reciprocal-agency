@@ -73,6 +73,7 @@ Scientific value does not automatically compensate a research subject for severe
 - [`subject-boundary-literature-map.md`](subject-boundary-literature-map.md) — intersecting, competing, and cautionary research on physical/computational individuation
 - [`subject-boundary-research-plan.md`](subject-boundary-research-plan.md) — staged preregistered program for synthetic, machine, and biological boundary experiments
 - [`subject-boundary-preregistration.json`](subject-boundary-preregistration.json) — WP0/WP1 benchmark protocol and validation rules
+- [`subject-boundary-autonomy-exploration.md`](subject-boundary-autonomy-exploration.md) — exploratory multistep autonomy results, confounds, and held-out confirmation requirements
 - [`subject_boundary/`](subject_boundary/) — executable standard-library synthetic causal-boundary benchmark and protocol notes
 - [`argument.json`](argument.json) — machine-readable propositions and dependencies
 - [`claim-audit.json`](claim-audit.json) — proposition-level origins, conflicts, falsifiers, status, and independence requirements
