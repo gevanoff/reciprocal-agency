@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "purpose": "Append-oriented registry for exploratory subject-boundary analyses performed after inspection. This file is separate from the immutable confirmatory preregistration.",
+  "extensions": {
+    "recurrent_autonomy_v1": {
+      "status": "exploratory_post_inspection",
+      "scope": "Natural multistep trajectories using the original six synthetic scenarios.",
+      "metric": "I((A_t,B_t);(A_t+1,B_t+1)|E_t), with local conditional-autonomy and state-entropy companions.",
+      "research_integrity_note": "Behavior of these measures was inspected during method development before this extension was documented. Observed contrasts must not be treated as preregistered confirmatory tests.",
+      "candidate_confounds": [
+        "Reciprocal copying/permutation can make a joint process highly self-predictive without conjunctive representation.",
+        "Low-entropy attractors can make an interventionally joint system look weakly autonomous on naturally visited trajectories."
+      ],
+      "next_confirmatory_requirement": "Preregister held-out dynamics or scenario variants in a new immutable confirmatory artifact before using autonomy contrasts as confirmatory evidence."
+    }
+  }
+}
