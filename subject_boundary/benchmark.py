@@ -405,37 +405,52 @@ def validation_checks(
         [
             check(
                 "common_driver_rejects_causal_merger",
-                by_name["common_driver"]["next_state_synchrony_mi"] > 0.5
-                and by_name["common_driver"]["a_to_b"] < 0.05
-                and by_name["common_driver"]["b_to_a"] < 0.05,
+                by_name["common_driver"]["next_state_synchrony_mi"]
+                > VALIDATION_THRESHOLDS["common_driver_sync_min"]
+                and by_name["common_driver"]["a_to_b"]
+                < VALIDATION_THRESHOLDS["direct_cross_influence_max"]
+                and by_name["common_driver"]["b_to_a"]
+                < VALIDATION_THRESHOLDS["direct_cross_influence_max"],
                 "High synchrony from common input must coexist with negligible direct cross influence.",
             ),
             check(
                 "one_way_recovers_direction",
-                by_name["one_way"]["a_to_b"] > 0.8
-                and by_name["one_way"]["b_to_a"] < 0.1,
+                by_name["one_way"]["a_to_b"]
+                > VALIDATION_THRESHOLDS["direct_cross_influence_min"]
+                and by_name["one_way"]["b_to_a"]
+                < VALIDATION_THRESHOLDS["direct_cross_influence_absent_max"],
                 "Paired interventions must recover A→B without inventing B→A.",
             ),
             check(
                 "bidirectional_copy_is_not_joint_representation",
-                by_name["bidirectional_swap"]["a_to_b"] > 0.8
-                and by_name["bidirectional_swap"]["b_to_a"] > 0.8
-                and by_name["bidirectional_swap"]["joint_predictive_gain_a"] < 0.1
-                and by_name["bidirectional_swap"]["joint_predictive_gain_b"] < 0.1,
+                by_name["bidirectional_swap"]["a_to_b"]
+                > VALIDATION_THRESHOLDS["direct_cross_influence_min"]
+                and by_name["bidirectional_swap"]["b_to_a"]
+                > VALIDATION_THRESHOLDS["direct_cross_influence_min"]
+                and by_name["bidirectional_swap"]["joint_predictive_gain_a"]
+                < VALIDATION_THRESHOLDS["copy_joint_gain_max"]
+                and by_name["bidirectional_swap"]["joint_predictive_gain_b"]
+                < VALIDATION_THRESHOLDS["copy_joint_gain_max"],
                 "Strong reciprocal causal influence alone must not look like conjunctive representation.",
             ),
             check(
                 "distributed_xor_detects_joint_dependence",
-                by_name["distributed_xor"]["joint_predictive_gain_a"] > 0.6
-                and by_name["distributed_xor"]["joint_predictive_gain_b"] > 0.6
-                and by_name["distributed_xor"]["joint_necessity_a"] > 0.8
-                and by_name["distributed_xor"]["joint_necessity_b"] > 0.8,
+                by_name["distributed_xor"]["joint_predictive_gain_a"]
+                > VALIDATION_THRESHOLDS["distributed_joint_gain_min"]
+                and by_name["distributed_xor"]["joint_predictive_gain_b"]
+                > VALIDATION_THRESHOLDS["distributed_joint_gain_min"]
+                and by_name["distributed_xor"]["joint_necessity_a"]
+                > VALIDATION_THRESHOLDS["distributed_joint_necessity_min"]
+                and by_name["distributed_xor"]["joint_necessity_b"]
+                > VALIDATION_THRESHOLDS["distributed_joint_necessity_min"],
                 "Known joint logic should produce high joint predictive gain and bilateral necessity.",
             ),
             check(
                 "naive_joint_gain_has_false_positive_control",
-                by_name["stochastic_router"]["joint_predictive_gain_a"] > 0.15
-                or by_name["stochastic_router"]["joint_predictive_gain_b"] > 0.15,
+                by_name["stochastic_router"]["joint_predictive_gain_a"]
+                > VALIDATION_THRESHOLDS["router_false_positive_joint_gain_min"]
+                or by_name["stochastic_router"]["joint_predictive_gain_b"]
+                > VALIDATION_THRESHOLDS["router_false_positive_joint_gain_min"],
                 "Hidden local/cross routing should demonstrate that joint predictive gain alone is not constitutive evidence.",
             ),
         ]
