@@ -6,6 +6,8 @@ All notable substantive changes to the argument corpus should be recorded here. 
 
 ### Added
 
+- `subject-boundary-autonomy-exploration.md`, documenting exploratory multistep information-theoretic autonomy results, communication false positives, attractor false negatives, and held-out confirmation requirements;
+- recurrent natural-trajectory sampling and autonomy diagnostics in the synthetic benchmark, explicitly segregated from locked confirmatory validation;
 - `subject-boundary-preregistration.json`, freezing WP0/WP1 constructs, competing models, evidence levels, synthetic scenarios, baseline metrics, validation rules, and AD-1 falsification directions;
 - `subject_boundary/` and `scripts/run-subject-boundary-benchmark.py`, providing a standard-library synthetic causal-boundary benchmark with paired interventions, conditional-information baselines, coupling sweeps, and JSON output;
 - subject-boundary regression tests and CI, including common-driver, directed-coupling, reciprocal-copy, distributed-XOR, and hidden-routing false-positive controls;
