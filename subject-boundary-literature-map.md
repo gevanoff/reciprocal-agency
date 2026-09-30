@@ -216,7 +216,7 @@ It is better treated as a multidimensional, dynamically maintained partition cha
 1. **Communication-only:** coupling transfers information but each subsystem reconstructs and owns its own states.
 2. **Layered functional individuation:** different forms of unity have different boundaries.
 3. **Causal-emergence boundary:** an emergent macroscale entity is identified by persistent irreducible predictive structure.
-4. **Exclusion/maximal-complex boundary:** one maximally irreducible complex defines the relevant system at a given grain.
+4. **Exclusion/maximal-complex boundary:** maxima among overlapping candidate substrates define the relevant complexes at a given grain; multiple non-overlapping maximal complexes may coexist.
 5. **Enactive-autonomy boundary:** individuation requires operational closure plus self-maintaining/precarious organization.
 6. **Statistical-boundary account:** Markov-blanket structure captures the relevant internal/external partition.
 7. **Hybrid account:** several of the above identify different necessary components.
