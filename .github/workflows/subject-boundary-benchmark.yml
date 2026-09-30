@@ -9,6 +9,7 @@ on:
       - "scripts/run-subject-boundary-benchmark.py"
       - "tests/test_subject_boundary_benchmark.py"
       - "subject-boundary-preregistration.json"
+      - "subject-boundary-exploratory-registry.json"
 
 permissions:
   contents: read

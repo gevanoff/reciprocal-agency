@@ -24,6 +24,14 @@ WP0/WP1 has begun with a standard-library synthetic benchmark and machine-readab
 
 This benchmark validates **causal discrimination only**. It does not validate any phenomenal interpretation.
 
+### Recurrent-autonomy exploratory extension
+
+Natural multistep trajectories now report a one-step information-theoretic autonomy baseline for the joint A+B process and local subsystem companions. This extension is explicitly exploratory because its behavior was inspected during method development.
+
+The first result is cautionary: reciprocal copying can produce higher joint trajectory autonomy than an explicitly conjunctive distributed-XOR system, while attractor collapse can make the XOR system look weakly autonomous observationally despite strong interventional joint dependence. See [subject-boundary-autonomy-exploration.md](subject-boundary-autonomy-exploration.md).
+
+Therefore trajectory autonomy is retained as a candidate axis, not promoted to a boundary criterion. Held-out confirmatory dynamics are required before any autonomy-based model comparison.
+
 ## Competing models
 
 Preregister the following models rather than optimizing one favored theory after seeing results.
