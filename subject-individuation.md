@@ -15,7 +15,9 @@ See [subject-boundary-literature-map.md](subject-boundary-literature-map.md) for
 
 ## Core hypothesis
 
-**Subject-individuation / causal-boundary hypothesis:** if phenomenal experience occurs, the boundary of a subject may depend partly on the organization of causal integration, information access, self-modeling, memory, and control rather than coinciding automatically with a familiar anatomical object such as one skull, one brain, or one computational process.
+**AD-1 — Subject-individuation / causal-boundary hypothesis:** if phenomenal experience occurs, the boundary of a subject may depend partly on the organization of causal integration, information access, self-modeling, memory, and control rather than coinciding automatically with a familiar anatomical object such as one skull, one brain, or one computational process.
+
+Throughout the adjacent literature map and research plan, **AD-1** refers exactly to this conditional hypothesis.
 
 This hypothesis does **not** imply that causal integration is sufficient for consciousness. It instead proposes that, conditional on consciousness, causal organization may help determine **which contents belong to which subject**.
 

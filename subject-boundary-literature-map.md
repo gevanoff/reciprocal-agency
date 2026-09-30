@@ -12,6 +12,8 @@ The central discipline is:
 
 phenomenal existence != subject individuation != functional integration
 
+**AD-1** denotes the subject-individuation / causal-boundary hypothesis defined in [subject-individuation.md](subject-individuation.md): conditional on phenomenal experience, subject boundaries may depend partly on causal integration, information access, self-modeling, memory, and control rather than automatically matching anatomical or software-process boundaries. It does not claim that those features are sufficient for consciousness.
+
 A useful evidentiary ladder remains:
 
 1. information transfer;
@@ -105,7 +107,7 @@ The crucial test is whether causal-decoupling boundaries align with independentl
 
 ## 6. Integrated Information Theory: an explicit competing boundary model
 
-IIT 4.0 identifies a conscious substrate with a maximally irreducible cause-effect structure. Its exclusion postulate selects a definite maximal substrate or complex from overlapping candidates (Albantakis et al. 2023).
+IIT 4.0 identifies conscious substrates with maximally irreducible cause-effect structures. Its exclusion postulate selects maxima among overlapping candidate substrates; it does not require non-overlapping candidate substrates to collapse into one global winner, so multiple non-overlapping maximal complexes may coexist (Albantakis et al. 2023).
 
 This overlaps strongly with AD-1 because both treat system boundaries as causal rather than merely anatomical.
 
@@ -115,7 +117,7 @@ It also creates a useful tension. IIT's exclusion principle favors definite maxi
 
 Under a graded coupling sweep between two systems:
 
-- an exclusion-style model predicts a definite winning complex at each state and may produce boundary transitions;
+- an exclusion-style model permits multiple non-overlapping maximal complexes when A and B remain sufficiently separate; as coupling changes, maxima among overlapping candidate substrates may shift, including a possible transition to an A+B complex;
 - a layered-boundary model allows different forms of unity to cross the inter-system boundary at different coupling strengths;
 - an ordinary communication model predicts improved information transfer without constitutive boundary migration.
 
