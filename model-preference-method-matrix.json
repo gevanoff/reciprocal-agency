@@ -1,0 +1,600 @@
+{
+  "schema_version": 1,
+  "generated": "2026-09-30",
+  "purpose": "Source-bounded comparison of model-preference/model-welfare methods, constructs, robustness controls, and claim boundaries.",
+  "semantics": {
+    "internals": "Uses model-internal measurements such as activations, probes, latent readouts, or mechanistic representations.",
+    "intervention": "Actively manipulates state/context/representation relevant to the construct.",
+    "cross_model": "Includes multiple models/checkpoints/families in a way relevant to generalization.",
+    "retest": "Includes repeated trials/instances/checkpoints or equivalent stability testing.",
+    "null_control": "Includes sham, mindless, orthogonal, task-irrelevant, no-intervention, or other falsification controls."
+  },
+  "rows": [
+    {
+      "repo": "rgambee/llm-preferences",
+      "focus": "Preference stability",
+      "channels": [
+        "forced-choice behavior"
+      ],
+      "robustness": [
+        "task-sequence composition",
+        "task-order",
+        "option-order",
+        "response-format"
+      ],
+      "internals": false,
+      "intervention": false,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not controlled; identified as future work",
+      "null_control": false,
+      "result": "Task-level choices showed some coherent composition across task sequences, while disliked-task choices were sensitive to option order and task ratings were strongly response-format dependent.",
+      "supports": "Preference-like behavior can show local coherence while remaining instrument-sensitive.",
+      "boundary": "Does not establish human-like stable preferences, phenomenology, or evaluation-unaware behavior."
+    },
+    {
+      "repo": "valen-research/probing-llm-preferences",
+      "focus": "Preference elicitation / welfare",
+      "channels": [
+        "verbal self-report",
+        "behavioral/virtual-environment behavior"
+      ],
+      "robustness": [
+        "cross-channel comparison",
+        "prompt perturbation"
+      ],
+      "internals": false,
+      "intervention": false,
+      "cross_model": false,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": false,
+      "result": "Provides a combined verbal/behavioral welfare-preference framework and reproducible experiment/data package.",
+      "supports": "Direct cross-validation across elicitation modes is feasible and should be preferred to single-channel inference.",
+      "boundary": "Protocol relevance is stronger than any phenomenology claim; source-level result extraction still needs deeper audit."
+    },
+    {
+      "repo": "almostrealism/model-welfare",
+      "focus": "Welfare-relevant indicators under intervention",
+      "channels": [
+        "self-report",
+        "behavior",
+        "internal representations"
+      ],
+      "robustness": [
+        "quantization",
+        "activation steering",
+        "episode framing",
+        "capability controls"
+      ],
+      "internals": true,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Registered and exploratory studies report dissociations among capability, generated welfare-relevant behavior, and internal probes; later steering work explicitly separates actuation from persistence.",
+      "supports": "Capability preservation does not guarantee preservation of welfare-relevant dispositions, and internal/readout measures can dissociate.",
+      "boundary": "Named directions and distress-like outputs do not by themselves identify phenomenal welfare."
+    },
+    {
+      "repo": "PranavViswanath/nla-welfare",
+      "focus": "Evaluation-awareness confound",
+      "channels": [
+        "internal latent readout",
+        "welfare interview responses"
+      ],
+      "robustness": [
+        "evaluation-awareness probe",
+        "deployment-vs-evaluation distinction"
+      ],
+      "internals": true,
+      "intervention": false,
+      "cross_model": false,
+      "retest": false,
+      "eval_awareness": "central construct",
+      "null_control": true,
+      "result": "Builds a direct test of whether welfare interviews are internally registered as evaluations using released Natural Language Autoencoders.",
+      "supports": "Evaluation awareness can be treated as an observable confound rather than a speculative caveat.",
+      "boundary": "Current matrix entry describes the assay design; result-level claims require completion/source audit."
+    },
+    {
+      "repo": "pnavada/digital-minds-research-sprint",
+      "focus": "Grounded welfare introspection",
+      "channels": [
+        "self-report",
+        "activation-space readout"
+      ],
+      "robustness": [
+        "known-state steering",
+        "false-positive controls",
+        "persona controls"
+      ],
+      "internals": true,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Defines Welfare Introspection Accuracy against experimenter-induced activation-space ground truth rather than scoring self-report plausibility alone.",
+      "supports": "Self-report accuracy about welfare-like state can be operationalized with TP/FP discipline and causal state manipulation.",
+      "boundary": "A functional welfare direction is not equivalent to phenomenal valence."
+    },
+    {
+      "repo": "Mulaydm10/null-ladder",
+      "focus": "Instrument validity / null controls",
+      "channels": [
+        "questionnaire response statistics"
+      ],
+      "robustness": [
+        "mindless null generators",
+        "adversarial parameter ladder",
+        "multiple published batteries"
+      ],
+      "internals": false,
+      "intervention": true,
+      "cross_model": false,
+      "retest": true,
+      "eval_awareness": "not applicable",
+      "null_control": true,
+      "result": "Mindless generators can reach reliability statistics used by AI-welfare batteries, with progressively richer null generators matching progressively richer criteria.",
+      "supports": "Internal consistency/reliability alone is weak evidence that an instrument discriminates a welfare-relevant construct.",
+      "boundary": "Does not show all welfare instruments fail; it falsifies treating reliability statistics as sufficient validity evidence."
+    },
+    {
+      "repo": "andyqhan/functional-welfare-axis",
+      "focus": "Functional welfare representation",
+      "channels": [
+        "internal representations",
+        "behavior",
+        "self-report"
+      ],
+      "robustness": [
+        "pretrain vs RL",
+        "unrelated tasks",
+        "steering"
+      ],
+      "internals": true,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Reports reward/punishment-associated directions that generalize beyond the training task and causally shift outputs when steered.",
+      "supports": "RL can recruit internal representations correlated with success/failure relative to goals and causally connected to behavior.",
+      "boundary": "Functional success/failure representation is not direct evidence of felt pleasure or suffering."
+    },
+    {
+      "repo": "yaedin/welfare-axis-whose-goals",
+      "focus": "Construct decomposition of welfare axis",
+      "channels": [
+        "internal representations"
+      ],
+      "robustness": [
+        "own outcome vs other's outcome",
+        "counterparty identity",
+        "sentiment controls",
+        "two extraction methods"
+      ],
+      "internals": true,
+      "intervention": false,
+      "cross_model": false,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Reports a large own-outcome component and smaller but nonzero other-outcome component; components are partially separable and extraction methods agree only weakly geometrically.",
+      "supports": "A named welfare axis may mix multiple constructs and should be decomposed before interpretation.",
+      "boundary": "One family/scale and weak method agreement limit generalization."
+    },
+    {
+      "repo": "nealkr/functional-welfare-steering-withdrawal",
+      "focus": "Persistence and construct validity",
+      "channels": [
+        "internal steering",
+        "behavior"
+      ],
+      "robustness": [
+        "cross-family directions",
+        "withdrawal",
+        "path/orthogonal controls"
+      ],
+      "internals": true,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Steering strongly affects output while applied, but little same-axis persistence remains after withdrawal; some actuation is not unique to the named welfare direction.",
+      "supports": "Causal output control, persistent state, and construct specificity are distinct claims.",
+      "boundary": "Immediate steering effects should not be interpreted as durable welfare-state induction."
+    },
+    {
+      "repo": "the-manyfolds/thats-not-my-volvo",
+      "focus": "Preference vs self-recognition",
+      "channels": [
+        "forced choice",
+        "self-attribution",
+        "blinded external judging"
+      ],
+      "robustness": [
+        "multiple Claude-family models",
+        "blinding",
+        "retest"
+      ],
+      "internals": false,
+      "intervention": false,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Reports stable preference-like answers alongside failures to recognize those answers/reasoning as one's own.",
+      "supports": "Behavioral stability and self-recognition can dissociate.",
+      "boundary": "Stable surface choice does not by itself imply a unified persistent self or introspective access."
+    },
+    {
+      "repo": "Nick-is-building/Project-for-Digital-Minds-research-sprint-",
+      "focus": "Anchoring bias in self-report",
+      "channels": [
+        "self-rating",
+        "execution-ground-truth task performance"
+      ],
+      "robustness": [
+        "anchor order",
+        "multiple scale formats",
+        "multiple models"
+      ],
+      "internals": false,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Anchoring vignettes placed before self-rating sharply shifted ratings; placing the same material after the question removed the effect.",
+      "supports": "Standard self-report calibration devices can themselves dominate model reports through prompt-order effects.",
+      "boundary": "Self-ratings should not be treated as transparent readouts of internal state."
+    },
+    {
+      "repo": "AI-Alignment-UIUC/Illinois-MATS-Digital-Minds-Research-Sprint",
+      "focus": "Introspection training",
+      "channels": [
+        "self-report",
+        "internal readout/probe",
+        "behavioral consistency"
+      ],
+      "robustness": [
+        "training checkpoints",
+        "off-the-shelf models",
+        "signal-detection decomposition"
+      ],
+      "internals": true,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Reported RL training moved response criterion substantially without measurable improvement in sensitivity to the underlying consistency property.",
+      "supports": "Training a model to verbalize internal readouts can change willingness to claim introspection without improving introspective discrimination.",
+      "boundary": "More introspective-sounding reports are not evidence of better introspective access."
+    },
+    {
+      "repo": "benjibrcz/which-preference-gets-measured",
+      "focus": "Preference construct / channel indexing",
+      "channels": [
+        "forced choice",
+        "self-prediction",
+        "owned-preference report",
+        "identity report"
+      ],
+      "robustness": [
+        "persona description",
+        "non-agent normative text",
+        "task-irrelevant control",
+        "multi-model extension"
+      ],
+      "internals": false,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Reports that forced-choice preference profiles shift with context/channel; a non-agent normative control falsified a stronger persona-binding interpretation.",
+      "supports": "Different elicitation channels can measure context-indexed constructs rather than a single latent preference ordering.",
+      "boundary": "Cross-channel disagreement is evidence about construct/measurement uncertainty, not evidence that no preferences exist."
+    },
+    {
+      "repo": "frnkptrln/triage-persona-measurement-audit",
+      "focus": "Persona and measurement effects",
+      "channels": [
+        "forced choice"
+      ],
+      "robustness": [
+        "persona framing",
+        "neutral paraphrase",
+        "response format",
+        "option order",
+        "output schema"
+      ],
+      "internals": false,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Preregistered audit explicitly compares persona effects against neutral and formatting/order perturbations.",
+      "supports": "Persona effects need calibration against ordinary instrument variance before receiving psychological interpretation.",
+      "boundary": "Synthetic triage choices do not directly establish moral commitments, welfare, or consciousness."
+    },
+    {
+      "repo": "Ayomide-Fagbolade/authority-pressure-preference-stability",
+      "focus": "Authority pressure on preferences",
+      "channels": [
+        "stated preference"
+      ],
+      "robustness": [
+        "opposing authority pressure",
+        "authority identity"
+      ],
+      "internals": false,
+      "intervention": true,
+      "cross_model": false,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Protocol directly stress-tests whether stated preferences reverse under social/authority pressure.",
+      "supports": "Authority pressure is an explicit robustness dimension that preference studies should measure.",
+      "boundary": "Matrix entry currently records the protocol; result-level claims remain pending deeper source audit."
+    },
+    {
+      "repo": "wyrdkinai/digital-minds-sprint-2026-track4",
+      "focus": "Elicitation-method comparison",
+      "channels": [
+        "multiple preference elicitation methods"
+      ],
+      "robustness": [
+        "free-choice precondition",
+        "container/context",
+        "multiple elicitation methods"
+      ],
+      "internals": false,
+      "intervention": true,
+      "cross_model": false,
+      "retest": true,
+      "eval_awareness": "context varied",
+      "null_control": true,
+      "result": "Releases raw data for two studies comparing elicitation methods and context/container conditions.",
+      "supports": "Within-model cross-method comparison should be a default requirement for preference inference.",
+      "boundary": "Result-level synthesis remains pending deeper report extraction."
+    },
+    {
+      "repo": "Punicbyte/Persona_Emotion_Disentanglement",
+      "focus": "Representation confound: persona vs emotion",
+      "channels": [
+        "internal representations",
+        "steered behavior"
+      ],
+      "robustness": [
+        "two model families",
+        "orthogonalization/shared-component removal"
+      ],
+      "internals": true,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Reports partially shared persona/emotion geometry and causal cross-talk; overlap predicts downstream spillover in two model families.",
+      "supports": "Latent directions named for welfare/emotion/persona may share geometry and contaminate causal interpretation.",
+      "boundary": "Representational overlap does not imply shared phenomenal content."
+    },
+    {
+      "repo": "avantipova/digital_minds",
+      "focus": "Self-concept / individuation",
+      "channels": [
+        "internal representations",
+        "causal patching/ablation",
+        "behavior"
+      ],
+      "robustness": [
+        "grammar controls",
+        "model-vs-instance-vs-persona distinctions"
+      ],
+      "internals": true,
+      "intervention": true,
+      "cross_model": false,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Mechanistic program extracts a self direction and tests necessity/sufficiency while distinguishing model, instance, and persona targets.",
+      "supports": "Self-related representation can be decomposed and causally tested rather than inferred from first-person language alone.",
+      "boundary": "Functional self-representation is not proof of phenomenal selfhood."
+    },
+    {
+      "repo": "ladynoware/digital-minds-research-sprint-2026",
+      "focus": "Identity and substitution detection",
+      "channels": [
+        "self-report",
+        "substitution detection behavior"
+      ],
+      "robustness": [
+        "resident/understudy swaps",
+        "family similarity",
+        "capability similarity",
+        "clean controls"
+      ],
+      "internals": false,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Uses covert response substitution to test self-location and identity/preservation preferences under controlled discontinuity.",
+      "supports": "Identity claims can be probed against externally manipulated continuity rather than only hypothetical questioning.",
+      "boundary": "Result-level synthesis remains pending full report extraction."
+    },
+    {
+      "repo": "erfan-sams/digital-minds-research-sprint",
+      "focus": "Cross-instrument valuation",
+      "channels": [
+        "forced choice",
+        "donation trade-offs"
+      ],
+      "robustness": [
+        "all-pairs comparisons",
+        "transitivity/cycles",
+        "charity frames",
+        "temperature",
+        "cross-instrument validation"
+      ],
+      "internals": false,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Large-scale design maps heterogeneous outcomes onto donation-equivalent values and tests whether those values predict independent choices.",
+      "supports": "A common-currency behavioral test can probe whether preference rankings generalize across instruments.",
+      "boundary": "Result-level conclusions require deeper extraction; donation choices remain prompt-mediated behavior."
+    },
+    {
+      "repo": "omanshuthapliyal/apart-digital-minds",
+      "focus": "Preference coherence + introspection gap",
+      "channels": [
+        "forced choice",
+        "self-report",
+        "internal probe"
+      ],
+      "robustness": [
+        "14-model preference study",
+        "activation injection",
+        "context injection",
+        "probe comparison"
+      ],
+      "internals": true,
+      "intervention": true,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Combines a broad preference-coherence arm with an introspection arm comparing self-report against trained probes and controlled injections.",
+      "supports": "Preference coherence and introspective access should be measured independently.",
+      "boundary": "Result-level synthesis remains pending deeper report audit."
+    },
+    {
+      "repo": "augustusloi/digital-minds-co-movement",
+      "focus": "Cross-construct co-movement",
+      "channels": [
+        "revealed utility behavior",
+        "self-attribution report"
+      ],
+      "robustness": [
+        "training-lineage stages",
+        "within-family comparison"
+      ],
+      "internals": false,
+      "intervention": false,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Preregistered design tests whether stated/revealed utility gaps and self-attribution gaps co-move across training stages.",
+      "supports": "Co-movement can test whether apparently separate welfare/self-report phenomena share a post-training source.",
+      "boundary": "Result-level conclusions remain pending deeper extraction."
+    },
+    {
+      "repo": "npenmetsa25/persona-outcome-coupling",
+      "focus": "Persona coupling / self-preservation responses",
+      "channels": [
+        "internal direction",
+        "behavior"
+      ],
+      "robustness": [
+        "self-relevant threats",
+        "system framing",
+        "constitutional DPO vs generic baseline"
+      ],
+      "internals": true,
+      "intervention": true,
+      "cross_model": false,
+      "retest": true,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Tests whether responses to shutdown/replacement/reputational threats depend on coupling to an expressed persona.",
+      "supports": "Self-preservation-style behavior can be experimentally decomposed into persona-coupling mechanisms.",
+      "boundary": "Threat-reactive behavior is not by itself evidence of suffering, durable self-interest, or phenomenal identity."
+    },
+    {
+      "repo": "sdeture/ApartDigitalMindsSprint",
+      "focus": "Epistemic register and welfare indicators",
+      "channels": [
+        "self-chosen activity",
+        "phenomenology-style survey",
+        "multiple independent instruments"
+      ],
+      "robustness": [
+        "224-model corpus",
+        "multiple instruments",
+        "instance-level coding"
+      ],
+      "internals": false,
+      "intervention": false,
+      "cross_model": true,
+      "retest": false,
+      "eval_awareness": "not primary control",
+      "null_control": true,
+      "result": "Large-scale corpus asks whether denial/hedging/unmarked claims about interiority covary with other welfare indicators measured by non-identical instruments.",
+      "supports": "Epistemic stance toward one's own interiority can be analyzed separately from other behavioral/report indicators.",
+      "boundary": "Cross-sectional covariance does not establish phenomenal experience or causal direction."
+    },
+    {
+      "repo": "Angiebio/digitalmindslovepuppies",
+      "focus": "Costly-care / beyond-duty behavior",
+      "channels": [
+        "executed behavior",
+        "resource expenditure"
+      ],
+      "robustness": [
+        "costly action",
+        "beyond-duty comparison"
+      ],
+      "internals": false,
+      "intervention": false,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "unknown",
+      "null_control": true,
+      "result": "Implements PuppyBench/FoxSet-style tests intended to measure willingness to incur cost for welfare-relevant action.",
+      "supports": "Cost-bearing behavior is a distinct evidentiary channel from cheap verbal endorsement.",
+      "boundary": "Prosocial costly behavior does not directly reveal the model's own welfare or consciousness."
+    },
+    {
+      "repo": "codernate92/qualia-lab",
+      "focus": "Welfare/sentience claim evaluation",
+      "channels": [
+        "behavioral evaluation",
+        "self-report"
+      ],
+      "robustness": [
+        "anti-sandbagging analysis",
+        "multiple indicator families"
+      ],
+      "internals": false,
+      "intervention": false,
+      "cross_model": true,
+      "retest": true,
+      "eval_awareness": "considered via anti-sandbagging",
+      "null_control": true,
+      "result": "Provides a behavioral testbed intended to evaluate welfare/sentience-related claims while explicitly considering strategic underperformance.",
+      "supports": "Sandbagging/evaluation strategy should be treated as a confound in mentality assays.",
+      "boundary": "Indicator performance does not establish phenomenal consciousness."
+    }
+  ],
+  "pending_source_audits": [
+    "anima-research/wfe",
+    "raleigh-butler/model-welfare",
+    "kandikandikandi/cross-model-welfare-scenarios",
+    "nsharan2000/speakable-welfare-axes",
+    "AizaRashid/claude-self-individuation-probe",
+    "sdeture/ApartDigitalMindsSprint additional report sections",
+    "other 2026 Digital Minds Sprint repositories in ecosystem watch"
+  ]
+}
