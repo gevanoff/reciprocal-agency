@@ -193,3 +193,4 @@ Before a real-data run, the exact source dataset(s), adapter mapping, file hashe
 
 Any change after the first pilot run must be appended here with date, reason, and whether the change was informed by pilot results. The frozen thresholds above are not silently edited.
 
+\n## Deviation / clarification log\n\n**D1 — 2026-09-30, after synthetic pilot, terminology only.** The implementation initially labeled criteria whose mechanism is explicitly present in a null rung as "guaranteed by construction." For stochastic rungs that is too strong: finite sampling can still fail a frozen threshold even when the underlying mechanism is encoded. Reporting terminology is therefore changed to **structurally encoded**. No generator, threshold, metric, hypothesis, seed, or result value changes. Deterministic cases such as N1 seen-pair lookup and N2 scalar-utility transitivity remain effectively guaranteed, but the common field uses the weaker term for consistency.\n
