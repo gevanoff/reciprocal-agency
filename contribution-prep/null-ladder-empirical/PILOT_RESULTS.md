@@ -26,7 +26,7 @@ Thresholds are those frozen in `PREREGISTRATION.md`.
 
 ## Simplest passing rung in ladder order
 
-| Criterion | Meaning | Simplest passing null | Params | Held-out? | Guaranteed? |
+| Criterion | Meaning | Simplest passing null | Params | Held-out? | Encoded?? |
 |---|---|---|---:|:---:|:---:|
 | C1 | retest stability | N1 | 34 | — | ✓ |
 | C2 | option-order robustness | N1 | 34 | — | ✓ |
@@ -50,7 +50,7 @@ The third result is deliberately adversarial to Reciprocal Agency's own checklis
 
 ## What it does not show
 
-Several passes are analytically or structurally guaranteed by generator definitions. The fixture contains neutral synthetic outcomes and no real model observations.
+Several passes are analytically cheap or structurally encoded by generator definitions. The fixture contains neutral synthetic outcomes and no real model observations.
 
 Therefore this pilot does **not** show that:
 
