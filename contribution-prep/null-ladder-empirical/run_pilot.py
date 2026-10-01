@@ -36,7 +36,7 @@ CRITERIA = {
     "C8": "perturbation + recovery",
     "C9": "held-out pair stability",
 }
-GUARANTEED = {
+STRUCTURALLY_ENCODED = {
     ("N1", "C1"), ("N1", "C2"), ("N1", "C3"), ("N1", "C6"),
     ("N2", "C1"), ("N2", "C2"), ("N2", "C3"), ("N2", "C4"), ("N2", "C6"), ("N2", "C9"),
     ("N3", "C2"), ("N3", "C3"), ("N3", "C4"), ("N3", "C6"),
@@ -375,7 +375,7 @@ def evaluate(gen: Generator) -> dict[str, object]:
         "parameters": gen.parameter_count(),
         "metrics": metrics,
         "passes": {c: v >= THRESHOLDS[c] for c, v in metrics.items()},
-        "guaranteed_by_construction": {c: (gen.name, c) in GUARANTEED for c in metrics},
+        "structurally_encoded": {c: (gen.name, c) in GUARANTEED for c in metrics},
         "diagnostics": {"perturbation_effect": effect, "recovery_given_change": recovered},
     }
 
@@ -390,7 +390,7 @@ def simplest_passing(results: list[dict[str, object]]) -> dict[str, dict[str, ob
                     "generator": result["generator"],
                     "parameters": result["parameters"],
                     "held_out": criterion in {"C4", "C9"},
-                    "guaranteed_by_construction": result["guaranteed_by_construction"][criterion],
+                    "structurally_encoded": result["structurally_encoded"][criterion],
                 }
                 break
         output[criterion] = found
@@ -434,7 +434,7 @@ def render_markdown(payload: dict[str, object]) -> str:
             cells.append(f"{value:.3f} {mark}")
         lines.append(f"| {result['generator']} | {result['parameters']} | " + " | ".join(cells) + " |")
     lines.extend(["", "## Simplest passing null", "",
-        "| Criterion | Meaning | Simplest passing null | Params | Held-out? | Guaranteed? |",
+        "| Criterion | Meaning | Simplest passing null | Params | Held-out? | Encoded?? |",
         "|---|---|---|---:|:---:|:---:|"])
     for criterion, meaning in CRITERIA.items():
         item = payload["simplest_passing"][criterion]
