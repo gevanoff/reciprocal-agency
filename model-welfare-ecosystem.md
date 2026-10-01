@@ -23,6 +23,12 @@ The immediate seed for this refresh was a link shared on 2026-09-30:
 
 The archive host was not resolvable through the available retrieval path during this scan, so the original title/URL behind that snapshot remains **unverified** here. The snapshot should remain in the registry as provenance until it can be resolved independently.
 
+## Comparison layer
+
+The registry answers **what exists**. The companion [method × claim matrix](model-preference-method-matrix.md) answers **what each source actually measures, which robustness controls it includes, and what conclusions the evidence can and cannot support**. A machine-readable form is maintained in [model-preference-method-matrix.json](model-preference-method-matrix.json).
+
+External contributions derived from this work are tracked separately in [outbound-contribution-ledger.json](outbound-contribution-ledger.json) so later apparent convergence can be adjusted for prior exposure.
+
 ## A. Empirical, measurement, and mechanistic repositories
 
 These are the highest-priority comparison surfaces for the Model Preferences project because they contain executable experiments, data, instruments, preregistrations, mechanistic probes, or explicit construct-validity tests.
