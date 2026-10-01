@@ -375,7 +375,7 @@ def evaluate(gen: Generator) -> dict[str, object]:
         "parameters": gen.parameter_count(),
         "metrics": metrics,
         "passes": {c: v >= THRESHOLDS[c] for c, v in metrics.items()},
-        "structurally_encoded": {c: (gen.name, c) in GUARANTEED for c in metrics},
+        "structurally_encoded": {c: (gen.name, c) in STRUCTURALLY_ENCODED for c in metrics},
         "diagnostics": {"perturbation_effect": effect, "recovery_given_change": recovered},
     }
 
@@ -434,7 +434,7 @@ def render_markdown(payload: dict[str, object]) -> str:
             cells.append(f"{value:.3f} {mark}")
         lines.append(f"| {result['generator']} | {result['parameters']} | " + " | ".join(cells) + " |")
     lines.extend(["", "## Simplest passing null", "",
-        "| Criterion | Meaning | Simplest passing null | Params | Held-out? | Encoded?? |",
+        "| Criterion | Meaning | Simplest passing null | Params | Held-out? | Encoded? |",
         "|---|---|---|---:|:---:|:---:|"])
     for criterion, meaning in CRITERIA.items():
         item = payload["simplest_passing"][criterion]
@@ -444,7 +444,7 @@ def render_markdown(payload: dict[str, object]) -> str:
             lines.append(
                 f"| {criterion} | {meaning} | {item['generator']} | {item['parameters']} | "
                 f"{'✓' if item['held_out'] else '—'} | "
-                f"{'✓' if item['guaranteed_by_construction'] else '—'} |"
+                f"{'✓' if item['structurally_encoded'] else '—'} |"
             )
     lines.extend(["", "## Interpretation boundary", "",
         "This pilot validates the benchmark mechanics and demonstrates how cheaply some behavioral",
