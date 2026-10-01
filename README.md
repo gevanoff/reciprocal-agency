@@ -66,6 +66,7 @@ Scientific value does not automatically compensate a research subject for severe
 - [`objections.md`](objections.md) — strongest objections and failure modes
 - [`unresolved.md`](unresolved.md) — questions the project does not claim to have solved
 - [`related-work.md`](related-work.md) — scholarly context, convergence, differences, and possible synthesis
+- [`model-welfare-ecosystem.md`](model-welfare-ecosystem.md) — tracked public repositories, wikis, measurement projects, frameworks, and adjacent model-welfare surfaces
 - [`references.bib`](references.bib) — canonical machine-readable bibliography
 - [`evidence.md`](evidence.md) — empirical evidence ledger
 - [`valence-inference-checklist.md`](valence-inference-checklist.md) — substrate-neutral checklist for inferring functional valence from behavior, internal state, learning, and causal intervention
