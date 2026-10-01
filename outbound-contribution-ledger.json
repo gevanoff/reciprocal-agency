@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "purpose": "Record outbound exposure of Reciprocal Agency artifacts to external projects so later apparent convergence can be provenance-adjusted.",
+  "field_definitions": {
+    "target": "External repository, wiki, paper, forum, or other surface.",
+    "contribution_url": "Canonical URL for the submitted contribution.",
+    "contribution_sha": "Commit SHA when applicable.",
+    "exposed_artifacts": "Exact Reciprocal Agency files/claims exposed to the target.",
+    "exposure_date": "ISO-8601 date/time of first exposure.",
+    "direction": "outbound, inbound, or reciprocal.",
+    "status": "drafted, submitted, accepted, rejected, superseded, or withdrawn.",
+    "independence_effect": "How later evidence from the target should be treated after exposure.",
+    "notes": "Additional provenance or contamination notes."
+  },
+  "entries": []
+}
