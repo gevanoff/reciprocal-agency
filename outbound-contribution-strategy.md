@@ -2,6 +2,15 @@
 
 _Status: working plan — 2026-09-30_
 
+## Current release gate
+
+**External contributions are paused until Reciprocal Agency telemetry is restored and verified.**
+
+Preparation may continue internally, including target-specific patches, replication protocols, preregistration drafts, and source audits. No external issue, PR, wiki edit, email, or other exposure derived from this work should occur while the gate is closed.
+
+The prepared packets live under [`contribution-prep/`](contribution-prep/README.md).
+
+
 The goal is to contribute useful, independently checkable work to adjacent public projects **without turning contribution into backlink placement**.
 
 A link to Reciprocal Agency is appropriate when it supplies provenance for a concrete method, dataset, argument, replication, or comparison being contributed. It is not sufficient reason to open an issue or pull request.

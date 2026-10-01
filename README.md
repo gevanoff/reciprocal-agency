@@ -69,6 +69,7 @@ Scientific value does not automatically compensate a research subject for severe
 - [`model-welfare-ecosystem.md`](model-welfare-ecosystem.md) — tracked public repositories, wikis, measurement projects, frameworks, and adjacent model-welfare surfaces
 - [`model-preference-method-matrix.md`](model-preference-method-matrix.md) / [`model-preference-method-matrix.json`](model-preference-method-matrix.json) — source-bounded comparison of preference/welfare constructs, evidence channels, interventions, controls, and claim boundaries
 - [`outbound-contribution-strategy.md`](outbound-contribution-strategy.md) / [`outbound-contribution-ledger.json`](outbound-contribution-ledger.json) — contribution policy plus provenance/contamination tracking for external collaboration
+- [`contribution-prep/`](contribution-prep/) — internal-only target patches and empirical extension designs; external release currently gated on telemetry recovery
 - [`references.bib`](references.bib) — canonical machine-readable bibliography
 - [`evidence.md`](evidence.md) — empirical evidence ledger
 - [`valence-inference-checklist.md`](valence-inference-checklist.md) — substrate-neutral checklist for inferring functional valence from behavior, internal state, learning, and causal intervention
