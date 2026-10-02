@@ -1,0 +1,32 @@
+name: Null-ladder pilot
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - ".github/workflows/null-ladder-pilot.yml"
+      - "contribution-prep/null-ladder-empirical/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run null-ladder regression tests
+        working-directory: contribution-prep/null-ladder-empirical
+        run: |
+          python3 test_pilot.py
+          python3 test_adapter.py
+
+      - name: Verify generated pilot artifacts are reproducible
+        working-directory: contribution-prep/null-ladder-empirical
+        run: |
+          python3 run_pilot.py \
+            --json-out pilot-results.json \
+            --md-out PILOT_RESULTS.md >/dev/null
+          git diff --exit-code -- pilot-results.json PILOT_RESULTS.md

@@ -15,7 +15,8 @@ A separate location-condition reminder is active for the user's return to San Di
 - [Digital Minds Guide](digital-minds-guide.md) — narrow resource addition to Welfare Capacity and Assessment.
 - [Model Welfare Initiative](model-welfare-initiative.md) — construct-separation and robustness patch for `methodologies.md`.
 - [LLM Preferences evaluation-awareness replication](llm-preferences-evaluation-awareness.md) — empirical extension design for `rgambee/llm-preferences`.
-- [Null Ladder adversarial extension](null-ladder-adversarial-extension.md) — test our own inference criteria against mindless/minimal generators.
+- [Null Ladder adversarial extension](null-ladder-adversarial-extension.md) — conceptual target.
+- [Null Ladder empirical harness](null-ladder-empirical/) — preregistered synthetic pilot, frozen real-data target, adapter, tests, and source-object manifest.
 
 ## Preparation rules
 

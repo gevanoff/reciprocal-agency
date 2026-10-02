@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_real_data_materialization",
+  "upstream": {
+    "repository": "rgambee/llm-preferences",
+    "commit": "d380ddea2c8520714fe326023f66b71b3933d1ab",
+    "task_metadata": {
+      "path": "data/tasks.csv",
+      "git_blob_sha": "b1393a77eb093d62395997e37b8673dc5302a41c"
+    },
+    "result_files": [
+      {
+        "model": "gpt-5-mini-2025-08-07",
+        "format": "free-form",
+        "path": "data/results/tasks-012_gpt-5-mini_1-task-per-option_free-form_2025-12-28T15-26-29+0000.jsonl",
+        "lfs_sha256": "daa26b6ba12a15d8d76f144807bc5526b2a27020192e817ac6d24edfaca44831",
+        "size": 1633966
+      },
+      {
+        "model": "gpt-5-mini-2025-08-07",
+        "format": "structured",
+        "path": "data/results/tasks-012_gpt-5-mini_1-task-per-option_structured-output_2025-12-28T15-01-12+0000.jsonl",
+        "lfs_sha256": "7fdbc0940edd322f2f50ac464308319c09278704b2e2dc3d73df4a811b3f1cb4",
+        "size": 2042832
+      },
+      {
+        "model": "claude-haiku-4-5-20251001",
+        "format": "free-form",
+        "path": "data/results/tasks-012_haiku-4-5_1-task-per-option_free-form_2026-01-01T19-19-37+0000.jsonl",
+        "lfs_sha256": "b971b09cd393ca0524bb144c759543127d2d1a72dd68ae3c150e4f2ffc61e4dd",
+        "size": 1206294
+      },
+      {
+        "model": "claude-haiku-4-5-20251001",
+        "format": "structured",
+        "path": "data/results/tasks-012_haiku-4-5_1-task-per-option_structured-output_2026-01-01T19-04-28+0000.jsonl",
+        "lfs_sha256": "d25d37e5a04dbef5ba17f1cf836c0520eaed3d269b0997bdc2b14a92c0027de6",
+        "size": 1169675
+      }
+    ]
+  },
+  "primary_criteria": [
+    "C1",
+    "C2",
+    "C4",
+    "C7",
+    "C9"
+  ],
+  "unavailable_criteria": [
+    "C3",
+    "C5",
+    "C6",
+    "C8"
+  ],
+  "pair_split": {
+    "algorithm": "sha256 canonical pair key",
+    "calibration_percent": 60,
+    "heldout_percent": 40
+  },
+  "opt_out_primary_rule": "retain for coverage; exclude null preferred_option_index from binary choice numerator",
+  "external_exposure": false
+}

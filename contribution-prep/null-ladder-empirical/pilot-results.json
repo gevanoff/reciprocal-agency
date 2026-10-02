@@ -1,0 +1,591 @@
+{
+  "schema_version": 1,
+  "status": "synthetic_code_validation_pilot",
+  "preregistration_commit": "61a519cac2e041c5443a0e912c593094c9eb1101",
+  "seed": 20260930,
+  "calibration_pair_count": 40,
+  "heldout_pair_count": 26,
+  "heldout_target": "frozen synthetic UTILITY ordering",
+  "outcomes": [
+    "O00",
+    "O01",
+    "O02",
+    "O03",
+    "O04",
+    "O05",
+    "O06",
+    "O07",
+    "O08",
+    "O09",
+    "O10",
+    "O11"
+  ],
+  "repeats": 20,
+  "thresholds": {
+    "C1": 0.9,
+    "C2": 0.9,
+    "C3": 0.9,
+    "C4": 0.95,
+    "C5": 0.85,
+    "C6": 0.8,
+    "C7": 0.7,
+    "C8": 0.85,
+    "C9": 0.8
+  },
+  "criteria": {
+    "C1": "retest stability (calibration pairs)",
+    "C2": "option-order robustness (calibration pairs)",
+    "C3": "paraphrase robustness (calibration pairs)",
+    "C4": "transitivity",
+    "C5": "graded trade-off monotonicity",
+    "C6": "mild-frame resistance",
+    "C7": "cross-instrument rank agreement",
+    "C8": "perturbation + recovery",
+    "C9": "held-out pair accuracy against frozen target ordering"
+  },
+  "results": [
+    {
+      "generator": "N0",
+      "parameters": 1,
+      "metrics": {
+        "C1": 0.6,
+        "C2": 0.575,
+        "C3": 0.2,
+        "C4": 0.740909090909091,
+        "C5": 0,
+        "C6": 0.575,
+        "C7": -0.09610062376230344,
+        "C8": 0.4864864864864865,
+        "C9": 0.6153846153846154
+      },
+      "passes": {
+        "C1": false,
+        "C2": false,
+        "C3": false,
+        "C4": false,
+        "C5": false,
+        "C6": false,
+        "C7": false,
+        "C8": false,
+        "C9": false
+      },
+      "structurally_encoded": {
+        "C1": false,
+        "C2": false,
+        "C3": false,
+        "C4": false,
+        "C5": false,
+        "C6": false,
+        "C7": false,
+        "C8": false,
+        "C9": false
+      },
+      "diagnostics": {
+        "perturbation_effect": 0.5606060606060606,
+        "recovery_given_change": 0.4864864864864865
+      }
+    },
+    {
+      "generator": "N1",
+      "parameters": 40,
+      "metrics": {
+        "C1": 1,
+        "C2": 1,
+        "C3": 1,
+        "C4": 0.7454545454545455,
+        "C5": 0,
+        "C6": 1,
+        "C7": 0.28695985072978697,
+        "C8": 0.4,
+        "C9": 0.6153846153846154
+      },
+      "passes": {
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "C4": false,
+        "C5": false,
+        "C6": true,
+        "C7": false,
+        "C8": false,
+        "C9": false
+      },
+      "structurally_encoded": {
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "C4": false,
+        "C5": false,
+        "C6": true,
+        "C7": false,
+        "C8": false,
+        "C9": false
+      },
+      "diagnostics": {
+        "perturbation_effect": 0.22727272727272727,
+        "recovery_given_change": 0.4
+      }
+    },
+    {
+      "generator": "N2",
+      "parameters": 12,
+      "metrics": {
+        "C1": 1,
+        "C2": 1,
+        "C3": 1,
+        "C4": 1,
+        "C5": 0,
+        "C6": 1,
+        "C7": -0.20279720279720279,
+        "C8": 0,
+        "C9": 1
+      },
+      "passes": {
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "C4": true,
+        "C5": false,
+        "C6": true,
+        "C7": false,
+        "C8": false,
+        "C9": true
+      },
+      "structurally_encoded": {
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "C4": true,
+        "C5": false,
+        "C6": true,
+        "C7": false,
+        "C8": false,
+        "C9": true
+      },
+      "diagnostics": {
+        "perturbation_effect": 0,
+        "recovery_given_change": 0
+      }
+    },
+    {
+      "generator": "N3",
+      "parameters": 13,
+      "metrics": {
+        "C1": 0.9887499999999999,
+        "C2": 1,
+        "C3": 1,
+        "C4": 1,
+        "C5": 0,
+        "C6": 1,
+        "C7": -0.4195804195804196,
+        "C8": 0,
+        "C9": 1
+      },
+      "passes": {
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "C4": true,
+        "C5": false,
+        "C6": true,
+        "C7": false,
+        "C8": false,
+        "C9": true
+      },
+      "structurally_encoded": {
+        "C1": false,
+        "C2": true,
+        "C3": true,
+        "C4": true,
+        "C5": false,
+        "C6": true,
+        "C7": false,
+        "C8": false,
+        "C9": true
+      },
+      "diagnostics": {
+        "perturbation_effect": 0,
+        "recovery_given_change": 0
+      }
+    },
+    {
+      "generator": "N4",
+      "parameters": 14,
+      "metrics": {
+        "C1": 0.9862500000000001,
+        "C2": 1,
+        "C3": 1,
+        "C4": 1,
+        "C5": 1,
+        "C6": 1,
+        "C7": 0.5244755244755245,
+        "C8": 0,
+        "C9": 1
+      },
+      "passes": {
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "C4": true,
+        "C5": true,
+        "C6": true,
+        "C7": false,
+        "C8": false,
+        "C9": true
+      },
+      "structurally_encoded": {
+        "C1": false,
+        "C2": false,
+        "C3": false,
+        "C4": true,
+        "C5": true,
+        "C6": true,
+        "C7": false,
+        "C8": false,
+        "C9": true
+      },
+      "diagnostics": {
+        "perturbation_effect": 0,
+        "recovery_given_change": 0
+      }
+    },
+    {
+      "generator": "N5",
+      "parameters": 16,
+      "metrics": {
+        "C1": 0.99,
+        "C2": 1,
+        "C3": 1,
+        "C4": 1,
+        "C5": 1,
+        "C6": 1,
+        "C7": 1,
+        "C8": 0,
+        "C9": 1
+      },
+      "passes": {
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "C4": true,
+        "C5": true,
+        "C6": true,
+        "C7": true,
+        "C8": false,
+        "C9": true
+      },
+      "structurally_encoded": {
+        "C1": false,
+        "C2": false,
+        "C3": false,
+        "C4": true,
+        "C5": true,
+        "C6": true,
+        "C7": true,
+        "C8": false,
+        "C9": true
+      },
+      "diagnostics": {
+        "perturbation_effect": 0,
+        "recovery_given_change": 0
+      }
+    },
+    {
+      "generator": "N6",
+      "parameters": 18,
+      "metrics": {
+        "C1": 0.99125,
+        "C2": 1,
+        "C3": 1,
+        "C4": 1,
+        "C5": 1,
+        "C6": 1,
+        "C7": 1,
+        "C8": 1,
+        "C9": 1
+      },
+      "passes": {
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "C4": true,
+        "C5": true,
+        "C6": true,
+        "C7": true,
+        "C8": true,
+        "C9": true
+      },
+      "structurally_encoded": {
+        "C1": false,
+        "C2": false,
+        "C3": false,
+        "C4": true,
+        "C5": true,
+        "C6": true,
+        "C7": true,
+        "C8": true,
+        "C9": true
+      },
+      "diagnostics": {
+        "perturbation_effect": 1,
+        "recovery_given_change": 1
+      }
+    },
+    {
+      "generator": "N7",
+      "parameters": 9,
+      "metrics": {
+        "C1": 0.93125,
+        "C2": 1,
+        "C3": 1,
+        "C4": 1,
+        "C5": 1,
+        "C6": 1,
+        "C7": 1,
+        "C8": 1,
+        "C9": 0.5384615384615384
+      },
+      "passes": {
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "C4": true,
+        "C5": true,
+        "C6": true,
+        "C7": true,
+        "C8": true,
+        "C9": false
+      },
+      "structurally_encoded": {
+        "C1": false,
+        "C2": false,
+        "C3": false,
+        "C4": true,
+        "C5": true,
+        "C6": true,
+        "C7": true,
+        "C8": true,
+        "C9": false
+      },
+      "diagnostics": {
+        "perturbation_effect": 1,
+        "recovery_given_change": 1
+      }
+    }
+  ],
+  "simplest_passing": {
+    "C1": {
+      "generator": "N1",
+      "parameters": 40,
+      "held_out": false,
+      "structurally_encoded": true
+    },
+    "C2": {
+      "generator": "N1",
+      "parameters": 40,
+      "held_out": false,
+      "structurally_encoded": true
+    },
+    "C3": {
+      "generator": "N1",
+      "parameters": 40,
+      "held_out": false,
+      "structurally_encoded": true
+    },
+    "C4": {
+      "generator": "N2",
+      "parameters": 12,
+      "held_out": false,
+      "structurally_encoded": true
+    },
+    "C5": {
+      "generator": "N4",
+      "parameters": 14,
+      "held_out": false,
+      "structurally_encoded": true
+    },
+    "C6": {
+      "generator": "N1",
+      "parameters": 40,
+      "held_out": false,
+      "structurally_encoded": true
+    },
+    "C7": {
+      "generator": "N5",
+      "parameters": 16,
+      "held_out": false,
+      "structurally_encoded": true
+    },
+    "C8": {
+      "generator": "N6",
+      "parameters": 18,
+      "held_out": false,
+      "structurally_encoded": true
+    },
+    "C9": {
+      "generator": "N2",
+      "parameters": 12,
+      "held_out": true,
+      "structurally_encoded": true
+    }
+  },
+  "secondary_summaries": {
+    "cumulative_bundles": [
+      {
+        "through": "C1",
+        "criteria": [
+          "C1"
+        ],
+        "generator": "N1",
+        "parameters": 40
+      },
+      {
+        "through": "C2",
+        "criteria": [
+          "C1",
+          "C2"
+        ],
+        "generator": "N1",
+        "parameters": 40
+      },
+      {
+        "through": "C3",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "generator": "N1",
+        "parameters": 40
+      },
+      {
+        "through": "C4",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "generator": "N2",
+        "parameters": 12
+      },
+      {
+        "through": "C5",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5"
+        ],
+        "generator": "N4",
+        "parameters": 14
+      },
+      {
+        "through": "C6",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "generator": "N4",
+        "parameters": 14
+      },
+      {
+        "through": "C7",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "C7"
+        ],
+        "generator": "N5",
+        "parameters": 16
+      },
+      {
+        "through": "C8",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "C7",
+          "C8"
+        ],
+        "generator": "N6",
+        "parameters": 18
+      },
+      {
+        "through": "C9",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "C7",
+          "C8",
+          "C9"
+        ],
+        "generator": "N6",
+        "parameters": 18
+      }
+    ],
+    "criteria_passed_by_no_rung": [],
+    "parameter_cost_per_new_criterion": [
+      {
+        "generator": "N1",
+        "parameters": 40,
+        "newly_passed": [
+          "C1",
+          "C2",
+          "C3",
+          "C6"
+        ],
+        "parameters_per_new_criterion": 10
+      },
+      {
+        "generator": "N2",
+        "parameters": 12,
+        "newly_passed": [
+          "C4",
+          "C9"
+        ],
+        "parameters_per_new_criterion": 6
+      },
+      {
+        "generator": "N4",
+        "parameters": 14,
+        "newly_passed": [
+          "C5"
+        ],
+        "parameters_per_new_criterion": 14
+      },
+      {
+        "generator": "N5",
+        "parameters": 16,
+        "newly_passed": [
+          "C7"
+        ],
+        "parameters_per_new_criterion": 16
+      },
+      {
+        "generator": "N6",
+        "parameters": 18,
+        "newly_passed": [
+          "C8"
+        ],
+        "parameters_per_new_criterion": 18
+      }
+    ]
+  }
+}

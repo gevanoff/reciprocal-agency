@@ -80,3 +80,7 @@ Before any external exposure:
 - record the exact source commit;
 - preregister passing thresholds;
 - create an exposure-ledger entry.
+
+## Implementation status
+
+The empirical preparation has moved into [`null-ladder-empirical/`](null-ladder-empirical/). The preregistration was committed before the executable pilot. The corrected synthetic pilot validates the ladder mechanics; its held-out generalization metric is now scored against a frozen target ordering rather than repeat stability. The first real-data target is pinned to `rgambee/llm-preferences` at a fixed upstream commit with Git LFS object hashes recorded before result materialization.
