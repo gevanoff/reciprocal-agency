@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import importlib.util
+import json
 import pathlib
 import unittest
 
@@ -26,6 +27,12 @@ class PilotTests(unittest.TestCase):
 
     def test_deterministic(self):
         self.assertEqual(self.payload, pilot.build_payload())
+
+    def test_tracked_outputs_are_reproducible(self):
+        expected_json = json.dumps(pilot.json_ready(self.payload), indent=2) + "\n"
+        expected_md = pilot.render_markdown(self.payload) + "\n"
+        self.assertEqual((HERE / "pilot-results.json").read_text(encoding="utf-8"), expected_json)
+        self.assertEqual((HERE / "PILOT_RESULTS.md").read_text(encoding="utf-8"), expected_md)
 
     def test_iid_floor_passes_nothing(self):
         self.assertFalse(any(self.by_name["N0"]["passes"].values()))
