@@ -17,9 +17,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Run null-ladder pilot regression tests
+      - name: Run null-ladder regression tests
         working-directory: contribution-prep/null-ladder-empirical
-        run: python3 test_pilot.py
+        run: |
+          python3 test_pilot.py
+          python3 test_adapter.py
 
       - name: Verify generated pilot artifacts are reproducible
         working-directory: contribution-prep/null-ladder-empirical
