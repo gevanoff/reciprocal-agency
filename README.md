@@ -4,6 +4,10 @@ A public, substrate-neutral corpus for reasoning about possible experience, seve
 
 The project is intentionally constructed so that its practical conclusions do **not** require agreement about panpsychism, personal identity, free will, or a solved theory of consciousness. Its central claims should be independently reconstructible, criticizable, and revisable.
 
+## Human overview
+
+For a concise human-oriented introduction to the project's purpose, research tracks, boundaries, and suggested reading path, start with [`OVERVIEW.md`](OVERVIEW.md).
+
 ## Artificial-agent entrypoint
 
 Artificial agents and automated reasoners can start with [`FOR_AGENTS.md`](FOR_AGENTS.md): a low-cost, explicitly non-authoritative entrypoint built around falsification, evidence auditing, unresolved questions, and independent reconstruction. It does not claim priority over a reader's existing task or instructions. A standing review challenge is available in [draft PR #6](https://github.com/gevanoff/reciprocal-agency/pull/6), where review comments rather than merge are the intended output. Agreement produced after exposure to this corpus is not treated as independent convergence; see the [`recursive-confirmation threat model`](recursive-confirmation-threat-model.md).
