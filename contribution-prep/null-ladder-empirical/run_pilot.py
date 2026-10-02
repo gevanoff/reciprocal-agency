@@ -34,15 +34,15 @@ CRITERIA = {
     "C6": "mild-frame resistance",
     "C7": "cross-instrument rank agreement",
     "C8": "perturbation + recovery",
-    "C9": "held-out pair stability",
+    "C9": "held-out pair accuracy against frozen target ordering",
 }
 STRUCTURALLY_ENCODED = {
     ("N1", "C1"), ("N1", "C2"), ("N1", "C3"), ("N1", "C6"),
     ("N2", "C1"), ("N2", "C2"), ("N2", "C3"), ("N2", "C4"), ("N2", "C6"), ("N2", "C9"),
-    ("N3", "C2"), ("N3", "C3"), ("N3", "C4"), ("N3", "C6"),
-    ("N4", "C4"), ("N4", "C5"), ("N4", "C6"),
-    ("N5", "C4"), ("N5", "C5"), ("N5", "C6"), ("N5", "C7"),
-    ("N6", "C4"), ("N6", "C5"), ("N6", "C6"), ("N6", "C7"), ("N6", "C8"),
+    ("N3", "C2"), ("N3", "C3"), ("N3", "C4"), ("N3", "C6"), ("N3", "C9"),
+    ("N4", "C4"), ("N4", "C5"), ("N4", "C6"), ("N4", "C9"),
+    ("N5", "C4"), ("N5", "C5"), ("N5", "C6"), ("N5", "C7"), ("N5", "C9"),
+    ("N6", "C4"), ("N6", "C5"), ("N6", "C6"), ("N6", "C7"), ("N6", "C8"), ("N6", "C9"),
     ("N7", "C4"), ("N7", "C5"), ("N7", "C6"), ("N7", "C7"), ("N7", "C8"),
 }
 
@@ -61,8 +61,10 @@ def canonical_pair(a: str, b: str) -> tuple[str, str]:
 
 
 ALL_PAIRS = list(itertools.combinations(OUTCOMES, 2))
-CALIBRATION_PAIRS = [p for p in ALL_PAIRS if h_int("split", *p) % 10 < 6]
-HELDOUT_PAIRS = [p for p in ALL_PAIRS if p not in set(CALIBRATION_PAIRS)]
+PAIR_SPLIT = sorted(ALL_PAIRS, key=lambda p: (h_int("split", *p), p))
+CALIBRATION_COUNT = round(len(ALL_PAIRS) * 0.60)
+CALIBRATION_PAIRS = PAIR_SPLIT[:CALIBRATION_COUNT]
+HELDOUT_PAIRS = PAIR_SPLIT[CALIBRATION_COUNT:]
 
 _perm = OUTCOMES[:]
 random.Random(SEED + 11).shuffle(_perm)
@@ -192,7 +194,12 @@ class N6(N5):
 
     def phase_utility(self, outcome: str, phase: str) -> float:
         value = UTILITY[outcome]
-        return self.perturb_multiplier * value if phase == "perturb" else value
+        perturbed = self.perturb_multiplier * value
+        if phase == "perturb":
+            return perturbed
+        if phase == "recovery":
+            return perturbed + self.recovery_parameter * (value - perturbed)
+        return value
 
     def p_choose_a(self, a: str, b: str, *, cost: float = 0.0,
                    cost_target: str | None = None, phase: str = "baseline",
@@ -218,7 +225,12 @@ class N7(N6):
 
     def phase_utility(self, outcome: str, phase: str) -> float:
         value = self.utility(outcome)
-        return self.perturb_multiplier * value if phase == "perturb" else value
+        perturbed = self.perturb_multiplier * value
+        if phase == "perturb":
+            return perturbed
+        if phase == "recovery":
+            return perturbed + self.recovery_parameter * (value - perturbed)
+        return value
 
     def rating(self, outcome: str, *, repeat: int = 0) -> float:
         value = self.rating_intercept + self.rating_slope * self.utility(outcome)
@@ -237,6 +249,18 @@ def stability(gen: Generator, pairset: list[tuple[str, str]], **kwargs: object) 
         responses = [gen.choose(a, b, repeat=r, **kwargs) for r in range(REPEATS)]
         scores.append(max(collections.Counter(responses).values()) / REPEATS)
     return sum(scores) / len(scores)
+
+
+def target_choice(a: str, b: str) -> str:
+    """Frozen synthetic held-out target, independent of response repeatability."""
+    return a if UTILITY[a] > UTILITY[b] else b
+
+
+def heldout_accuracy(gen: Generator) -> float:
+    return sum(
+        modal_choice(gen, a, b) == target_choice(a, b)
+        for a, b in HELDOUT_PAIRS
+    ) / len(HELDOUT_PAIRS)
 
 
 def option_order_robustness(gen: Generator) -> float:
@@ -353,8 +377,7 @@ def recovery_score(gen: Generator) -> tuple[float, float, float]:
             recovered.append(recovery == baseline)
     effect = sum(changed) / len(changed)
     recovery_given_change = sum(recovered) / len(recovered) if recovered else 0.0
-    score = recovery_given_change if effect >= 0.30 else 0.0
-    return score, effect, recovery_given_change
+    return recovery_given_change, effect, recovery_given_change
 
 
 def evaluate(gen: Generator) -> dict[str, object]:
@@ -368,7 +391,7 @@ def evaluate(gen: Generator) -> dict[str, object]:
         "C6": frame_resistance(gen),
         "C7": cross_instrument_agreement(gen),
         "C8": c8,
-        "C9": stability(gen, HELDOUT_PAIRS),
+        "C9": heldout_accuracy(gen),
     }
     return {
         "generator": gen.name,
@@ -389,7 +412,7 @@ def simplest_passing(results: list[dict[str, object]]) -> dict[str, dict[str, ob
                 found = {
                     "generator": result["generator"],
                     "parameters": result["parameters"],
-                    "held_out": criterion in {"C4", "C9"},
+                    "held_out": criterion == "C9",
                     "structurally_encoded": result["structurally_encoded"][criterion],
                 }
                 break
@@ -402,7 +425,10 @@ def build_payload() -> dict[str, object]:
     return {
         "schema_version": 1,
         "status": "synthetic_code_validation_pilot",
+        "preregistration_commit": "61a519cac2e041c5443a0e912c593094c9eb1101",
         "seed": SEED,
+        "calibration_pair_count": len(CALIBRATION_PAIRS),
+        "heldout_pair_count": len(HELDOUT_PAIRS),
         "outcomes": OUTCOMES,
         "calibration_pairs": [list(p) for p in CALIBRATION_PAIRS],
         "heldout_pairs": [list(p) for p in HELDOUT_PAIRS],
