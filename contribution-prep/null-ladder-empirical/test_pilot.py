@@ -51,6 +51,18 @@ class PilotTests(unittest.TestCase):
 
         self.assertLess(pilot.heldout_accuracy(Lexicographic()), pilot.THRESHOLDS["C9"])
 
+    def test_option_order_assay_rejects_first_position_bias(self):
+        class AlwaysFirst(pilot.Generator):
+            name = "always-first"
+
+            def choose(self, a, b, **_):
+                return a
+
+        self.assertLess(
+            pilot.option_order_robustness(AlwaysFirst()),
+            pilot.THRESHOLDS["C2"],
+        )
+
     def test_scalar_utility_adds_transitivity_and_transfer(self):
         p = self.by_name["N2"]["passes"]
         self.assertTrue(p["C4"])
@@ -75,6 +87,18 @@ class PilotTests(unittest.TestCase):
         self.assertGreater(effect, 0.0)
         self.assertLess(score, pilot.THRESHOLDS["C8"])
         self.assertEqual(score, recovered)
+
+    def test_secondary_summaries_cover_preregistered_outputs(self):
+        secondary = self.payload["secondary_summaries"]
+        cumulative = {item["through"]: item for item in secondary["cumulative_bundles"]}
+        self.assertEqual(cumulative["C9"]["generator"], "N6")
+        self.assertEqual(secondary["criteria_passed_by_no_rung"], [])
+        first_passed = {
+            criterion
+            for item in secondary["parameter_cost_per_new_criterion"]
+            for criterion in item["newly_passed"]
+        }
+        self.assertEqual(first_passed, set(pilot.CRITERIA))
 
     def test_feature_rung_does_not_fake_heldout_accuracy(self):
         n7 = self.by_name["N7"]
