@@ -22,7 +22,7 @@ All notable substantive changes to the argument corpus should be recorded here. 
 
 ### Changed
 
-- corrected the null-ladder pilot after review: exact deterministic 60/40 pair allocation, held-out C9 accuracy against a frozen target ordering, active N6 recovery dynamics, removal of an undocumented C8 effect gate, accurate C4 held-out labeling, and canonical reproducible result generation;
+- corrected the null-ladder pilot after review, including C2 option reversal and preregistered secondary summaries: exact deterministic 60/40 pair allocation, held-out C9 accuracy against a frozen target ordering, active N6 recovery dynamics, removal of an undocumented C8 effect gate, accurate C4 held-out labeling, and canonical reproducible result generation;
 - corrected the remaining IIT exclusion/maximal-complex synthesis wording so it consistently allows multiple non-overlapping maximal complexes rather than implying one global winner;
 - clarified `AD-1` as the explicit subject-individuation / causal-boundary hypothesis and corrected IIT-style exclusion predictions to allow multiple non-overlapping maximal complexes before any coupling-induced A+B transition;
 - the agent entrypoint now requires exposed reviewers to label their output context-conditioned and disallows treating model fluency or agreement as evidence of consciousness, continuity, or independent convergence;
