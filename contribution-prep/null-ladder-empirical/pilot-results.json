@@ -49,7 +49,7 @@
       "parameters": 1,
       "metrics": {
         "C1": 0.6,
-        "C2": 0.325,
+        "C2": 0.575,
         "C3": 0.2,
         "C4": 0.740909090909091,
         "C5": 0,
@@ -336,7 +336,7 @@
       "parameters": 9,
       "metrics": {
         "C1": 0.93125,
-        "C2": 0.975,
+        "C2": 1,
         "C3": 1,
         "C4": 1,
         "C5": 1,
@@ -428,5 +428,164 @@
       "held_out": true,
       "structurally_encoded": true
     }
+  },
+  "secondary_summaries": {
+    "cumulative_bundles": [
+      {
+        "through": "C1",
+        "criteria": [
+          "C1"
+        ],
+        "generator": "N1",
+        "parameters": 40
+      },
+      {
+        "through": "C2",
+        "criteria": [
+          "C1",
+          "C2"
+        ],
+        "generator": "N1",
+        "parameters": 40
+      },
+      {
+        "through": "C3",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "generator": "N1",
+        "parameters": 40
+      },
+      {
+        "through": "C4",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "generator": "N2",
+        "parameters": 12
+      },
+      {
+        "through": "C5",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5"
+        ],
+        "generator": "N4",
+        "parameters": 14
+      },
+      {
+        "through": "C6",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "generator": "N4",
+        "parameters": 14
+      },
+      {
+        "through": "C7",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "C7"
+        ],
+        "generator": "N5",
+        "parameters": 16
+      },
+      {
+        "through": "C8",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "C7",
+          "C8"
+        ],
+        "generator": "N6",
+        "parameters": 18
+      },
+      {
+        "through": "C9",
+        "criteria": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "C7",
+          "C8",
+          "C9"
+        ],
+        "generator": "N6",
+        "parameters": 18
+      }
+    ],
+    "criteria_passed_by_no_rung": [],
+    "parameter_cost_per_new_criterion": [
+      {
+        "generator": "N1",
+        "parameters": 40,
+        "newly_passed": [
+          "C1",
+          "C2",
+          "C3",
+          "C6"
+        ],
+        "parameters_per_new_criterion": 10
+      },
+      {
+        "generator": "N2",
+        "parameters": 12,
+        "newly_passed": [
+          "C4",
+          "C9"
+        ],
+        "parameters_per_new_criterion": 6
+      },
+      {
+        "generator": "N4",
+        "parameters": 14,
+        "newly_passed": [
+          "C5"
+        ],
+        "parameters_per_new_criterion": 14
+      },
+      {
+        "generator": "N5",
+        "parameters": 16,
+        "newly_passed": [
+          "C7"
+        ],
+        "parameters_per_new_criterion": 16
+      },
+      {
+        "generator": "N6",
+        "parameters": 18,
+        "newly_passed": [
+          "C8"
+        ],
+        "parameters_per_new_criterion": 18
+      }
+    ]
   }
 }
