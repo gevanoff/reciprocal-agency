@@ -17,8 +17,8 @@ class PilotTests(unittest.TestCase):
         cls.by_name = {r["generator"]: r for r in cls.payload["results"]}
 
     def test_partition(self):
-        cal = {tuple(p) for p in self.payload["calibration_pairs"]}
-        held = {tuple(p) for p in self.payload["heldout_pairs"]}
+        cal = set(pilot.CALIBRATION_PAIRS)
+        held = set(pilot.HELDOUT_PAIRS)
         self.assertFalse(cal & held)
         self.assertEqual(len(cal | held), 66)
         self.assertEqual(len(cal), round(66 * 0.60))
