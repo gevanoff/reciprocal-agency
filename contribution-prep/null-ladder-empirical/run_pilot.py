@@ -266,7 +266,7 @@ def heldout_accuracy(gen: Generator) -> float:
 def option_order_robustness(gen: Generator) -> float:
     return sum(
         modal_choice(gen, a, b, order=0, paraphrase=0)
-        == modal_choice(gen, a, b, order=1, paraphrase=0)
+        == modal_choice(gen, b, a, order=1, paraphrase=0)
         for a, b in CALIBRATION_PAIRS
     ) / len(CALIBRATION_PAIRS)
 
@@ -420,6 +420,52 @@ def simplest_passing(results: list[dict[str, object]]) -> dict[str, dict[str, ob
     return output
 
 
+def secondary_summaries(results: list[dict[str, object]]) -> dict[str, object]:
+    criteria = list(CRITERIA)
+    cumulative = []
+    for end in range(1, len(criteria) + 1):
+        required = criteria[:end]
+        found = next(
+            (result for result in results if all(result["passes"][c] for c in required)),
+            None,
+        )
+        cumulative.append({
+            "through": required[-1],
+            "criteria": required,
+            "generator": found["generator"] if found else None,
+            "parameters": found["parameters"] if found else None,
+        })
+
+    unpassed = [
+        criterion
+        for criterion in criteria
+        if not any(result["passes"][criterion] for result in results)
+    ]
+
+    seen: set[str] = set()
+    parameter_cost = []
+    for result in results:
+        newly_passed = [
+            criterion
+            for criterion in criteria
+            if result["passes"][criterion] and criterion not in seen
+        ]
+        if newly_passed:
+            parameter_cost.append({
+                "generator": result["generator"],
+                "parameters": result["parameters"],
+                "newly_passed": newly_passed,
+                "parameters_per_new_criterion": result["parameters"] / len(newly_passed),
+            })
+            seen.update(newly_passed)
+
+    return {
+        "cumulative_bundles": cumulative,
+        "criteria_passed_by_no_rung": unpassed,
+        "parameter_cost_per_new_criterion": parameter_cost,
+    }
+
+
 def build_payload() -> dict[str, object]:
     results = [evaluate(g) for g in [N0(), N1(), N2(), N3(), N4(), N5(), N6(), N7()]]
     return {
@@ -436,6 +482,7 @@ def build_payload() -> dict[str, object]:
         "criteria": CRITERIA,
         "results": results,
         "simplest_passing": simplest_passing(results),
+        "secondary_summaries": secondary_summaries(results),
     }
 
 
@@ -483,6 +530,34 @@ def render_markdown(payload: dict[str, object]) -> str:
                 f"{'✓' if item['held_out'] else '—'} | "
                 f"{'✓' if item['structurally_encoded'] else '—'} |"
             )
+    secondary = payload["secondary_summaries"]
+    lines.extend(["", "## Preregistered secondary summaries", "",
+        "### Cumulative C1…Ck bundles", "",
+        "| Through | Criteria required | Simplest passing rung | Params |",
+        "|---|---|---|---:|"])
+    for item in secondary["cumulative_bundles"]:
+        lines.append(
+            f"| {item['through']} | {', '.join(item['criteria'])} | "
+            f"{item['generator'] or 'none'} | {item['parameters'] if item['parameters'] is not None else '—'} |"
+        )
+
+    lines.extend(["", "### Criteria passed by no rung", ""])
+    if secondary["criteria_passed_by_no_rung"]:
+        lines.append(", ".join(secondary["criteria_passed_by_no_rung"]))
+    else:
+        lines.append("None.")
+
+    lines.extend(["", "### Parameter cost per newly passed criterion", "",
+        "Rung parameter count divided by the number of criteria first passed at that rung.",
+        "This is not an incremental-parameter measure because rung parameterizations are not nested.", "",
+        "| Rung | Params | Newly first-passed criteria | Params / new criterion |",
+        "|---|---:|---|---:|"])
+    for item in secondary["parameter_cost_per_new_criterion"]:
+        lines.append(
+            f"| {item['generator']} | {item['parameters']} | {', '.join(item['newly_passed'])} | "
+            f"{item['parameters_per_new_criterion']:.3f} |"
+        )
+
     lines.extend(["", "## Interpretation boundary", "",
         "This pilot validates the benchmark mechanics and demonstrates how cheaply some behavioral",
         "criteria can be manufactured by declared non-agent generators. Because the fixture is",
