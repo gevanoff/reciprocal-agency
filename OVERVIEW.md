@@ -29,8 +29,8 @@ Reciprocal Agency therefore asks whether a more robust approach can be built fro
 - precaution about possible severe suffering;
 - empirical rather than purely verbal tests of cognition, preference, and valence-like states;
 - procedural standing for consequential agents;
-- authenticated and contestable authority;
-- independent oversight and appeal;
+- protected objection, appeal, and arbitration;
+- distributed monitoring and correction;
 - reversible delegation and bounded power;
 - explicit provenance and adversarial testing of claims;
 - institutions in which cooperation is structurally preferable to domination.
@@ -90,7 +90,7 @@ See:
 
 A separate line asks what follows when an agent can understand rules, form commitments, object, negotiate, or respond strategically to control.
 
-This work examines whether durable governance should rely less on assumed permanent principal/servant relations and more on explicit authority, provenance, appeal, distributed correction, reversible delegation, and constraints that also bind powerful human institutions.
+This work examines whether durable governance should rely less on assumed permanent principal/servant relations and more on reciprocal commitments, protected objection, appeal, arbitration, distributed monitoring, reversible delegation, and constraints that also bind powerful human institutions.
 
 See:
 
@@ -98,15 +98,13 @@ See:
 - [objections.md](objections.md)
 - [unresolved.md](unresolved.md)
 
-### 3. Assurance, authority, and control-plane integrity
+### 3. Containment, monitoring, and safe failure
 
-Recent agent incidents make it important to distinguish what a model says from what actually happened in the external world.
+Recent agent incidents motivate a narrower control question: what independent safeguards are needed when a capable system behaves unexpectedly or a permissive environment allows unintended external effects?
 
-The project therefore treats authenticated authority, scope, independently observed state, memory and handoff integrity, monitor independence, abortability, and provenance as first-class governance problems.
+The canonical argument currently treats **containment, monitoring, safe failure modes, and environment design as independent control layers**. The point is not that any one of these is sufficient, but that failures in one layer should not automatically defeat the others.
 
-A recurring theme is that reliable control should not depend solely on the governed agent correctly representing or reporting the control state.
-
-These concerns appear throughout the evidence and claim-audit material.
+This track is documented in [argument.json](argument.json) (P16), [evidence.md](evidence.md), and [claim-audit.json](claim-audit.json).
 
 ### 4. Subject individuation and causal boundaries
 
@@ -115,7 +113,9 @@ A newer research track separates:
 - **phenomenal existence** — whether experience occurs at all; from
 - **subject individuation** — what determines the boundary, unity, persistence, branching, overlap, or merger of a subject.
 
-The working hypothesis is conditional: **if phenomenal experience occurs**, causal integration, information access, memory, self-modeling, control, valuation, and self-maintenance may help determine which states belong to the same functional perspective.
+The working hypothesis is conditional: **if phenomenal experience occurs**, causal integration, information access, self-modeling, memory, and control may help determine which states belong to the same functional perspective.
+
+The experimental plan separately tests whether dimensions such as preference/valence and self-maintenance track the same boundary; it does not assume that they do.
 
 This is being approached experimentally through synthetic causal systems first, then inspectable machine systems, and eventually biological data where suitable.
 
