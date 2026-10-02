@@ -439,6 +439,17 @@ def build_payload() -> dict[str, object]:
     }
 
 
+def json_ready(value: object) -> object:
+    """Normalize integral floats so tracked JSON has one canonical representation."""
+    if isinstance(value, float) and value.is_integer():
+        return int(value)
+    if isinstance(value, dict):
+        return {k: json_ready(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [json_ready(v) for v in value]
+    return value
+
+
 def render_markdown(payload: dict[str, object]) -> str:
     lines = [
         "# Synthetic Null-Ladder Pilot Results", "",
@@ -488,11 +499,12 @@ def main() -> None:
     parser.add_argument("--md-out", type=Path)
     args = parser.parse_args()
     payload = build_payload()
+    canonical_json = json.dumps(json_ready(payload), indent=2)
     if args.json_out:
-        args.json_out.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+        args.json_out.write_text(canonical_json + "\n", encoding="utf-8")
     if args.md_out:
         args.md_out.write_text(render_markdown(payload) + "\n", encoding="utf-8")
-    print(json.dumps(payload, indent=2))
+    print(canonical_json)
 
 
 if __name__ == "__main__":
