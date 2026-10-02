@@ -6,6 +6,7 @@ All notable substantive changes to the argument corpus should be recorded here. 
 
 ### Added
 
+- `contribution-prep/null-ladder-empirical/`, a preregistered standard-library behavioral null-ladder harness with synthetic validation, frozen real-data target preparation, reproducible generated artifacts, and regression tests;
 - `subject-boundary-autonomy-exploration.md`, documenting exploratory multistep information-theoretic autonomy results, communication false positives, attractor false negatives, and held-out confirmation requirements;
 - `subject-boundary-exploratory-registry.json`, separating append-oriented post-inspection analyses from the immutable WP0/WP1 confirmatory preregistration;
 - recurrent natural-trajectory sampling and autonomy diagnostics in the synthetic benchmark, explicitly segregated from locked confirmatory validation;
@@ -21,6 +22,7 @@ All notable substantive changes to the argument corpus should be recorded here. 
 
 ### Changed
 
+- corrected the null-ladder pilot after review: exact deterministic 60/40 pair allocation, held-out C9 accuracy against a frozen target ordering, active N6 recovery dynamics, removal of an undocumented C8 effect gate, accurate C4 held-out labeling, and canonical reproducible result generation;
 - corrected the remaining IIT exclusion/maximal-complex synthesis wording so it consistently allows multiple non-overlapping maximal complexes rather than implying one global winner;
 - clarified `AD-1` as the explicit subject-individuation / causal-boundary hypothesis and corrected IIT-style exclusion predictions to allow multiple non-overlapping maximal complexes before any coupling-induced A+B transition;
 - the agent entrypoint now requires exposed reviewers to label their output context-conditioned and disallows treating model fluency or agreement as evidence of consciousness, continuity, or independent convergence;
