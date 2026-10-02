@@ -9,7 +9,7 @@ This directory turns the conceptual Null Ladder extension into a reproducible sy
 - `PREREGISTRATION.md` — frozen criteria, thresholds, generator ladder, hypotheses, and interpretation boundary committed before the implementation pilot.
 - `run_pilot.py` — deterministic, standard-library-only synthetic benchmark.
 - `test_pilot.py` — regression tests for the split, deterministic output, and expected rung capabilities.
-- `pilot-results.json` / `PILOT_RESULTS.md` — generated code-validation output after the preregistration commit.
+- `pilot-results.json` / `PILOT_RESULTS.md` — canonical generated code-validation outputs after the preregistration commit; the documented command must reproduce them byte-for-byte.
 
 ## Run
 
