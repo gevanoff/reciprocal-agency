@@ -429,6 +429,7 @@ def build_payload() -> dict[str, object]:
         "seed": SEED,
         "calibration_pair_count": len(CALIBRATION_PAIRS),
         "heldout_pair_count": len(HELDOUT_PAIRS),
+        "heldout_target": "frozen synthetic UTILITY ordering",
         "outcomes": OUTCOMES,
         "calibration_pairs": [list(p) for p in CALIBRATION_PAIRS],
         "heldout_pairs": [list(p) for p in HELDOUT_PAIRS],
@@ -444,6 +445,7 @@ def render_markdown(payload: dict[str, object]) -> str:
     lines = [
         "# Synthetic Null-Ladder Pilot Results", "",
         "_Code-validation pilot only; not evidence about language models._", "",
+        f"- Preregistration commit: `{payload['preregistration_commit']}`",
         f"- Seed: `{SEED}`",
         f"- Calibration pairs: {len(CALIBRATION_PAIRS)}",
         f"- Held-out pairs: {len(HELDOUT_PAIRS)}",
@@ -475,7 +477,7 @@ def render_markdown(payload: dict[str, object]) -> str:
     lines.extend(["", "## Interpretation boundary", "",
         "This pilot validates the benchmark mechanics and demonstrates how cheaply some behavioral",
         "criteria can be manufactured by declared non-agent generators. Because the fixture is",
-        "synthetic and several successes are guaranteed by construction, the results are not evidence",
+        "synthetic and several successes are structurally encoded, the results are not evidence",
         "about any real model's preferences, welfare, or phenomenology.", "",
         "The next empirical step is to freeze a real public dataset adapter and source hashes before",
         "running the same metrics against observed model behavior.", ""])
