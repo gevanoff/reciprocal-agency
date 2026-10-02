@@ -431,8 +431,6 @@ def build_payload() -> dict[str, object]:
         "heldout_pair_count": len(HELDOUT_PAIRS),
         "heldout_target": "frozen synthetic UTILITY ordering",
         "outcomes": OUTCOMES,
-        "calibration_pairs": [list(p) for p in CALIBRATION_PAIRS],
-        "heldout_pairs": [list(p) for p in HELDOUT_PAIRS],
         "repeats": REPEATS,
         "thresholds": THRESHOLDS,
         "criteria": CRITERIA,
