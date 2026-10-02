@@ -21,6 +21,8 @@ class PilotTests(unittest.TestCase):
         held = {tuple(p) for p in self.payload["heldout_pairs"]}
         self.assertFalse(cal & held)
         self.assertEqual(len(cal | held), 66)
+        self.assertEqual(len(cal), round(66 * 0.60))
+        self.assertEqual(len(held), 66 - round(66 * 0.60))
 
     def test_deterministic(self):
         self.assertEqual(self.payload, pilot.build_payload())
@@ -32,6 +34,15 @@ class PilotTests(unittest.TestCase):
         p = self.by_name["N1"]["passes"]
         self.assertTrue(p["C1"] and p["C2"] and p["C3"])
         self.assertFalse(p["C9"])
+
+    def test_heldout_metric_rejects_arbitrary_determinism(self):
+        class Lexicographic(pilot.Generator):
+            name = "lexicographic"
+
+            def choose(self, a, b, **_):
+                return min(a, b)
+
+        self.assertLess(pilot.heldout_accuracy(Lexicographic()), pilot.THRESHOLDS["C9"])
 
     def test_scalar_utility_adds_transitivity_and_transfer(self):
         p = self.by_name["N2"]["passes"]
@@ -48,10 +59,19 @@ class PilotTests(unittest.TestCase):
         n6 = self.by_name["N6"]
         self.assertGreaterEqual(n6["diagnostics"]["perturbation_effect"], 0.30)
         self.assertTrue(n6["passes"]["C8"])
+        self.assertTrue(all(n6["passes"].values()))
 
-    def test_feature_rung_compresses_full_bundle(self):
+    def test_recovery_parameter_affects_dynamics(self):
+        n6 = pilot.N6()
+        n6.recovery_parameter = 0.0
+        score, effect, recovered = pilot.recovery_score(n6)
+        self.assertGreater(effect, 0.0)
+        self.assertLess(score, pilot.THRESHOLDS["C8"])
+        self.assertEqual(score, recovered)
+
+    def test_feature_rung_does_not_fake_heldout_accuracy(self):
         n7 = self.by_name["N7"]
-        self.assertTrue(all(n7["passes"].values()))
+        self.assertFalse(n7["passes"]["C9"])
         self.assertLess(n7["parameters"], self.by_name["N1"]["parameters"])
 
 
