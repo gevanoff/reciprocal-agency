@@ -2,6 +2,13 @@
 
 All notable substantive changes to the argument corpus should be recorded here. Editorial changes that do not alter meaning may be omitted.
 
+## Unreleased — 2026-10-06
+
+### Added
+
+- `practical-agency-functional-affect.md`: exploratory FA-1 hypothesis connecting practical agency with integrated emotion-like valuation, with competing explanations, benign causal interventions, selective-dissociation criteria, and explicit functional/phenomenal boundaries;
+- primary and theoretical sources for Damasio's account and its empirical challenges, with a repository-map link. No experiment results or changes to core propositions are claimed.
+
 ## Unreleased — 2026-09-28
 
 ### Added
