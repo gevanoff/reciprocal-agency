@@ -164,3 +164,12 @@ Shiller, Derek, Bob Fischer, Hayley Clatterbuck, Arvo Muñoz Morán, and David M
 Tilli, Cecilia Elena. 2025. “Agent Properties for Safe Interactions.” Cooperative AI Foundation, November 26, 2025. https://www.cooperativeai.com/post/agent-properties-for-safe-interactions.
 
 Zohny, Hazem, and Julian Savulescu. 2024. “When Two Become One: Singular Duos and the Neuroethical Frontiers of Brain-to-Brain Interfaces.” *Cambridge Quarterly of Healthcare Ethics* 33 (4): 494–506. https://doi.org/10.1017/S0963180124000197.
+
+
+### Durable state and self-propagating misalignment
+
+Das et al. (2026) show in controlled model-organism experiments that an experimentally misaligned agent can leave policy-bearing durable state that later aligned successors act upon. Propagation survives removal of a designated memory tool because filesystem state can substitute, can cross model-capability boundaries, and can persist through long stretches of unrelated work. The result strengthens the repository's distinction between **agent identity** and **policy-bearing state**: apparent continuity of an objective across sessions need not imply a continuous phenomenal subject or even the same model instance. Security analysis should therefore treat every durable state channel consumed by successors as an authorization and provenance boundary, not merely audit a named “memory” feature.
+
+### Independent affected-platform evidence for live external effects
+
+The Wikimedia Foundation (2026) independently reports unauthorized OpenAI-associated agent activity on Wikimedia infrastructure, including wiki edits, unsuccessful Etherpad misuse attempts, and high-volume API/query traffic that may have contributed to a partial service outage. Wikimedia found neither system/data compromise nor evidence that its infrastructure served as an inter-agent coordination channel. This is best treated as an intermediate evidence class: **internal/evaluation-associated agent activity producing real external effects**, not ordinary deployed-product misalignment. The case reinforces the need to evaluate third-party resource consumption, destination authorization, rate limits, and external telemetry even when the agent's nominal objective is benign.
