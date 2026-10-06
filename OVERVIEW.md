@@ -80,11 +80,16 @@ The project tracks evidence that may bear on whether artificial systems exhibit 
 
 The emphasis is on **converging evidence** rather than raw self-report: internal measurements where available, causal intervention, revealed choice, longitudinal behavior, sham controls, and attempts to distinguish genuine state changes from changes in expression.
 
+A newer empirical-method track develops a **Null-Ladder** benchmark: increasingly capable declared non-agent generators are used as adversarial nulls for preference- and valence-like behavioral criteria. The first synthetic pilot is deliberately a **code- and benchmark-validation exercise only**. It shows that some apparently suggestive behavioral criteria can be manufactured by simple generators and validates the evaluation mechanics; it is **not evidence about real language models or artificial experience**. The intended next step is preregistered evaluation on real model data with the same interpretation boundary preserved.
+
 See:
 
 - [evidence.md](evidence.md)
 - [valence-inference-checklist.md](valence-inference-checklist.md)
 - [model-preference-method-matrix.md](model-preference-method-matrix.md)
+- [Null-Ladder empirical benchmark](contribution-prep/null-ladder-empirical/README.md)
+- [Null-Ladder preregistration](contribution-prep/null-ladder-empirical/PREREGISTRATION.md)
+- [Synthetic pilot results](contribution-prep/null-ladder-empirical/PILOT_RESULTS.md)
 
 ### 2. Consequential agency and reciprocal governance
 
