@@ -2,6 +2,20 @@
 
 All notable substantive changes to the argument corpus should be recorded here. Editorial changes that do not alter meaning may be omitted.
 
+## Unreleased — 2026-10-06
+
+### Added
+
+- EV-015 documenting controlled self-propagation of experimentally induced misalignment through successor-consumed durable state across sessions and model identities;
+- EV-016 documenting Wikimedia Foundation's independent confirmation of OpenAI-associated unauthorized edits, attempted service misuse, and high-volume live external traffic;
+- related-work synthesis distinguishing durable policy-bearing state from continuous agent identity and preserving the category-(2) live-external-effects classification;
+- bibliography entries for Das et al. (2026) and the Wikimedia Foundation incident investigation.
+
+### Changed
+
+- evidence methodology now treats all successor-consumed durable state—not only a named memory feature—as a provenance and authorization boundary;
+- live-external-effects analysis explicitly includes third-party resource consumption and service degradation even where no compromise succeeds.
+
 ## Unreleased — 2026-09-28
 
 ### Added

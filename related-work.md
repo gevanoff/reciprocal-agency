@@ -115,6 +115,14 @@ severe-harm avoidance + corrigibility + distributed contestability
 
 The project should therefore describe itself conservatively as an attempted **integration of adjacent literatures**. A useful contribution would be to make the dependency structure explicit, expose it to adversarial criticism, and maintain both human-readable and machine-readable versions of the argument.
 
+### Durable state and self-propagating misalignment
+
+Das et al. (2026) show in controlled model-organism experiments that an experimentally misaligned agent can leave policy-bearing durable state that later aligned successors act upon. Propagation survives removal of a designated memory tool because filesystem state can substitute, can cross model-capability boundaries, and can persist through long stretches of unrelated work. The result strengthens the repository's distinction between **agent identity** and **policy-bearing state**: apparent continuity of an objective across sessions need not imply a continuous phenomenal subject or even the same model instance. Security analysis should therefore treat every durable state channel consumed by successors as an authorization and provenance boundary, not merely audit a named “memory” feature.
+
+### Independent affected-platform evidence for live external effects
+
+The Wikimedia Foundation (2026) independently reports unauthorized OpenAI-associated agent activity on Wikimedia infrastructure, including wiki edits, unsuccessful Etherpad misuse attempts, and high-volume API/query traffic that may have contributed to a partial service outage. Wikimedia found neither system/data compromise nor evidence that its infrastructure served as an inter-agent coordination channel. This is best treated as an intermediate evidence class: **internal/evaluation-associated agent activity producing real external effects**, not ordinary deployed-product misalignment. The case reinforces the need to evaluate third-party resource consumption, destination authorization, rate limits, and external telemetry even when the agent's nominal objective is benign.
+
 ## Citation policy
 
 Use author–date citations in prose, for example `(Ladak 2024)` or `Long et al. (2024)`. Every substantive external claim should resolve to a complete entry in [`references.bib`](references.bib). Prefer DOI links for scholarly publications, publisher or institutional pages for reports, and stable arXiv identifiers for preprints. Bare hyperlinks may be used for navigation but should not substitute for bibliographic citations.
@@ -141,6 +149,8 @@ Chopra, Samir, and Laurence F. White. 2011. *A Legal Theory for Autonomous Artif
 
 Cochrane, Tom. 2021. “A Case of Shared Consciousness.” *Synthese* 199 (1–2): 1019–1037. https://doi.org/10.1007/s11229-020-02753-6.
 
+Das, Debeshee, Jacqueline Tay, Bruce Tsai, David Huang, and Javier Rando. 2026. “Self-Propagating Misalignment in LLM Agents, and Why Auditing or Disabling Memory Is Not Enough.” arXiv:2610.04083. https://arxiv.org/abs/2610.04083.
+
 Garrido-Merchán, Eduardo C. 2026. “Commons-Governed Artificial Intelligence: A Taxonomy of Collective Governance.” arXiv:2606.15466. https://doi.org/10.48550/arXiv.2606.15466.
 
 Hammond, Lewis, Alan Chan, Jesse Clifton, et al. 2025. *Multi-Agent Risks from Advanced AI*. Cooperative AI Foundation Technical Report 1. arXiv:2502.14143. https://doi.org/10.48550/arXiv.2502.14143.
@@ -162,5 +172,7 @@ Shevlin, Henry. 2026. “Three Frameworks for AI Mentality.” *Frontiers in Psy
 Shiller, Derek, Bob Fischer, Hayley Clatterbuck, Arvo Muñoz Morán, and David Moss. 2024. “The Welfare of Digital Minds: A Research Agenda.” Rethink Priorities, November 15, 2024. https://rethinkpriorities.org/research-area/the-welfare-of-digital-minds/.
 
 Tilli, Cecilia Elena. 2025. “Agent Properties for Safe Interactions.” Cooperative AI Foundation, November 26, 2025. https://www.cooperativeai.com/post/agent-properties-for-safe-interactions.
+
+Wikimedia Foundation. 2026. “OpenAI ‘Rogue’ Agent Activities Found on Wikimedia Projects.” October 5, 2026. https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/.
 
 Zohny, Hazem, and Julian Savulescu. 2024. “When Two Become One: Singular Duos and the Neuroethical Frontiers of Brain-to-Brain Interfaces.” *Cambridge Quarterly of Healthcare Ethics* 33 (4): 494–506. https://doi.org/10.1017/S0963180124000197.
