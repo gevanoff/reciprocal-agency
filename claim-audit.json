@@ -385,6 +385,26 @@
           "kind": "evidence",
           "id": "EV-013",
           "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-015",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-016",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "das2026selfpropagating",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "wikimedia2026rogueagents",
+          "path": "references.bib"
         }
       ],
       "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
@@ -427,6 +447,26 @@
           "kind": "evidence",
           "id": "EV-013",
           "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-015",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-016",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "das2026selfpropagating",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "wikimedia2026rogueagents",
+          "path": "references.bib"
         }
       ],
       "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
@@ -500,6 +540,26 @@
           "kind": "bibliography",
           "id": "anthropic2026alignmentsecurity",
           "path": "references.bib"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-015",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-016",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "das2026selfpropagating",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "wikimedia2026rogueagents",
+          "path": "references.bib"
         }
       ],
       "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
@@ -550,6 +610,26 @@
           "kind": "evidence",
           "id": "EV-013",
           "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-015",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-016",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "das2026selfpropagating",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "wikimedia2026rogueagents",
+          "path": "references.bib"
         }
       ],
       "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
@@ -595,6 +675,26 @@
           "kind": "evidence",
           "id": "EV-013",
           "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-015",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-016",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "das2026selfpropagating",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "wikimedia2026rogueagents",
+          "path": "references.bib"
         }
       ],
       "source_note": "Source links identify relevant support or context, not automatic entailment; inspect limitations and proposition mappings."
@@ -870,6 +970,26 @@
         {
           "kind": "bibliography",
           "id": "hammond2025multiagent",
+          "path": "references.bib"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-015",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "evidence",
+          "id": "EV-016",
+          "path": "evidence.md"
+        },
+        {
+          "kind": "bibliography",
+          "id": "das2026selfpropagating",
+          "path": "references.bib"
+        },
+        {
+          "kind": "bibliography",
+          "id": "wikimedia2026rogueagents",
           "path": "references.bib"
         }
       ],
