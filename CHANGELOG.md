@@ -11,6 +11,9 @@ All notable substantive changes to the argument corpus should be recorded here. 
 - related-work synthesis distinguishing durable policy-bearing state from continuous agent identity and preserving the category-(2) live-external-effects classification;
 - bibliography entries for Das et al. (2026) and the Wikimedia Foundation incident investigation.
 
+- `practical-agency-functional-affect.md`: exploratory FA-1 hypothesis connecting practical agency with integrated emotion-like valuation, with competing explanations, benign causal interventions, selective-dissociation criteria, and explicit functional/phenomenal boundaries;
+- primary and theoretical sources for Damasio's account and its empirical challenges, with a repository-map link. No experiment results or changes to core propositions are claimed.
+
 ### Changed
 
 - evidence methodology now treats all successor-consumed durable state—not only a named memory feature—as a provenance and authorization boundary;
