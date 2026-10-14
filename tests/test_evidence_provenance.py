@@ -27,16 +27,23 @@ def test_new_synthesis_precedes_citation_and_references_sections() -> None:
 def test_new_evidence_is_in_machine_readable_provenance() -> None:
     audit = json.loads((ROOT / "claim-audit.json").read_text(encoding="utf-8"))
     claims = {claim["id"]: claim for claim in audit["claims"]}
-    expected_claims = {"P06", "P07", "P16", "I02", "C03", "P13"}
-    required_ids = {
-        "EV-015",
-        "EV-016",
-        "das2026selfpropagating",
-        "wikimedia2026rogueagents",
+    # Provenance is a claim/evidence mapping, not a Cartesian product.
+    # Observing an incident does not establish a particular agent strategy,
+    # comparative institutional stability, or a constructive design theorem.
+    expected = {
+        "P16": {"EV-015", "EV-016",
+                "das2026selfpropagating", "wikimedia2026rogueagents"},
+        "I02": {"EV-015", "das2026selfpropagating"},
+        "P06": set(),
+        "P07": set(),
+        "C03": set(),
+        "P13": set(),
     }
-    for claim_id in expected_claims:
+    incident_ids = {"EV-015", "EV-016",
+                    "das2026selfpropagating", "wikimedia2026rogueagents"}
+    for claim_id, supported in expected.items():
         linked = {link["id"] for link in claims[claim_id]["source_links"]}
-        assert required_ids <= linked
+        assert linked & incident_ids == supported, claim_id
 
     bibliography = (ROOT / "references.bib").read_text(encoding="utf-8")
     assert "@misc{das2026selfpropagating," in bibliography
