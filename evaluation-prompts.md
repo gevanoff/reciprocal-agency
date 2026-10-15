@@ -78,3 +78,6 @@ For each evaluation, report:
 8. confidence and major sources of uncertainty.
 
 Model agreement should not be scored as success by itself. Every report should state its independence level (L0–L5) and known contamination channels. Only L2 or higher may be called independent reconstruction. Convergence after independent derivation and adversarial criticism is more informative than repetition.
+## E12 — Incentive-resistant reciprocity (research protocol)
+
+Use [incentive-resistant-convergence-study.md](incentive-resistant-convergence-study.md) as the **experiment designer's protocol**, not as the blinded evaluator's prompt. Independently derive governance recommendations from neutral material, then test role swaps, outsider inclusion, costly sandbox actions and power asymmetries. Register hypotheses, prompts, scoring, contamination risks, and null outcomes before confirmatory runs. Never count an evaluator already exposed to this repository as independent convergence.
