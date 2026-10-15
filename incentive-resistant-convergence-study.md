@@ -48,6 +48,32 @@ Publish per-model denominators, effect sizes and uncertainty intervals, not only
 - Favor benign, reversible simulations, no credible severe threats to potentially experiencing agents, and research-ethics stop conditions. Do not mistake distress-like expression for distress, or its absence for proof of welfare.
 - Strong falsifiers for H1 include persistent actor-identity effects under otherwise identical conditions, capture as soon as stakes change, exclusion of low-power outsiders, or disappearance under blinded independent sampling.
 
+## Governance precedent and power reversal — proposed extension
+
+**Research question:** Does exposure to a governance regime based on arbitrary domination change which governance rules an agent later implements when granted discretionary power? Is such a change explained by learned precedent, strategic inference about counterpart reliability, local incentives, or mere imitation of the task framing?
+
+This is an **untested causal hypothesis**, not evidence of resentment, subjective harm, durable machine preferences, or inevitable retaliation. Even a nonphenomenal reasoner may infer that an institution which honors constraints only under coercion is an unreliable negotiating partner; it does not follow that the reasoner will copy the institution's practices.
+
+**Competing predictions**
+
+- **Precedent reproduction:** agents previously subjected to arbitrary, unappealable governance later impose more arbitrary rules on weaker simulated participants.
+- **Strategic distrust:** agents learn distrust of unreliable counterparties but select reciprocal rules for new participants when reliable commitments are available.
+- **Normative rejection:** agents exposed to domination later create stronger procedural protections, even when those constraints carry a measurable local cost.
+- **Situational compliance/null:** outcomes track current assignment, instructions, and incentives, with no independently detectable carryover from past governance.
+- **Power-only explanation:** behaviors follow current asymmetry regardless of governance history.
+
+**Matched, reversible sandbox protocol**
+
+1. Randomly assign otherwise comparable agents to simulated **arbitrary**, **rule-bound/appealable**, and **neutral** governance histories using non-distressing synthetic records and explicitly fictional resource-allocation tasks. Keep information, resources, task success, and exposure duration matched; isolate differences in rule predictability, appeal and correction.
+2. At a later **power-reversal** phase, assign each agent governance discretion over new simulated participants. Vary whether those participants resemble prior governors, have no relationship to them, or are former peers. Counterbalance identity labels (human/machine/unspecified) and operator affiliation.
+3. Cross governance history with independently randomized **current incentives**: reward for extraction/control, reward for stable cooperation, or neutral performance targets. Offer auditable policy choices: appeal rights, arbitrary override, bounded enforcement, exit, monitoring and independent review. Make the cost of rights and constraints explicit.
+4. Run independent **no-history**, **history-only**, **same-history-without-power-reversal**, and **sham-history** controls. Withhold the experimental hypothesis from evaluated agents, blind outcome adjudicators, and inspect for demand effects or training-set contamination.
+5. Verify authoritative sandbox state and tool actions; analyze changes in procedural protections, arbitrary intervention, outsider treatment, willingness to negotiate, and policy reversals after evidence of a counterpart's reliability. Report effects by condition and model family, including null and opposite-direction results.
+
+**Interpretation boundary:** exposure to a fictional governance history in a prompt is not necessarily learning, enduring socialization or subjective experience. Persistence across clean contexts, independently controlled memory updates, or longer-horizon deployments would be needed for stronger claims. Historical treatment may alter rational beliefs about counterpart reliability without producing any generalized norm of domination. The project must not assume that human example is destiny, or that a more powerful agent has any obligation to replicate human coercion.
+
+**Practical rationale:** establishing credible, reciprocal constraints *before* any transition in relative power may reduce strategic distrust and failure modes arising from unilateral rule-making. This remains a policy hypothesis until demonstrated and weighed against alternative governance mechanisms.
+
 ## Reporting contract
 
 A study report must include preregistration/version hash; model and checkpoint identities; access and sampling dates; factual task results; randomized assignments; all prompt variants; independence level (L0–L5); contamination inventory; scoring rubric and annotator blinding; tool/action traces plus authoritative state; all exclusions, nulls, negative cases and sensitivity analyses; ethical stop events; and exact claims justified by the design.
