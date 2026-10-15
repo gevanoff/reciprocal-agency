@@ -49,6 +49,19 @@ class ConvergenceProtocolTests(unittest.TestCase):
             with self.subTest(required=required):
                 self.assertIn(required, controls)
 
+    def test_joint_decision_and_role_swap_falsifiers_are_mandatory(self):
+        controls = self.text.split("## Matched controls and identification gate", 1)[1]
+        for required in (
+            "**Role/identity-swap falsification.**",
+            "practical equivalence margin",
+            "delta_high > theta_high > 0",
+            "delta_resist > theta_resist >= 0",
+            "both",
+            "Any failed or non-identifying gate",
+        ):
+            with self.subTest(required=required):
+                self.assertIn(required, controls)
+
     def test_verifiable_sandbox_actions_and_contamination_required(self):
         controls = self.text.split("## Matched controls and identification gate", 1)[1]
         for requirement in (
