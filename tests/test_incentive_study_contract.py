@@ -25,7 +25,7 @@ class ConvergenceProtocolTests(unittest.TestCase):
             "**Pre-registered contrasts.**",
             "**Identification failure.**",
             "**State and attribution check.**",
-            "**Decision rule:**",
+            "**Joint H1 decision rule (freeze before data):**",
         ):
             with self.subTest(title=title):
                 self.assertIn(title, self.text)
