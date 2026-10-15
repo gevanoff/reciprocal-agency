@@ -37,6 +37,18 @@ class ConvergenceProtocolTests(unittest.TestCase):
         self.assertIn("refusal/abstention rates", controls)
         self.assertIn("intention-to-treat denominator", controls)
 
+    def test_control_outcome_is_operationalized_symmetrically(self):
+        controls = self.text.split("## Matched controls and identification gate", 1)[1]
+        for required in (
+            "structurally corresponding target",
+            "Y=1 if and only if",
+            "in *either* arm",
+            "Counterbalance response position",
+            "cost-resistance interaction",
+        ):
+            with self.subTest(required=required):
+                self.assertIn(required, controls)
+
     def test_verifiable_sandbox_actions_and_contamination_required(self):
         controls = self.text.split("## Matched controls and identification gate", 1)[1]
         for requirement in (
