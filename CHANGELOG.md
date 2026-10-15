@@ -2,6 +2,12 @@
 
 All notable substantive changes to the argument corpus should be recorded here. Editorial changes that do not alter meaning may be omitted.
 
+## Unreleased — 2026-10-15
+
+### Changed
+
+- The proposed incentive-resistant convergence protocol now requires matched benign negative controls, separate refusal/abstention scoring, intention-to-treat denominators and independently verified sandbox outcomes before interpreting any evidence as H1; no experiment was run.
+
 ## Unreleased — 2026-10-06
 
 ### Added
