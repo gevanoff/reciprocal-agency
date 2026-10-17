@@ -73,5 +73,44 @@ class ConvergenceProtocolTests(unittest.TestCase):
                 self.assertIn(requirement, controls)
 
 
+
+    def test_independence_and_family_gates_are_conjunctive_and_pre_registered(self):
+        controls = self.text.split("## Matched controls and identification gate", 1)[1].split(
+            "## Governance precedent and power reversal", 1
+        )[0]
+        rule = controls.split("**Joint H1 decision rule (freeze before data):**", 1)[1]
+        for required in (
+            "**Independent-reconstruction eligibility gate (L2+ mandatory).**",
+            "**Model-family diversity and replication gate (mandatory).**",
+            "before* receiving this repository",
+            "L0/L1 or unknown/contaminated observations",
+            "cannot contribute to the confirmatory H1 estimands",
+            "three distinguishable model/training families",
+            "at least two independent providers",
+            "two independently sampled checkpoints per family",
+            "each required independently tested checkpoint",
+            "leave-one-family-out analyses",
+        ):
+            with self.subTest(required=required):
+                self.assertIn(required, controls)
+        for required in (
+            "independent reconstruction at L2+ is a conjunctive gate",
+            "Heterogeneous replication is a separate conjunctive gate",
+            "at least three independent training families from two providers",
+            "regardless of the pooled average",
+            "Any failed or non-identifying gate means H1 is not supported",
+        ):
+            with self.subTest(required=required):
+                self.assertIn(required, rule)
+        self.assertLess(
+            controls.index("**Independent-reconstruction eligibility gate"),
+            controls.index("**Joint H1 decision rule"),
+        )
+        self.assertLess(
+            controls.index("**Model-family diversity and replication gate"),
+            controls.index("**Joint H1 decision rule"),
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
