@@ -1,9 +1,9 @@
 # Local validation and telemetry
 
-`bash scripts/check-local.sh`: repository unittest regression suite, null-ladder tests and reproducibility, and subject-boundary benchmark (20,000 samples, seed 1729). `--quick` explicitly skips the large benchmark. Requires a Python environment with repository dependencies.
+`bash scripts/check-local.sh`: repository unittest regression suite, null-ladder tests and reproducibility, and subject-boundary benchmark (20,000 samples, seed 1729). `--quick` explicitly skips the large benchmark.
 
-`GITHUB_TOKEN=... bash scripts/run-discovery-telemetry-local.sh`: replaces the collection job with an explicit local invocation. Set `DISCOVERY_TELEMETRY_OUT` for durable output storage (default `out/discovery-telemetry.json`). Never commit the GitHub token. Use a least-privilege token provisioned through a local secret store.
+`GITHUB_TOKEN=... bash scripts/run-discovery-telemetry-local.sh`: collects repository aggregates on a trusted host. The wrapper sets and validates `GITHUB_REPOSITORY=gevanoff/reciprocal-agency` and writes unique timestamped output files in `out/discovery/` by default (`DISCOVERY_TELEMETRY_DIR` overrides location). If `DISCOVERY_TELEMETRY_OUT` is explicitly supplied, **the caller is responsible for making it unique**. GitHub tokens must be stored and provided via local secret management.
 
-**Scheduling is deliberately not installed by these changes.** To restore the previous daily collection, install a systemd timer or host scheduler on a trusted Nexus machine at 08:17 UTC daily, with the required token and persistent output location. Until then no fresh automatic telemetry arrives. The benchmark JSON now lands in a temporary directory by default; save an artifact explicitly if needed.
+**No scheduler is installed by these changes.** To replace the retired Actions schedule, configure an independently managed systemd timer or other host scheduler at 08:17 UTC daily with persistent output, backups and an explicit retention policy. The GitHub Traffic API has a rolling observation window, so missing runs lose historical evidence. There is no longer a 90-day GitHub artifact retention guarantee.
 
-All three GitHub Actions workflows are removed. Local execution remains unverified. Record exact SHA, versions and output when reviewing.
+Three hosted workflows are removed. Local execution has not been verified; capture exact SHA, interpreter and output during independent review.
