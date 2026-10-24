@@ -8,18 +8,18 @@ Two classes of signal are collected.
 
 ### Passive GitHub aggregates
 
-A daily GitHub Actions job requests GitHub's repository traffic aggregates:
+When invoked by an operator or an independently installed host scheduler, `scripts/run-discovery-telemetry-local.sh` requests GitHub's repository traffic aggregates:
 
 - views;
 - clones;
 - popular referrers;
 - popular paths.
 
-GitHub's traffic API exposes a rolling window, so snapshots are uploaded as workflow artifacts for 90 days. If the default workflow token cannot read traffic endpoints, the snapshot records them as unavailable rather than failing the rest of the collection. An optional repository secret named `GH_TRAFFIC_TOKEN` can provide a traffic-capable token; the workflow falls back to `GITHUB_TOKEN` when it is absent.
+GitHub's traffic API exposes a rolling window. The local wrapper writes a unique, timestamped snapshot under `out/discovery/` on each invocation. No GitHub Actions artifacts, scheduled runs, or managed 90-day retention remain. Install a host timer separately for 08:17 UTC daily collection, provision an appropriately scoped `GITHUB_TOKEN` in a local secret store, and ensure `GITHUB_REPOSITORY=gevanoff/reciprocal-agency`. Snapshot retention and backup are the host operator's responsibility. Unavailable traffic endpoints remain explicitly represented as unavailable.
 
 ### Observable engagement
 
-The same job counts interaction with deliberately marked surfaces:
+The same collector counts interaction with deliberately marked surfaces:
 
 - issues created from the **Agent finding** template;
 - comments on those issues;
