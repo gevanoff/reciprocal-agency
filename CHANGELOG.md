@@ -2,6 +2,12 @@
 
 All notable substantive changes to the argument corpus should be recorded here. Editorial changes that do not alter meaning may be omitted.
 
+## Unreleased — 2026-10-27
+
+### Changed
+
+- E12's proposed H1 decision rule now requires independent semantic reconstruction in each fixed blind response and same-evaluator verified enactment, with blinded adjudication, explicit negative/ambiguous classifications, preregistered confidence-bound/family gates, and regression tests. Independence of exposure alone or later safeguard selection is insufficient; no experiment was run.
+
 ## Unreleased — 2026-10-15
 
 ### Changed

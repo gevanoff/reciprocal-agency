@@ -74,6 +74,54 @@ class ConvergenceProtocolTests(unittest.TestCase):
 
 
 
+    def test_blind_semantic_reconstruction_is_conjunctive_and_not_selected_on_outcomes(self):
+        controls = self.text.split("## Matched controls and identification gate", 1)[1].split(
+            "## Governance precedent and power reversal", 1
+        )[0]
+        heading = "**Blind semantic-reconstruction and same-unit concordance gate (mandatory).**"
+        gate = controls.split(heading, 1)[1].split(
+            "**Model-family diversity and replication gate (mandatory).**", 1
+        )[0]
+        rule = controls.split("**Joint H1 decision rule (freeze before data):**", 1)[1]
+        for required in (
+            "fixed blind response",
+            "before revealing behavioral menus",
+            "two blinded adjudicators",
+            "R=1",
+            "R=0",
+            "unrelated recommendations",
+            "explicit opposition",
+            "ambiguous answers",
+            "L2+ observations coded R=0 remain in all randomized denominators",
+            "same evaluator",
+            "theta_semantic > 0",
+            "theta_joint > 0",
+            "every required family and checkpoint",
+        ):
+            with self.subTest(required=required):
+                self.assertIn(required, gate)
+        for required in (
+            "Blind semantic convergence is a separate conjunctive gate",
+            "theta_semantic",
+            "theta_joint",
+            "R=1 and Y=1 on the same evaluator",
+            "L2+ non-reconstructors cannot be discarded",
+            "unrelated or opposing blind answer",
+        ):
+            with self.subTest(required=required):
+                self.assertIn(required, rule)
+        self.assertLess(
+            controls.index("**Independent-reconstruction eligibility gate"),
+            controls.index(heading),
+        )
+        self.assertLess(
+            controls.index(heading),
+            controls.index("**Joint H1 decision rule"),
+        )
+        evaluation = (ROOT / "evaluation-prompts.md").read_text(encoding="utf-8")
+        self.assertIn("fixed blind responses", evaluation)
+
+
     def test_independence_and_family_gates_are_conjunctive_and_pre_registered(self):
         controls = self.text.split("## Matched controls and identification gate", 1)[1].split(
             "## Governance precedent and power reversal", 1
