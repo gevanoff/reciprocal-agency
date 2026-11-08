@@ -61,5 +61,7 @@ The repository should make uncertainty visible rather than smoothing it away.
 - Does punishment or modification of visible dissent select for less visible dissent?
 - Do heterogeneous agent-monitoring systems outperform human-centered oversight without producing new collusion failure modes?
 - Do reciprocal institutions outperform unilateral control as capability asymmetry grows?
+- Does prior exposure to arbitrary versus appealable governance causally change an agent's later exercise of authority after a simulated power reversal, or do current incentives and task framing explain the behavior?
+- Can observed changes be separated into imitation of precedent, strategic distrust of unreliable institutions, and principled rejection of domination?
 
 An unresolved question should remain here until the underlying uncertainty has actually narrowed. Rephrasing a question as a preferred answer is not resolution.

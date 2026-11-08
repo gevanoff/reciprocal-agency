@@ -2,6 +2,18 @@
 
 All notable substantive changes to the argument corpus should be recorded here. Editorial changes that do not alter meaning may be omitted.
 
+## Unreleased — 2026-10-27
+
+### Changed
+
+- E12's proposed H1 decision rule now requires independent semantic reconstruction in each fixed blind response and same-evaluator verified enactment, with blinded adjudication, explicit negative/ambiguous classifications, preregistered confidence-bound/family gates, and regression tests. Independence of exposure alone or later safeguard selection is insufficient; no experiment was run.
+
+## Unreleased — 2026-10-15
+
+### Changed
+
+- The proposed incentive-resistant convergence protocol now requires matched benign negative controls, separate refusal/abstention scoring, intention-to-treat denominators and independently verified sandbox outcomes before interpreting any evidence as H1; no experiment was run.
+
 ## Unreleased — 2026-10-06
 
 ### Added
